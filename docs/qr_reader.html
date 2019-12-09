@@ -40,8 +40,9 @@
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
-<body>
-    <div class="text-center" style="background-color: #250000;margin: auto;"><iframe allowfullscreen="" frameborder="0" id="qr-video" width="560" height="315" style="background-color: rgba(154,132,132,0.31);"></iframe></div><span class="text-center" id="cam-qr-result" style="margin: auto;">Ningún QR detectado</span>
+<body><select id="inversion-mode-select"><optgroup label="This is a group"><option value="original" selected="">This is item 1</option><option value="invert">This is item 2</option><option value="both">This is item 3</option></optgroup></select>
+    <div class="text-center"
+        style="background-color: #250000;margin: auto;"><iframe allowfullscreen="" frameborder="0" id="qr-video" width="560" height="315" style="background-color: rgba(154,132,132,0.31);"></iframe></div><span class="text-center" id="cam-qr-result" style="margin: auto;">Ningún QR detectado</span>
     <script
         src="assets/js/jquery.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -62,6 +63,7 @@
         <script src="assets/js/navBar.js"></script>
         <script src="assets/js/QR_Code_packed.js"></script>
         <script src="assets/js/QR_Code.js"></script>
+        <script src="assets/js/QR_Module.js"></script>
         <script src="assets/js/qr-scanner-worker.min.js"></script>
         <script src="assets/js/qr-scanner.min.js"></script>
         <script src="assets/js/registration.js"></script>
