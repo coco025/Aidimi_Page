@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="height: 100%;color: rgb(0,0,0);background-color: #0c0c0c;">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -40,31 +40,9 @@
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
-<body style="background-color: rgb(12,12,12);width: 100%;min-height: 0px;height: 100%;">
-    <div class="text-center" style="margin-top: 5%;width: 100%;"><span id="scan" class="span_text" style="margin-left: 25px;color: rgb(255,255,255);">Escanea tu código</span></div>
-    <main id="main" style="vertical-align: top;background-color: rgba(255,255,255,0);width: 100%;margin: auto;margin-top: 5%;">
-        <section style="border-radius: 25px;vertical-align: middle;width: auto;margin: auto;margin-top: 0px;background-color: rgba(255,255,255,0);height: 100%;">
-            <div class="container text-center shadow" style="border: 0px solid;border-width: 1px;border-color: rgb(72,72,72);border-radius: 50px;vertical-align: middle;margin: auto;margin-left: 2%;margin-right: 2%;width: auto;background-color: rgba(255,255,255,0);height: 100%;padding: 0px;">
-                <div class="row" style="margin-top: 10%;margin-bottom: 5%;">
-                    <div class="col" style="padding: 0px;">
-                        <!-- Start: Social Icon Circle --><button class="btn btn-link border-primary btn-circle" style="border-radius: 50px;border: 1px solid rgb(255,0,0);background-color: #191919;" type="button"><i class="fa fa-camera" style="font-size: 5vw;background-color: rgba(0,0,0,0);color: rgb(255,255,255);margin: auto;margin-top: 0px;"></i></button>
-                        <!-- End: Social Icon Circle -->
-                    </div>
-                </div>
-                <div class="row" style="margin-top: 5%;margin-bottom: 5%;">
-                    <div class="col">
-                        <div style="width: 100%;"><video id="qr-video" width="560" height="315" style="background-color: rgba(154,132,132,0.31);" muted="" playsinline=""></video></div>
-                    </div>
-                </div><span class="text-center" id="cam-qr-result" style="margin: auto;color: rgb(255,255,255);">Ningún QR detectado</span>
-                <div class="row" style="margin-top: 10%;margin-bottom: 10%;">
-                    <div class="col-2 text-right" style="margin: auto;"><i class="fa fa-info-circle pulse animated infinite" style="margin: auto;color: rgb(255,255,255);font-size: 20px;"></i></div>
-                    <div class="col" style="margin: auto;padding-right: 15px;padding-left: 0px;">
-                        <p class="text-left span_text" style="margin: auto;color: rgb(255,255,255);">Este código es único e inigualable para cada propósito al que accedas.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main><select id="inversion-mode-select"><option value="original" selected="">Original</option><option value="invert">Invertido</option><option value="both">Ambos</option></select>
+<body><select id="inversion-mode-select"><optgroup label="This is a group"><option value="original" selected="">This is item 1</option><option value="invert">This is item 2</option><option value="both">This is item 3</option></optgroup></select>
+    <div class="text-center"
+        style="background-color: #250000;margin: auto;"><video id="qr-video" width="560" height="315" style="background-color: rgba(154,132,132,0.31);" muted="" playsinline=""></video></div><span class="text-center" id="cam-qr-result" style="margin: auto;">Ningún QR detectado</span>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-animation.js"></script>
