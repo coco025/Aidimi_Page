@@ -7,4 +7,4 @@ async function sleep(ms) {
     window.location.replace("login.html");
 }
 
-document.getElementById("body_start_page").setAttribute("onload", "sleep(2000);");
+document.getElementById("body_start_page").setAttribute("onload", "sleep(3000);");
