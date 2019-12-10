@@ -201,10 +201,10 @@ class QrScanner {
 
     _updateSourceRect() {
         const smallestDimension = Math.min(this.$video.videoWidth, this.$video.videoHeight);
-        const sourceRectSize = 100;//Math.round(smallestDimension);
+        const sourceRectSize = Math.round(2 / 3 * smallestDimension);
         this._sourceRect.width = this._sourceRect.height = sourceRectSize;
-        this._sourceRect.x = (this.$video.videoWidth - sourceRectSize);
-        this._sourceRect.y = (this.$video.videoHeight - sourceRectSize);
+        this._sourceRect.x = (this.$video.videoWidth - sourceRectSize) / 2;
+        this._sourceRect.y = (this.$video.videoHeight - sourceRectSize) / 2;
     }
 
     _scanFrame() {
@@ -223,9 +223,9 @@ class QrScanner {
 
     _getCameraStream(facingMode, exact = false) {
         const constraintsToTry = [{
-            width: { min: 2048 }
-        }, {
             width: { min: 1024 }
+        }, {
+            width: { min: 768 }
         }, {}];
 
         if (facingMode) {
@@ -319,7 +319,7 @@ class QrScanner {
         });
     }
 }
-QrScanner.DEFAULT_CANVAS_SIZE = 800;
+QrScanner.DEFAULT_CANVAS_SIZE = 400;
 //QrScanner.WORKER_PATH = 'qr-scanner-worker.min.js';
 
 //import QrScanner from "./qr-scanner.min.js";
