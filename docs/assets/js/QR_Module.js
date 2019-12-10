@@ -319,7 +319,7 @@ class QrScanner {
         });
     }
 }
-QrScanner.DEFAULT_CANVAS_SIZE = 800;
+QrScanner.DEFAULT_CANVAS_SIZE = 400;
 //QrScanner.WORKER_PATH = 'qr-scanner-worker.min.js';
 
 //import QrScanner from "./qr-scanner.min.js";
@@ -327,7 +327,6 @@ QrScanner.DEFAULT_CANVAS_SIZE = 800;
 QrScanner.WORKER_PATH = './assets/js/qr-scanner-worker.min.js';
 
 const video = document.getElementById('qr-video');
-const camHasCamera = document.getElementById('cam-has-camera');
 const camQrResult = document.getElementById('cam-qr-result');
 
 function setResult(label, result) {
