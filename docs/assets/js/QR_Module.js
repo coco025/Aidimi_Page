@@ -319,7 +319,7 @@ class QrScanner {
         });
     }
 }
-//QrScanner.DEFAULT_CANVAS_SIZE = 400;
+QrScanner.DEFAULT_CANVAS_SIZE = 800;
 //QrScanner.WORKER_PATH = 'qr-scanner-worker.min.js';
 
 //import QrScanner from "./qr-scanner.min.js";
