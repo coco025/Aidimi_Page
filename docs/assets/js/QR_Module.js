@@ -201,10 +201,10 @@ class QrScanner {
 
     _updateSourceRect() {
         const smallestDimension = Math.min(this.$video.videoWidth, this.$video.videoHeight);
-        const sourceRectSize = Math.round(2 / 3 * smallestDimension);
+        const sourceRectSize = Math.round(smallestDimension);
         this._sourceRect.width = this._sourceRect.height = sourceRectSize;
-        this._sourceRect.x = (this.$video.videoWidth - sourceRectSize) / 2;
-        this._sourceRect.y = (this.$video.videoHeight - sourceRectSize) / 2;
+        this._sourceRect.x = (this.$video.videoWidth - sourceRectSize);
+        this._sourceRect.y = (this.$video.videoHeight - sourceRectSize);
     }
 
     _scanFrame() {
