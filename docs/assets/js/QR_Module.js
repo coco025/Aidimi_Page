@@ -340,7 +340,8 @@ function setResult(label, result) {
 QrScanner.hasCamera().then(hasCamera => camHasCamera.textContent = hasCamera);
 const scanner = new QrScanner(video, result => setResult(camQrResult, result));
 scanner.start();
-
+/*
 document.getElementById('inversion-mode-select').addEventListener('change', event => {
 	scanner.setInversionMode(event.target.value);
 });
+*/
