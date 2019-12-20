@@ -1,9 +1,11 @@
 async function openNav() {   
-    document.getElementById("mySidenav").style.marginLeft = "0px";
+   
+   
+   document.getElementById("mySidenav").style.marginLeft = "0px";
 }
 
 function closeNav() {
-	
+	    //document.getElementById("navBar").style.zIndex = "0";
         document.getElementById("mySidenav").style.marginLeft = "-350px";                                      
     
 }
