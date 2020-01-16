@@ -1,11 +1,11 @@
 async function openNav() {
-    document.getElementById("inside_mySideNav").style.marginLeft = "0px";
-    document.getElementById("mySidenav").style.marginLeft = "0px";
+    document.getElementById("inside_mySideNav").style.marginLeft = "0%";
+    document.getElementById("mySidenav").style.marginLeft = "0%";
 }
 
 function closeNav() {
-        document.getElementById("inside_mySideNav").style.marginLeft = "-350px";
-        document.getElementById("mySidenav").style.marginLeft = "-100%";
+    document.getElementById("inside_mySideNav").style.marginLeft = "-100%";
+    document.getElementById("mySidenav").style.marginLeft = "-100%";
 }
 
 document.getElementById("mySidenav").setAttribute("onclick","closeNav();");
