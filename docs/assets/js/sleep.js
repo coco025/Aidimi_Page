@@ -16,8 +16,7 @@ async function setFavorite(ms) {
 async function indexPage(ms){
     await sleep(ms);
     var element = document.getElementById("img_center"); 
-    element.classList.remove("fadeIn");
-    element.classList.remove("slow");
+    //element.classList.remove("fadeIn");
     element.classList.add("zoomOutRight");
     element = document.getElementById("loading"); 
     element.classList.remove("fadeIn");
