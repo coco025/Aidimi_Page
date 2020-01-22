@@ -12,5 +12,7 @@ $("#image_favorite").click(function(){
 
 document.getElementById("purpose").setAttribute("onclick","window.location.href = 'join_purpose.html';");
 
+document.getElementById("click").setAttribute("onclick","window.location.href = 'about-us.html';");
+
 
 
