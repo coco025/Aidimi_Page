@@ -16,8 +16,8 @@ async function setFavorite(ms) {
 async function indexPage(ms){
     await sleep(ms);
     var element = document.getElementById("img_center"); 
-    //element.classList.add("zoomOutDown");
-    var element = document.getElementById("loading"); 
+    element.classList.add("fadeOut");
+    element = document.getElementById("loading"); 
     element.classList.add("zoomOutDown");
     await sleep(1000);
     window.location.replace("login.html");
