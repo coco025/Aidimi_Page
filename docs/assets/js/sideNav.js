@@ -1,4 +1,4 @@
-async function openNav() {
+function openNav() {
     document.getElementById("inside_mySideNav").style.marginLeft = "0%";
     document.getElementById("mySidenav").style.marginLeft = "0%";
 }

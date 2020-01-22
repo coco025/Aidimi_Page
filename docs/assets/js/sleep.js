@@ -2,14 +2,24 @@ function sleep_aux(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function sleep(ms) {
+async function sleep(ms){
+    //alert("Wait", ms.toString());
     await sleep_aux(ms);
+}
+
+async function setFavorite(ms) {
+    await sleep(ms);
+    var element = document.getElementById("image_favorite");
+    element.classList.remove("rubberBand");
+}
+
+async function indexPage(ms){
+    await sleep(ms);
     var element = document.getElementById("img_center"); 
-   // document.getElementById("body_start_page").style.backgroundColor = "#dddddd";
     element.classList.add("zoomOutDown");
     
-        await sleep_aux(1000);
+    await sleep(1000);
     window.location.replace("login.html");
 }
 
-document.getElementById("body_start_page").setAttribute("onload", "sleep(3000);");
+document.getElementById("body_start_page").setAttribute("onload", "indexPage(3000);");
