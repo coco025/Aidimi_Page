@@ -1,5 +1,4 @@
 .steps-progressbar > ul {
-  /*display: table;*/
   table-layout: fixed;
   border-collapse: separate;
   margin: 12px 0 10px;
@@ -7,7 +6,7 @@
   padding: 0;
   list-style: none;
   color: #5e5e5e;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 400;
 }
 
@@ -27,7 +26,7 @@
   height: 15px;
   border: 2px solid #dbdbdb;
   border-radius: 0% 0% 0% 0%;
-  background-color: #ffffff;
+  background-color: #dbdbdb;
   line-height: 30px;
   content: " ";
   z-index: 1;
@@ -59,21 +58,40 @@
   /*width: 50px;*/
 }
 
-.steps-progressbar > ul > li.active:before, .steps-progressbar > ul > li.previous:before {
+.steps-progressbar > ul > li.previousOrange:before {
   border-color: rgba(170,170,170,0);
-  background-color: #1dbdbd;
+  background-color: #f67600;
 }
 
-.steps-progressbar > ul > li.active:after, .steps-progressbar > ul > li.previous:after {
+.steps-progressbar > ul > li.previousGreen:before {
+  border-color: rgba(170,170,170,0);
+  background-color: #00a843;
+}
+
+.steps-progressbar > ul > li.previousBlue:before {
+  border-color: rgba(170,170,170,0);
+  background-color: #0089b3;
+}
+
+.steps-progressbar > ul > li.previous:after {
   box-shadow: none;
   background-color: rgba(255,0,0,0);
 }
 
 .steps-progressbar > ul > li.active:before {
-  margin-top: 1px;
+  border: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 1px;
+  background-color: rgba(196,230,235,0);
+  border-radius: 0% 0% 0% 0%;
+}
+
+.steps-progressbar > ul > li.active:after {
+  margin-top: 0px;
   margin-bottom: 0px;
   width: 20px;
-  height: 30px;
+  /*height: 30px;*/
   background-color: rgba(196,230,235,0);
   border-radius: 0% 0% 0% 0%;
 }
