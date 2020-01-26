@@ -73,6 +73,11 @@
   background-color: #0089b3;
 }
 
+.steps-progressbar > ul > li.previousPurple:before {
+  border-color: rgba(170,170,170,0);
+  background-color: #5d007e;
+}
+
 .steps-progressbar > ul > li.previous:after {
   box-shadow: none;
   background-color: rgba(255,0,0,0);
