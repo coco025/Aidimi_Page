@@ -1,0 +1,54 @@
+.group {
+  position: relative;
+  /*margin-bottom: 45px;*/
+}
+
+input.inputData {
+  width: 100%;
+  background-color: rgba(0,0,0,0);
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #108b8b;
+}
+
+input.inputData:focus {
+  outline: none;
+}
+
+label.labelData {
+  color: #108b8b;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+}
+
+input.inputData:focus ~ label, input.inputData:valid ~ label.labelData {
+  top: -20px;
+  font-size: 14px;
+  color: #108b8b;
+}
+
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  /*width: 50%;*/
+}
+
+.highlight {
+  /*position: absolute;*/
+  /*height: 60%;*/
+  width: 100%;
+  /*top: 25%;*/
+  /*left: 0;*/
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+input:focus ~ .highlight {
+  /*animation: inputHighlighter 0.3s ease;*/
+}
+
