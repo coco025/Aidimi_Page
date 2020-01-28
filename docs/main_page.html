@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/--mp---Masonry-Gallery-with-Loader.css">
@@ -50,17 +49,20 @@
 <body id="body" style="width: 100%;">
     <div class="border rounded order-1 sidenav" id="mySidenav" style="z-index: 100;transition: 0.0s;background-color: rgba(44,44,44,0.51);padding-left: 0px;width: 100%;padding-top: 0px;height: 100%;margin-left: -100%;">
         <div class="border rounded shadow-lg" id="inside_mySideNav" style="z-index: 99;transition: all 0.25s;background-color: #ffffff;width: 300px;height: 100%;">
-            <div class="text-center" id="myID" style="border-radius: 30px;/*margin-left: 25px;*//*background-color: rgba(255,255,255,0);*/padding: 10px;padding-left: 15%;">
-                <div class="text-left" style="margin-top: 10px;"><img class="border rounded-circle pulse animated" src="assets/img/one-piece-calavera-pegatina_large.png" width="100px" height="100px" style="height: 75px;width: 75px;"></div>
-                <div class="text-left" id="myID_Name" style="margin-bottom: 10px;"><span data-bs-hover-animate="rubberBand">Monkey D. Luffy</span><img id="edit_user" src="assets/img/bx-pencil.svg" style="margin-left: 20px;width: 20px;background-color: rgba(255,255,255,0);margin-bottom: 5px;"></div>
+            <div class="text-center" id="myID" style="border-radius: 30px;/*margin-left: 10px;*//*background-color: rgba(255,255,255,0);*/padding: 10px;padding-left: 5%;padding-bottom: 0px;">
+                <div>
+                    <div class="text-left" style="margin-top: 10px;width: 100%;"><img class="border rounded-circle pulse animated" src="assets/img/one-piece-calavera-pegatina_large.png" width="100px" height="100px" style="height: 75px;width: 75px;margin-left: 5px;"><img id="edit_user" class="right" src="assets/img/bx-pencil.svg" style="width: 22px;background-color: rgba(255,255,255,0);opacity: 0.40;margin-left: 150px;"></div>
+                </div>
+                <div class="text-left" id="myID_Name" style="margin-bottom: 0px;margin-top: 10px;"><span data-bs-hover-animate="rubberBand">Monkey D. Luffy</span></div>
             </div>
-            <div id="Items" style="margin-top: 15px;background-color: #f5f5f5;height: 100%;">
+            <div id="Items" style="border-width: 5px;border-top: 5px;margin-top: 5px;background-color: #ffffff;height: 100%;">
                 <div id="divisor" style="margin-top: 15px;margin-bottom: 15px;">
                     <h1 class="border rounded-0 border-primary shadow-sm"></h1>
                 </div>
                 <div class="row" style="margin: 0px;">
-                    <div class="col text-center" style="width: 10px;max-width: 50px;margin: auto;padding-right: 0px;margin-left: 5px;"><i class="icon ion-android-apps" style="font-size: 24px;"></i></div>
-                    <div class="col" style="padding-right: 0px;"><a href="#" style="color: #000000;font-size: 18px;padding-left: 0px;">Mis Comunidades</a></div>
+                    <div class="col" style="padding-right: 0px;">
+                        <div><a href="#" style="color: #15C299;font-size: 18px;padding-left: 0px;font-family: Roboto, sans-serif;line-height: 21px;margin-left: 20px;">Administrar comunidad&nbsp;<img src="assets/img/plus-regular-60.png" style="color: rgb(186,94,133);margin-left: 15px;width: 30px;"></a></div>
+                    </div>
                 </div>
                 <div class="row" style="margin: 0px;">
                     <div class="col text-center" style="width: 10px;max-width: 50px;margin: auto;padding-right: 0px;margin-left: 5px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABeUlEQVRIS82WPy5HQRDHP79GdCoVCScQjYTENTQSNJyAhA4dCRdAQ6FxDUGiwQkoVCoqoZFJJrLm2X1vZ5+sLV9m57Pz531nBlQ6g0pcvOBRYFkffQa85AbgAQv0FphQ2BMwkwv3gNeBAxPhBnCYE3UKPAUsAu/AMfCsjtvAY8AaMAycAw+/PSgGFqikc0gvPQLTwCuQSvUIcAdM6r0PLUMDHgPvAZvmpRLFiX6LNdeqZie8ug9s2ahj4B1g2xivANLBqSOdfmoMdgHx9+PEwFKnyyBlN8Bcx+a5BmaDEs0H/fHtItVcUq8FQOrUFql9k0Qu/XGhfdF4s+d36hh42syCixXJ4KL+QnAvihSAk/5CcJsw5KY46e9fgKulWlJZpblya1hk/1cCshQIyFvOdCqRzKtAXmWqZUlmtSHhHYsyOo9MarPGYskicB/sY5+6CMi3TmNRjLyrz7hZfRpQce6ZTr1Iqwfci8J5wL0onBdcpFreGhdDxcEXvw9wHzfaw18AAAAASUVORK5CYII="
@@ -78,9 +80,16 @@
                         class="col"><a class="stretched-link" href="my_achivements.html" style="color: #000000;font-size: 18px;padding-left: 0px;">Mis logros</a></div>
             </div>
             <div class="row" style="margin: 0px;">
-                <div class="col text-center" style="width: 10px;max-width: 50px;margin: auto;padding-right: 0px;margin-left: 5px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABNklEQVRIS+2WgU0CQRBFHxUYK9AOxArQDuxArQCoQEqwA+1ASsAOtANLwA7II7uXzXoct9wpJN4kl8CxO3//m5kNI44UoyPpMgj/GfkB9cmgvgQuwmne+zzVrhrfAU/AOBN7BebAuush6oSfgWlDYkVvgY8u4rnwA/ASEn4DOlwBIpfCJPz2BVx3cZ4L6+YMUFTMCqSR0hC53w+KVFhHbyHLY3Bbl9TD2HCinhWofqaEUuFFaChznTdgFP99gWBcal9Ytm2chHApatFF1DZlpKAzI39naaox3NVcLrBr2zZXWqaYs+5dVaGmcVI8H6ebsFO3fo4OdOdjxDVFwm7cd4E4aibfd4EUCytuvd14lXSvgstQ11+5MtNJ8cbyMapROGCUfmwZ/gj0QbFVjgF1K0x9LPp/qDdX3kAfD/cxbwAAAABJRU5ErkJggg=="
-                        style="width: 24px;"></div>
-                <div class="col"><a class="stretched-link" href="#" style="color: #000000;font-size: 18px;padding-left: 0px;">Mis Accesos</a></div>
+                <div class="col text-center" style="width: 10px;max-width: 50px;margin: auto;padding-right: 0px;margin-left: 5px;"><img src="assets/img/bx-lock-alt.svg" style="width: 24px;"></div>
+                <div class="col"><a class="stretched-link" href="#" style="color: #000000;font-size: 18px;padding-left: 0px;">Privacidad</a></div>
+            </div>
+            <div class="row" style="margin: 0px;">
+                <div class="col text-center" style="width: 10px;max-width: 50px;margin: auto;padding-right: 0px;margin-left: 5px;"><img src="assets/img/bx-cog.svg" style="width: 24px;"></div>
+                <div class="col"><a class="stretched-link" href="#" style="color: #000000;font-size: 18px;padding-left: 0px;">Ajustes</a></div>
+            </div>
+            <div class="row" style="margin: 0px;">
+                <div class="col text-center" style="width: 10px;max-width: 50px;margin: auto;padding-right: 0px;margin-left: 5px;"><img src="assets/img/bx-question-mark.svg" style="width: 24px;"></div>
+                <div class="col"><a class="stretched-link" href="#" style="color: #000000;font-size: 18px;padding-left: 0px;">FAQ</a></div>
             </div>
             <div id="divisor" style="margin-top: 15px;margin-bottom: 15px;">
                 <h1 class="border rounded-0 border-primary shadow-sm"></h1>
@@ -139,7 +148,7 @@
                                 </div>
                             </div>
                             <div class="col-1" id="click" style="padding-right: 0px;padding-left: 0px;">
-                                <div style="display: flex;background-color: rgba(66,255,0,0);border-radius: 25px;width: 100%;height: 100%;"><i class="material-icons" style="vertical-align: middle;height: auto;margin-top: 50%;">timer</i></div>
+                                <div style="display: flex;background-color: rgba(66,255,0,0);border-radius: 25px;width: 100%;margin-top: 5px;"><img src="assets/img/bx-timer.svg" style="opacity: 0.50;"></div>
                             </div>
                         </div>
                     </div>
@@ -165,7 +174,7 @@
                                 </div>
                             </div>
                             <div class="col-1" id="click" style="padding-right: 0px;padding-left: 0px;">
-                                <div style="display: flex;background-color: rgba(66,255,0,0);border-radius: 25px;width: 100%;height: 100%;"><i class="material-icons" style="vertical-align: middle;height: auto;margin-top: 50%;">timer</i></div>
+                                <div style="display: flex;background-color: rgba(66,255,0,0);border-radius: 25px;width: 100%;margin-top: 5px;"><img src="assets/img/bx-timer.svg" style="opacity: 0.50;"></div>
                             </div>
                         </div>
                     </div>
@@ -191,7 +200,7 @@
                                 </div>
                             </div>
                             <div class="col-1" id="click" style="padding-right: 0px;padding-left: 0px;">
-                                <div style="display: flex;background-color: rgba(66,255,0,0);border-radius: 25px;width: 100%;height: 100%;"><i class="material-icons" style="vertical-align: middle;height: auto;margin-top: 50%;">timer</i></div>
+                                <div style="display: flex;background-color: rgba(66,255,0,0);border-radius: 25px;width: 100%;margin-top: 5px;"><img src="assets/img/bx-timer.svg" style="opacity: 0.50;"></div>
                             </div>
                         </div>
                     </div>
