@@ -13,7 +13,7 @@ body {
   background-color: #111;
   overflow-x: hidden;
   transition: 0.25s;
-  padding-top: 60px;
+  /*padding-top: 60px;*/
 }
 
 .sidenav a {
@@ -55,5 +55,9 @@ body {
 }
 
 :root {
+}
+
+.item {
+  margin: 5px;
 }
 

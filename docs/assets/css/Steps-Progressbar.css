@@ -23,7 +23,7 @@
   display: block;
   margin: 1px 1px 1px;
   width: 25px;
-  height: 15px;
+  height: 20px;
   border: 2px solid #dbdbdb;
   border-radius: 0% 0% 0% 0%;
   background-color: #dbdbdb;
@@ -59,6 +59,7 @@
 }
 
 .steps-progressbar > ul > li.previousOrange:before {
+  /*width: 20%;*/
   border-color: rgba(170,170,170,0);
   background-color: #f67600;
 }

@@ -1,14 +1,15 @@
 function openNav() {
-    document.getElementById("inside_mySideNav").style.marginLeft = "0%";
-    document.getElementById("mySidenav").style.marginLeft = "0%";
+    document.getElementById("sideNav_Options").style.marginLeft = "0%";
+    document.getElementById("sideNav_Back").style.marginLeft = "0%";
+    //document.getElementById("sideNav_Main").style.marginLeft = "0%";
 }
 
 function closeNav() {
-    document.getElementById("inside_mySideNav").style.marginLeft = "-100%";
-    document.getElementById("mySidenav").style.marginLeft = "-100%";
+    document.getElementById("sideNav_Options").style.marginLeft = "-100%";
+    document.getElementById("sideNav_Back").style.marginLeft = "-100%";
 }
 
-document.getElementById("mySidenav").setAttribute("onclick","closeNav();");
+document.getElementById("sideNav_Back").setAttribute("onclick","closeNav();");
 
 document.getElementById("openSideNav").setAttribute("onclick", "openNav();");
 
