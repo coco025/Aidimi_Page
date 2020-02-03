@@ -8,4 +8,4 @@ async function Qrwait(ms){
 
 }
 
-document.getElementById("body_reader").setAttribute("onload","Qrwait(2000);");
+document.getElementById("body_reader").setAttribute("onload","Qrwait(5000);");
