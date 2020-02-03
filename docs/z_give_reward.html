@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="width: 100%;">
+<html style="height: 100%;color: rgb(0,0,0);background-color: #0c0c0c;">
 
 <head>
     <meta charset="utf-8">
@@ -48,64 +48,26 @@
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
-<body id="body" style="width: 100%;">
-    <nav class="navbar navbar-light navbar-expand-md border-primary border rounded-0 shadow-sm" id="navBar" style="top: 0px;z-index: 1;position: fixed;background-color: #ffffff;width: 100%;margin: 0px;height: 80px;padding-top: 30px;">
-        <div class="container-fluid">
-            <div style="height: 50%;font-size: 20px;font-family: Roboto, sans-serif;"><span class="open-sidebar" style="margin-left: 25px;">Restablecer Contraseña</span></div>
-        </div>
-    </nav>
-    <main id="main" style="height: 100%;background-color: rgba(104,104,104,0);width: 100%;padding: 0px;margin-top: 70px;">
-        <section class="shadow-lg" style="width: 100%;margin-top: 0px;height: 100%;">
-            <div class="container text-left border rounded" style="width: 100%;padding: 0px;max-width: none;height: 100%;">
-                <div style="margin: 0px 10%;margin-top: 10%;">
-                    <div class="row" style="margin: 0px;">
-                        <div class="col"><span style="color: #108b8b;">Ingrese el código recibido para establecer la nueva contraseña</span></div>
+<body style="background-color: rgb(12,12,12);width: 100%;min-height: 0px;height: 100%;">
+    <div class="text-center" style="margin-top: 5%;width: 100%;"><span id="scan" class="span_text" style="margin-left: 25px;color: rgb(255,255,255);">Escanea tu código</span></div>
+    <main id="main" style="vertical-align: top;background-color: rgba(255,255,255,0);width: 100%;margin: auto;margin-top: 5%;">
+        <section style="border-radius: 25px;vertical-align: middle;width: auto;margin: auto;margin-top: 0px;background-color: rgba(255,255,255,0);height: 100%;">
+            <div class="container text-center shadow" style="border: 0px solid;border-width: 1px;border-color: rgb(72,72,72);border-radius: 50px;vertical-align: middle;margin: auto;margin-left: 2%;margin-right: 2%;width: auto;background-color: rgba(255,255,255,0);height: 100%;padding: 0px;">
+                <div class="row" style="margin-top: 10%;margin-bottom: 5%;">
+                    <div class="col" style="padding: 0px;">
+                        <!-- Start: Social Icon Circle --><button class="btn btn-link border-primary btn-circle" style="border-radius: 50px;border: 1px solid rgb(255,0,0);background-color: #191919;" type="button"><i class="fa fa-camera" style="font-size: 5vw;background-color: rgba(0,0,0,0);color: rgb(255,255,255);margin: auto;margin-top: 0px;"></i></button>
+                        <!-- End: Social Icon Circle -->
                     </div>
-                    <div class="row" style="margin: 0px;margin-top: 5%;">
-                        <div class="col" style="margin-top: 20px;width: 100%;">
-                            <!-- Start: Google Style Text Input --><div class="group">      
-    <input type="text" required class="inputData">
-
-    <label class="labelData">Código</label>
-    
-</div>
-
-
-
-                            <!-- End: Google Style Text Input -->
-                        </div>
+                </div>
+                <div class="row" style="margin-top: 5%;margin-bottom: 5%;">
+                    <div class="col">
+                        <div style="width: 100%;"><img class="rounded bg-dark border border-dark shadow" id="QR_image" src="assets/img/qr-code.png" style="/*border-radius: 5px;*/width: 75%;height: 100%;background-color: rgb(255,0,0);max-width: 400px;"></div>
                     </div>
-                    <div class="row" style="margin: 0px;margin-top: 5%;">
-                        <div class="col" style="margin-top: 20px;width: 100%;">
-                            <!-- Start: Google Style Text Input --><div class="group">      
-    <input type="password" required class="inputData">
-
-    <label class="labelData">Contraseña</label>
-</div>
-
-
-
-                            <!-- End: Google Style Text Input -->
-                        </div>
-                    </div>
-                    <div class="row" style="margin: 0px;margin-top: 5%;">
-                        <div class="col" style="margin-top: 20px;width: 100%;">
-                            <!-- Start: Google Style Text Input --><div class="group">      
-    <input type="password" required class="inputData">
-
-    <label class="labelData">Repetir contraseña</label>
-</div>
-
-
-
-                            <!-- End: Google Style Text Input -->
-                        </div>
-                    </div>
-                    <div class="row text-center d-sm-inline-block" style="width: 100%;margin: 0px;margin-top: 10%;">
-                        <div class="col">
-                            <div><a class="btn btn-primary text-break text-center shadow" role="button" data-bs-hover-animate="pulse" style="width: 500px;display: table-cell;margin: auto;/*border-width: 0px;*/border-radius: 25px;border-color: #bfbfbf;background-color: #1faeae;/*width: 200px;*/height: 50px;font-weight: bold;font-family: Roboto, sans-serif;"
-                                    href="login.html">Establecer contraseña</a></div>
-                        </div>
+                </div>
+                <div class="row" style="margin-top: 10%;margin-bottom: 10%;">
+                    <div class="col-2 text-right" style="margin: auto;"><i class="fa fa-info-circle pulse animated infinite" style="margin: auto;color: rgb(255,255,255);font-size: 20px;"></i></div>
+                    <div class="col" style="margin: auto;padding-right: 15px;padding-left: 0px;">
+                        <p class="text-left span_text" style="margin: auto;color: rgb(255,255,255);">Este código es único e inigualable para cada propósito al que accedas.</p>
                     </div>
                 </div>
             </div>

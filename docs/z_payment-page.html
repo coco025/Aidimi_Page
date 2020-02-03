@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html style="width: 100%;">
+<html>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>AIDIMI</title>
+    <title>Payment - AIDIMI</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
@@ -48,69 +48,70 @@
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
-<body id="body" style="width: 100%;">
-    <nav class="navbar navbar-light navbar-expand-md border-primary border rounded-0 shadow-sm" id="navBar" style="top: 0px;z-index: 1;position: fixed;background-color: #ffffff;width: 100%;margin: 0px;height: 80px;padding-top: 30px;">
-        <div class="container-fluid">
-            <div style="height: 50%;font-size: 20px;font-family: Roboto, sans-serif;"><span class="open-sidebar" style="margin-left: 25px;">Restablecer Contraseña</span></div>
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg bg-white clean-navbar" id="NavBar">
+        <div class="container-fluid"><a class="navbar-brand clean-navbar" id="openSideNav">AIDIMI</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="z_login_deprecated_blue.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="features.html">Features</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="z_pricing.html">Pricing</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="z_payment-page.html">Payment</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="z_about-us.html">About Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="z_contact-us.html">Contact Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="z_login_deprecated_blue.html">Login</a></li>
+                </ul>
+        </div>
         </div>
     </nav>
-    <main id="main" style="height: 100%;background-color: rgba(104,104,104,0);width: 100%;padding: 0px;margin-top: 70px;">
-        <section class="shadow-lg" style="width: 100%;margin-top: 0px;height: 100%;">
-            <div class="container text-left border rounded" style="width: 100%;padding: 0px;max-width: none;height: 100%;">
-                <div style="margin: 0px 10%;margin-top: 10%;">
-                    <div class="row" style="margin: 0px;">
-                        <div class="col"><span style="color: #108b8b;">Ingrese el código recibido para establecer la nueva contraseña</span></div>
-                    </div>
-                    <div class="row" style="margin: 0px;margin-top: 5%;">
-                        <div class="col" style="margin-top: 20px;width: 100%;">
-                            <!-- Start: Google Style Text Input --><div class="group">      
-    <input type="text" required class="inputData">
-
-    <label class="labelData">Código</label>
-    
-</div>
-
-
-
-                            <!-- End: Google Style Text Input -->
-                        </div>
-                    </div>
-                    <div class="row" style="margin: 0px;margin-top: 5%;">
-                        <div class="col" style="margin-top: 20px;width: 100%;">
-                            <!-- Start: Google Style Text Input --><div class="group">      
-    <input type="password" required class="inputData">
-
-    <label class="labelData">Contraseña</label>
-</div>
-
-
-
-                            <!-- End: Google Style Text Input -->
-                        </div>
-                    </div>
-                    <div class="row" style="margin: 0px;margin-top: 5%;">
-                        <div class="col" style="margin-top: 20px;width: 100%;">
-                            <!-- Start: Google Style Text Input --><div class="group">      
-    <input type="password" required class="inputData">
-
-    <label class="labelData">Repetir contraseña</label>
-</div>
-
-
-
-                            <!-- End: Google Style Text Input -->
-                        </div>
-                    </div>
-                    <div class="row text-center d-sm-inline-block" style="width: 100%;margin: 0px;margin-top: 10%;">
-                        <div class="col">
-                            <div><a class="btn btn-primary text-break text-center shadow" role="button" data-bs-hover-animate="pulse" style="width: 500px;display: table-cell;margin: auto;/*border-width: 0px;*/border-radius: 25px;border-color: #bfbfbf;background-color: #1faeae;/*width: 200px;*/height: 50px;font-weight: bold;font-family: Roboto, sans-serif;"
-                                    href="login.html">Establecer contraseña</a></div>
-                        </div>
-                    </div>
+    <main class="page payment-page">
+        <section class="clean-block payment-form dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Payment</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
                 </div>
+                <form>
+                    <div class="products">
+                        <h3 class="title">Checkout</h3>
+                        <div class="item"><span class="price">$200</span>
+                            <p class="item-name">Product 1</p>
+                            <p class="item-description">Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="item"><span class="price">$120</span>
+                            <p class="item-name">Product 2</p>
+                            <p class="item-description">Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="total"><span>Total</span><span class="price">$320</span></div>
+                    </div>
+                    <div class="card-details">
+                        <h3 class="title">Credit Card Details</h3>
+                        <div class="form-row">
+                            <div class="col-sm-7">
+                                <div class="form-group"><label for="card-holder">Card Holder</label><input class="form-control" type="text" placeholder="Card Holder"></div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="form-group"><label>Expiration date</label>
+                                    <div class="input-group expiration-date"><input class="form-control" type="text" placeholder="MM"><input class="form-control" type="text" placeholder="YY"></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="form-group"><label for="card-number">Card Number</label><input class="form-control" type="text" id="card-number" placeholder="Card Number"></div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group"><label for="cvc">CVC</label><input class="form-control" type="text" id="cvc" placeholder="CVC"></div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Proceed</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
+    <footer class="page-footer dark"></footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-animation.js"></script>
