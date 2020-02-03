@@ -320,7 +320,7 @@ class QrScanner {
     }
 }
 
-QrScanner.DEFAULT_CANVAS_SIZE = 600;
+QrScanner.DEFAULT_CANVAS_SIZE = 400;
 QrScanner.WORKER_PATH = './assets/js/qr-scanner-worker.min.js';
 
 const video = document.getElementById('qr-video');
