@@ -1,6 +1,6 @@
 async function Qrwait(ms){
     //alert("s");   
-    document.getElementById("body_reader").style.opacity = 0;
+    //document.getElementById("body_reader").style.opacity = 0;
 
     await sleep(ms);
     
@@ -8,4 +8,4 @@ async function Qrwait(ms){
 
 }
 
-document.getElementById("body_reader").setAttribute("onload","Qrwait(5000);");
+document.getElementById("body_reader").setAttribute("onload","Qrwait(1000);");
