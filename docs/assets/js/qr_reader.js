@@ -1,5 +1,6 @@
 async function Qrwait(ms){
-    //alert("s");   document.getElementById("body_reader").style.opacity = 0;
+    //alert("s");   
+    document.getElementById("body_reader").style.opacity = 0;
 
     await sleep(ms);
     
