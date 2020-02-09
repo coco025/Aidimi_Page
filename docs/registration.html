@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/css/Collapsible-sidebar-left-or-right--Content-overlay.css">
     <link rel="stylesheet" href="assets/css/divider-text-middle.css">
     <link rel="stylesheet" href="assets/css/float_button.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/Google-Style-Text-Input.css">
     <link rel="stylesheet" href="assets/css/Horizontal-scrolling-cards-for-mobile-apps.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -51,7 +52,7 @@
 <body style="width: 100%;height: 100%;">
     <nav class="navbar navbar-light navbar-expand-md border-primary border rounded-0 shadow-sm" id="navBar" style="top: 0px;z-index: 1;position: fixed;background-color: #ffffff;width: 100%;margin: 0px;height: 80px;padding-top: 30px;">
         <div class="container-fluid">
-            <div style="height: 50%;font-size: 20px;font-family: Roboto, sans-serif;"><span class="open-sidebar" style="margin-left: 25px;font-size: 22px;">Crea tu ID</span></div>
+            <div style="height: 50%;font-size: 20px;font-family: Roboto, sans-serif;"><span class="open-sidebar" style="margin-left: 25px;font-size: 22px;font-family: Roboto, sans-serif;">Crea tu ID</span></div>
         </div>
     </nav>
     <main class="page registration-page" style="height: 100%;margin-top: 110px;">
@@ -61,24 +62,26 @@
                     <div class="text-center border rounded-circle tada animated center" id="divImage" style="width: 100px;background-color: #e1e1e1;height: 100px;margin: auto;"><input type="file" id="openFile" style="display: none;"><i class="fa fa-camera" style="margin: auto;width: 100px;height: 100px;margin-top: 40%;background-color: rgba(255,255,255,0);color: rgb(137,137,137);font-size: 24px;"></i></div>
                 </div>
                 <form style="background-color: rgba(160,160,160,0.06);margin-bottom: 0px;height: 100%;">
-                    <div class="form-group"><label for="name">Mi nombre</label><input class="form-control item" type="text" id="name" style="border-radius: 10px;"></div>
-                    <div class="form-group"><label for="email">Correo</label><input class="form-control item" type="email" id="email" style="border-radius: 10px;"></div>
-                    <div class="form-group"><label for="password">Contraseña</label><input class="form-control item" type="password" id="password" style="border-radius: 10px;margin-bottom: 10px;" placeholder="contraseña"></div>
-                    <div class="form-group"><label for="password">Repetir Contraseña</label><input class="form-control item" type="password" id="password" style="border-radius: 10px;margin-bottom: 10px;" placeholder="repetir contraseña"></div>
-                    <div class="form-group">
-                        <!-- Start: Bootstrap 4's Custom Radios & Checkboxes -->
-                        <div>
-                            <fieldset>
-                                <legend style="font-size: 20px;line-height: 26px;">Mi ocupación</legend>
-                                <div class="custom-checkbox custom-control"><input type="checkbox" id="customCheck1" class="custom-control-input" checked=""><label class="custom-control-label" for="customCheck1">Estudio</label></div>
-                                <div class="custom-control custom-checkbox"><input type="checkbox" id="customCheck2" class="custom-control-input"><label class="custom-control-label" for="customCheck2">Trabajo</label></div>
-                                <div class="custom-control custom-checkbox"><input type="checkbox" id="customCheck3" class="custom-control-input"><label class="custom-control-label" for="customCheck3">Otro</label></div>
-                            </fieldset>
-                        </div>
-                        <!-- End: Bootstrap 4's Custom Radios & Checkboxes -->
-                    </div><a class="btn btn-primary text-break text-center shadow" role="button" data-bs-hover-animate="pulse" style="width: 500px;display: table-cell;margin: auto;/*border-width: 0px;*/border-radius: 25px;border-color: #bfbfbf;background-color: #1faeae;/*width: 200px;*/height: 50px;font-weight: bold;font-family: Roboto, sans-serif;color: rgb(255,255,255);"
-                        href="main_page.html">Registrarse</a></form>
-            </div>
+                    <div class="form-group"><label for="name" style="font-family: Roboto, sans-serif;">Mi nombre</label><input class="form-control item" type="text" id="name" style="border-radius: 10px;"></div>
+                    <div class="form-group"><label for="email" style="font-family: Roboto, sans-serif;">Correo</label><input class="form-control item" type="email" id="email" style="border-radius: 10px;" placeholder="correo"></div>
+                    <div class="form-group"><label for="password" style="font-family: Roboto, sans-serif;">Contraseña</label><input class="form-control item" type="password" id="password" style="border-radius: 10px;margin-bottom: 10px;font-family: Roboto, sans-serif;" placeholder="contraseña"></div>
+                    <div
+                        class="form-group"><label for="password" style="font-family: Roboto, sans-serif;">Repetir Contraseña</label><input class="form-control item" type="password" id="password" style="border-radius: 10px;margin-bottom: 10px;" placeholder="repetir contraseña"></div>
+            <div
+                class="form-group">
+                <!-- Start: Bootstrap 4's Custom Radios & Checkboxes -->
+                <div>
+                    <fieldset>
+                        <legend style="font-size: 20px;line-height: 26px;font-family: Roboto, sans-serif;">Mi ocupación</legend>
+                        <div class="custom-checkbox custom-control"><input type="checkbox" id="customCheck1" class="custom-control-input" checked=""><label class="custom-control-label" for="customCheck1" style="font-family: Roboto, sans-serif;">Estudio</label></div>
+                        <div class="custom-control custom-checkbox"><input type="checkbox" id="customCheck2" class="custom-control-input"><label class="custom-control-label" for="customCheck2" style="font-family: Roboto, sans-serif;">Trabajo</label></div>
+                        <div class="custom-control custom-checkbox"><input type="checkbox" id="customCheck3" class="custom-control-input"><label class="custom-control-label" for="customCheck3" style="font-family: Roboto, sans-serif;">Otro</label></div>
+                    </fieldset>
+                </div>
+                <!-- End: Bootstrap 4's Custom Radios & Checkboxes -->
+                </div><a class="btn btn-primary text-break text-center shadow" role="button" data-bs-hover-animate="pulse" style="width: 500px;display: table-cell;margin: auto;/*border-width: 0px;*/border-radius: 25px;border-color: #bfbfbf;background-color: #1faeae;/*width: 200px;*/height: 50px;font-weight: bold;font-family: Roboto, sans-serif;color: rgb(255,255,255);"
+                    href="main_page.html">Registrarse</a></form>
+                </div>
         </section>
     </main>
     <script src="assets/js/jquery.min.js"></script>
