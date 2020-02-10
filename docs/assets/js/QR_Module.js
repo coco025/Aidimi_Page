@@ -331,6 +331,7 @@ function setResult(label, result) {
 	label.style.color = 'teal';
 	clearTimeout(label.highlightTimeout);
 	label.highlightTimeout = setTimeout(() => label.style.color = 'inherit', 100);
+    info(result);
 }
 // ####### Web Cam Scanning #######
 //QrScanner.hasCamera().then(hasCamera => camHasCamera.textContent = hasCamera);
