@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="assets/css/Horizontal-scrolling-cards-for-mobile-apps.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/Image_center.css">
     <link rel="stylesheet" href="assets/css/Loading-Div-1.css">
     <link rel="stylesheet" href="assets/css/Loading-Div.css">
@@ -42,6 +43,7 @@
     <link rel="stylesheet" href="assets/css/SIdebar-Responsive-2.css">
     <link rel="stylesheet" href="assets/css/sidebar.css">
     <link rel="stylesheet" href="assets/css/sidenav.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
     <link rel="stylesheet" href="assets/css/smoothproducts.css">
     <link rel="stylesheet" href="assets/css/Social-Icon-Circle.css">
     <link rel="stylesheet" href="assets/css/Steps-Progressbar.css">
@@ -60,33 +62,70 @@
             <div class="container" style="background-color: #ffffff;height: 100%;padding-top: 10px;">
                 <div class="text-center border rounded-circle tada animated center" id="divImage" style="width: 100px;background-color: #e1e1e1;height: 100px;margin: auto;margin-top: 20px;margin-bottom: 20px;"><input type="file" id="openFile" style="display: none;"><i class="fa fa-camera" style="margin: auto;width: 100px;height: 100px;margin-top: 40%;background-color: rgba(255,255,255,0);color: rgb(137,137,137);font-size: 24px;"></i></div>
                 <form
-                    style="background-color: rgba(160,160,160,0.06);margin-bottom: 0px;height: 100%;">
-                    <div class="form-group"><label for="name" style="font-family: Roboto, sans-serif;">Mi nombre</label><input class="form-control item" type="text" id="name" style="border-radius: 10px;font-family: Roboto, sans-serif;"></div>
-                    <div class="form-group"><label for="email" style="font-family: Roboto, sans-serif;">Correo</label><input class="form-control item" type="email" id="email" style="border-radius: 10px;font-family: Roboto, sans-serif;background-color: rgb(255,255,255);" readonly=""></div>
-                    <div
-                        class="form-group"><label for="password" style="font-family: Roboto, sans-serif;">Contraseña</label><input class="form-control item" type="password" id="password" style="border-radius: 10px;margin-bottom: 10px;font-family: Roboto, sans-serif;" placeholder="contraseña"></div>
-            <div
-                class="form-group"><label for="password" style="font-family: Roboto, sans-serif;">Repetir Contraseña</label><input class="form-control item" type="password" id="password" style="border-radius: 10px;margin-bottom: 10px;font-family: Roboto, sans-serif;" placeholder="repetir contraseña"></div>
-                <div
-                    class="form-group">
-                    <!-- Start: Bootstrap 4's Custom Radios & Checkboxes -->
-                    <div>
-                        <fieldset>
-                            <legend style="font-size: 20px;font-family: Roboto, sans-serif;">Mi ocupación</legend>
-                            <div class="custom-control custom-checkbox"><input type="checkbox" id="customCheck1" class="custom-control-input"><label class="custom-control-label" for="customCheck1" style="font-family: Roboto, sans-serif;">Estudio</label></div>
-                            <div class="custom-control custom-checkbox"><input type="checkbox" id="customCheck2" class="custom-control-input"><label class="custom-control-label" for="customCheck2" style="font-family: Roboto, sans-serif;">Trabajo</label></div>
-                            <div class="custom-control custom-checkbox"><input type="checkbox" id="customCheck3" class="custom-control-input"><label class="custom-control-label" for="customCheck3" style="font-family: Roboto, sans-serif;">Otro</label></div>
-                        </fieldset>
+                    style="border-radius: 15px;background-color: rgba(160,160,160,0.06);margin-bottom: 0px;height: 100%;">
+                    <div class="form-group">
+                        <!-- Start: Google Style Text Input --><div class="group">      
+    <input type="text" required class="inputData2">
+    <span class="highlight" style="font-family: Roboto, sans-serif;"></span>
+    <label class="labelData2">Nombre</label>
+</div>
+
+
+
+                        <!-- End: Google Style Text Input -->
                     </div>
-                    <!-- End: Bootstrap 4's Custom Radios & Checkboxes -->
+                    <div class="form-group">
+                        <!-- Start: Google Style Text Input --><div class="group">      
+    <input type="text" required class="inputData2">
+    <span class="highlight" style="font-family: Roboto, sans-serif;"></span>
+    <label class="labelData2">Correo</label>
+</div>
+
+
+
+                        <!-- End: Google Style Text Input -->
+                    </div>
+                    <div class="form-group">
+                        <!-- Start: Google Style Text Input --><div class="group">      
+    <input type="password" required class="inputData2">
+    <span class="highlight" style="font-family: Roboto, sans-serif;"></span>
+    <label class="labelData2">Contraseña</label>
+</div>
+
+
+
+                        <!-- End: Google Style Text Input -->
+                    </div>
+                    <div class="form-group">
+                        <!-- Start: Google Style Text Input --><div class="group">      
+    <input type="password" required class="inputData2">
+    <span class="highlight" style="font-family: Roboto, sans-serif;"></span>
+    <label class="labelData2">Repetir contraseña</label>
+</div>
+
+
+
+                        <!-- End: Google Style Text Input -->
+                    </div>
+                    <div class="form-group">
+                        <!-- Start: Bootstrap 4's Custom Radios & Checkboxes -->
+                        <div>
+                            <fieldset>
+                                <legend style="font-size: 20px;font-family: Roboto, sans-serif;color: rgb(80,80,80);">Mi ocupación</legend>
+                                <div class="custom-control custom-checkbox"><input type="checkbox" id="customCheck1" class="custom-control-input"><label class="custom-control-label" for="customCheck1" style="font-family: Roboto, sans-serif;color: rgb(80,80,80);">Estudio</label></div>
+                                <div class="custom-control custom-checkbox"><input type="checkbox" id="customCheck2" class="custom-control-input"><label class="custom-control-label" for="customCheck2" style="font-family: Roboto, sans-serif;color: rgb(80,80,80);">Trabajo</label></div>
+                                <div class="custom-control custom-checkbox"><input type="checkbox" id="customCheck3" class="custom-control-input"><label class="custom-control-label" for="customCheck3" style="font-family: Roboto, sans-serif;color: rgb(80,80,80);">Otro</label></div>
+                            </fieldset>
+                        </div>
+                        <!-- End: Bootstrap 4's Custom Radios & Checkboxes -->
                     </div><a class="btn btn-primary text-break text-center shadow" role="button" data-bs-hover-animate="pulse" style="width: 500px;display: table-cell;margin: auto;/*border-width: 0px;*/border-radius: 25px;border-color: #bfbfbf;background-color: #1faeae;/*width: 420px;*/height: 50px;font-family: Roboto, sans-serif;color: rgb(255,255,255);font-weight: bold;"
                         href="main_page.html">Guardar Cambios</a></form>
-                    </div>
+            </div>
         </section>
     </main>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-animation.js"></script>
+    <script src="assets/js/bs-init.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://cdn.rawgit.com/digistate/resouces/master/multipleFilterMasonry.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
@@ -99,6 +138,7 @@
     <script src="assets/js/3D_CSS_PROGRESS_BAR_BY_REDSTAPLER.js"></script>
     <script src="assets/js/backPage.js"></script>
     <script src="assets/js/explore.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
     <script src="assets/js/join_purpose.js"></script>
     <script src="assets/js/Loading-Page-Animation-Style.js"></script>
     <script src="assets/js/main_page.js"></script>
@@ -110,6 +150,7 @@
     <script src="assets/js/qr-scanner-worker.min.js"></script>
     <script src="assets/js/registration.js"></script>
     <script src="assets/js/sideNav.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
     <script src="assets/js/sleep.js"></script>
 </body>
 

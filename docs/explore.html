@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="assets/css/Horizontal-scrolling-cards-for-mobile-apps.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/Image_center.css">
     <link rel="stylesheet" href="assets/css/Loading-Div-1.css">
     <link rel="stylesheet" href="assets/css/Loading-Div.css">
@@ -42,6 +43,7 @@
     <link rel="stylesheet" href="assets/css/SIdebar-Responsive-2.css">
     <link rel="stylesheet" href="assets/css/sidebar.css">
     <link rel="stylesheet" href="assets/css/sidenav.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
     <link rel="stylesheet" href="assets/css/smoothproducts.css">
     <link rel="stylesheet" href="assets/css/Social-Icon-Circle.css">
     <link rel="stylesheet" href="assets/css/Steps-Progressbar.css">
@@ -58,7 +60,7 @@
                     <div>
                         <div class="row" style="height: 100%;">
                             <div class="col" id="search_purposes" style="display: none;"><img src="assets/img/bx-compass.svg" style="width: 100%;height: 100%;"></div>
-                            <div class="col" id="following"><img src="assets/img/bx-bookmarks.svg"></div>
+                            <div class="col" id="following" style="display: none;"><img src="assets/img/bx-home-smile.svg"></div>
                         </div>
                     </div>
                 </div>
@@ -192,15 +194,19 @@
                     </div>
                 </div>
                 <div class="row item">
-                    <div class="col text-center" style="width: 10px;max-width: 50px;margin: auto;padding-right: 0px;margin-left: 5px;"><img src="assets/img/bx-loader-circle.svg" style="width: 24px;height: 24px;"></div>
-                    <div class="col"><a href="progress_achivements.html" style="color: #000000;font-size: 18px;padding-left: 0px;font-family: Roboto, sans-serif;">Mis progresos</a></div>
-                </div>
-                <div class="row item">
                     <div class="col text-center" style="width: 10px;max-width: 50px;margin: auto;padding-right: 0px;margin-left: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABeUlEQVRIS82WPy5HQRDHP79GdCoVCScQjYTENTQSNJyAhA4dCRdAQ6FxDUGiwQkoVCoqoZFJJrLm2X1vZ5+sLV9m57Pz531nBlQ6g0pcvOBRYFkffQa85AbgAQv0FphQ2BMwkwv3gNeBAxPhBnCYE3UKPAUsAu/AMfCsjtvAY8AaMAycAw+/PSgGFqikc0gvPQLTwCuQSvUIcAdM6r0PLUMDHgPvAZvmpRLFiX6LNdeqZie8ug9s2ahj4B1g2xivANLBqSOdfmoMdgHx9+PEwFKnyyBlN8Bcx+a5BmaDEs0H/fHtItVcUq8FQOrUFql9k0Qu/XGhfdF4s+d36hh42syCixXJ4KL+QnAvihSAk/5CcJsw5KY46e9fgKulWlJZpblya1hk/1cCshQIyFvOdCqRzKtAXmWqZUlmtSHhHYsyOo9MarPGYskicB/sY5+6CMi3TmNRjLyrz7hZfRpQce6ZTr1Iqwfci8J5wL0onBdcpFreGhdDxcEXvw9wHzfaw18AAAAASUVORK5CYII="><img style="width: 24px;" src="assets/img/bx-star.svg"></div>
                     <div class="col"><a class="stretched-link" href="my_achivements.html" style="color: #000000;font-size: 18px;padding-left: 0px;font-family: Roboto, sans-serif;">Mis logros</a></div>
                 </div>
-                <div id="divisor" style="margin-top: 15px;margin-bottom: 15px;">
-                    <h1 class="border rounded-0 border-primary shadow-sm"></h1>
+                <div class="row item">
+                    <div class="col text-center" style="width: 10px;max-width: 50px;margin: auto;padding-right: 0px;margin-left: 5px;"><img src="assets/img/bx-lock-alt.svg" style="width: 24px;height: 24px;"></div>
+                    <div class="col"><a href="progress_achivements.html" style="color: #000000;font-size: 18px;padding-left: 0px;font-family: Roboto, sans-serif;">Mis Accesos - Pendiente</a></div>
+                </div>
+                <div class="shadow-lg" id="divisor" style="margin-top: 15px;margin-bottom: 15px;background-color: #eeeeee;margin-right: 5px;margin-left: 5px;">
+                    <h1 class="border rounded-0 border-primary shadow"></h1>
+                </div>
+                <div class="row item">
+                    <div class="col text-center" style="width: 10px;max-width: 50px;margin: auto;padding-right: 0px;margin-left: 5px;"><img src="assets/img/bx-question-mark.svg" style="width: 24px;height: 24px;"></div>
+                    <div class="col"><a href="progress_achivements.html" style="color: #000000;font-size: 18px;padding-left: 0px;font-family: Roboto, sans-serif;">Preguntas frequentes</a></div>
                 </div>
                 <div class="row item">
                     <div class="col text-center" style="width: 10px;max-width: 50px;margin: auto;padding-right: 0px;margin-left: 5px;"><img src="assets/img/subdirectory-right-regular-96.png" style="width: 24px;"></div>
@@ -212,7 +218,7 @@
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-animation.js"></script>
+    <script src="assets/js/bs-init.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://cdn.rawgit.com/digistate/resouces/master/multipleFilterMasonry.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
@@ -225,6 +231,7 @@
     <script src="assets/js/3D_CSS_PROGRESS_BAR_BY_REDSTAPLER.js"></script>
     <script src="assets/js/backPage.js"></script>
     <script src="assets/js/explore.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
     <script src="assets/js/join_purpose.js"></script>
     <script src="assets/js/Loading-Page-Animation-Style.js"></script>
     <script src="assets/js/main_page.js"></script>
@@ -236,6 +243,7 @@
     <script src="assets/js/qr-scanner-worker.min.js"></script>
     <script src="assets/js/registration.js"></script>
     <script src="assets/js/sideNav.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
     <script src="assets/js/sleep.js"></script>
 </body>
 

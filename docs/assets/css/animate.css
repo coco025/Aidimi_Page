@@ -3,8 +3,7 @@
  * Version - 3.7.2
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
  *
- * Copyright (c) 2019 Daniel Eden
-  */
+ * Copyright (c) 2019 Daniel Eden */
 
 @keyframes bounce {
   from, 20%, 53%, 80%, to {
@@ -52,7 +51,7 @@
   animation-name: flash;
 }
 
-/*  originally authored by Nick Pettit - https://github.com/nickpettit/glide  */
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @keyframes pulse {
   from {
@@ -222,7 +221,7 @@
   animation-name: tada;
 }
 
-/*  originally authored by Nick Pettit - https://github.com/nickpettit/glide  */
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @keyframes wobble {
   from {
@@ -1409,7 +1408,7 @@
   animation-name: jackInTheBox;
 }
 
-/*  originally authored by Nick Pettit - https://github.com/nickpettit/glide  */
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @keyframes rollIn {
   from {
@@ -1429,7 +1428,7 @@
   animation-name: rollIn;
 }
 
-/*  originally authored by Nick Pettit - https://github.com/nickpettit/glide  */
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @keyframes rollOut {
   from {

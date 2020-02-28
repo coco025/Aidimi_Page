@@ -13,6 +13,16 @@ input.inputData {
   border-bottom: 1px solid #108b8b;
 }
 
+input.inputData2 {
+  width: 100%;
+  background-color: rgba(0,0,0,0);
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+
 input.inputData:focus {
   outline: none;
 }
@@ -28,10 +38,27 @@ label.labelData {
   transition: 0.2s ease all;
 }
 
+label.labelData2 {
+  color: #505050;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+}
+
 input.inputData:focus ~ label, input.inputData:valid ~ label.labelData {
   top: -20px;
   font-size: 14px;
   color: #108b8b;
+}
+
+input.inputData2:focus ~ label, input.inputData2:valid ~ label.labelData2 {
+  top: -20px;
+  font-size: 14px;
+  color: #5d5d5d;
 }
 
 input:focus ~ .bar:before, input:focus ~ .bar:after {
