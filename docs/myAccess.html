@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="height: 100%;">
 
 <head>
     <meta charset="utf-8">
@@ -53,7 +53,16 @@
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
-<body id="body">
+<body id="body" style="background-color: rgb(244,244,244);height: 100%;">
+    <nav class="navbar navbar-light navbar-expand-md border-primary border rounded-0 shadow-sm" id="navBar" style="top: 0px;z-index: 10;position: fixed;background-color: #ffffff;margin: 0px;height: 80px;width: 100%;padding-top: 30px;">
+        <div class="container-fluid">
+            <div style="height: 50%;"><img id="backPage" src="assets/img/bx-arrow-back.svg" style="margin-top: -5px;"><span class="open-sidebar" style="margin-left: 20px;font-family: Roboto, sans-serif;font-weight: 500;font-size: 22px;line-height: 26px;margin-top: 1px;">Nombre comunidad</span></div>
+            <div
+                class="row" style="margin: 0px;margin-top: -10px;">
+                <div class="col" id="following"><img src="assets/img/house.svg" style="width: 25px;"></div>
+        </div>
+        </div>
+    </nav>
     <div class="container" id="sideNav_Main" style="padding: 0px;margin: 0px;">
         <div class="border rounded shadow-lg" id="sideNav_Options" style="top: 0;position: fixed;z-index: 150;transition: all 0.3s;background-color: #ffffff;height: 100%;width: 300px;margin-left: -100%;">
             <div class="text-center" id="myID" style="border-radius: 30px;/*margin-left: 10px;*//*background-color: rgba(255,255,255,0);*/padding: 10px;padding-left: 5%;padding-bottom: 0px;margin-top: 10px;">
@@ -95,53 +104,50 @@
         </div>
         <div class="border rounded order-1" id="sideNav_Back" style="top: 0;position: fixed;z-index: 100;transition: all 0s;background-color: rgba(44,44,44,0.51);padding-left: 0px;padding-top: 0px;width: 100%;height: 100%;margin-left: -100%;"></div>
     </div>
-    <nav class="navbar navbar-light navbar-expand-md border-primary border rounded-0 shadow-sm" id="navBar" style="top: 0px;z-index: 10;position: fixed;background-color: #ffffff;margin: 0px;height: 80px;width: 100%;padding-top: 30px;">
-        <div class="container-fluid">
-            <div style="height: 50%;"><img id="backPage" src="assets/img/bx-arrow-back.svg" style="margin-top: -5px;"><span class="open-sidebar" style="margin-left: 20px;font-family: Roboto, sans-serif;font-weight: 500;font-size: 22px;line-height: 26px;margin-top: 1px;">Mis Logros</span></div>
-            <div
-                class="row" style="margin: 0px;margin-top: -10px;">
-                <div class="col" id="following"><img src="assets/img/house.svg" style="width: 25px;"></div>
-        </div>
-        </div>
-    </nav>
-    <main id="main" style="height: 100%;background-color: rgba(104,104,104,0.07);width: 100%;padding: 0px;margin-top: 80px;">
-        <section style="width: 100%;margin-top: 25px;height: auto;">
-            <div class="container text-left" style="margin-left: 0%;margin-right: 0%;width: 100%;padding: 0px;max-width: none;height: auto;margin-top: 20px;">
-                <div class="row justify-content-center" style="margin: 0px;margin-top: 20px;">
-                    <div class="col-sm-7 col-lg-4 text-left" data-bs-hover-animate="rubberBand" style="border-radius: 15pc;margin: 5px;width: 100%;padding: 0px;background-color: rgba(255,255,255,0);margin-top: 15px;">
-                        <div style="border-radius: 25px;padding: 0px;width: auto;/*background-color: #f9f9f9;*/">
-                            <div class="row" style="border-radius: 15px;width: 100%;margin: 0px;padding: 5px;background-color: #ffffff;">
-                                <div class="col-2 text-center align-self-center" style="width: 0px;background-color: rgba(0,25,255,0);padding: 0px;">
-                                    <div style="border-radius: 50px;height: 100%;"><img class="rounded-circle square" src="assets/img/favicon-512.png" style="border-radius: 15px;margin: 0px;height: 50%;width: 50%;"></div>
+    <div class="carousel slide" data-ride="carousel" id="carousel-1" style="margin-bottom: 20px;">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <main id="main" style="height: 100%;background-color: rgba(255,255,255,0);width: 100%;padding: 0px;margin-top: 80px;padding-top: 20px;">
+                    <div class="text-center" style="margin: 15px;font-size: -6px;margin-top: 10px;color: rgb(0,0,0);font-weight: bold;margin-bottom: 5px;">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col" style="padding-left: 0px;"><span class="span_text" style="font-size: 20px;color: rgb(0,0,0);font-weight: 500;font-family: Roboto, sans-serif;filter: blur(0px) grayscale(0%) hue-rotate(0deg) invert(0%) sepia(0%);line-height: 23px;margin-left: 5px;">Nombre del Propósito</span></div>
                                 </div>
-                                <div class="col text-center" style="border-radius: 25px;max-width: none;width: 100%;background-color: rgba(242,242,242,0.52);">
-                                    <div style="text-align: center;border-radius: 25px;background-color: rgba(0,0,0,0);margin: auto;height: 100%;font-size: 16px;"><span style="display: inline-block;vertical-align: middle;text-align: center;border-radius: 25px;background-color: rgba(0,0,0,0);font-size: 16px;margin-top: 1%;">Mc Donald's</span></div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="text-center" style="margin: 15px;font-size: 5px;margin-top: 10px;color: rgb(0,0,0);font-weight: bold;"><span class="span_text" style="font-size: 18px;color: rgb(0,0,0);font-family: Roboto, sans-serif;filter: blur(0px) grayscale(0%) hue-rotate(0deg) invert(0%) sepia(0%);font-weight: 500;">Código:</span><span class="span_text"
+                                                style="font-size: 18px;color: rgb(0,0,0);font-family: Roboto, sans-serif;filter: blur(0px) grayscale(0%) hue-rotate(0deg) invert(0%) sepia(0%);font-weight: 500;">&nbsp;######</span></div>
+                                    </div>
                                 </div>
-                                <div class="col text-center" style="border-radius: 25px;max-width: none;width: 100%;background-color: rgba(242,242,242,0.52);margin-left: 15px;">
-                                    <div class="center" style="text-align: center;border-radius: 25px;background-color: rgba(0,0,0,0);margin: auto;height: 100%;font-size: 16px;"><img src="assets/img/Group%20126.svg" style="width: 25px;margin-left: 5px;"><span style="display: inline-block;vertical-align: middle;text-align: center;border-radius: 25px;background-color: rgba(0,0,0,0);font-size: 15px;margin-top: 1%;margin-left: 2px;">x4</span></div>
+                            </div>
+                            <div class="col-5 center" style="padding: 0px;margin-right: 10px;">
+                                <div style="border-radius: 15px;background-color: #1faeae;height: 50px;margin-right: 10px;width: 100%;">
+                                    <div class="row" style="margin: 0px;width: 100%;height: 100%;">
+                                        <div class="col center" style="width: 100%;"><span style="text-align: center;width: 100%;color: rgb(255,255,255);font-family: Roboto, sans-serif;">25 / 50</span></div>
+                                        <div class="col-3 center" style="padding: 0px;"><img src="assets/img/trophy-regular-168.png" style="width: 25px;"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-7 col-lg-4 text-left" data-bs-hover-animate="rubberBand" style="border-radius: 15pc;margin: 5px;width: 100%;padding: 0px;background-color: rgba(255,255,255,0);">
-                        <div style="border-radius: 25px;padding: 0px;width: auto;/*background-color: #f9f9f9;*/">
-                            <div class="row" style="border-radius: 15px;width: 100%;margin: 0px;padding: 5px;background-color: #ffffff;">
-                                <div class="col-2 text-center align-self-center" style="width: 0px;background-color: rgba(0,25,255,0);padding: 0px;">
-                                    <div style="border-radius: 50px;height: 100%;"><img class="rounded-circle square" src="assets/img/lo-kfc-oxigeno.png" style="border-radius: 15px;margin: 0px;height: 50%;width: 50%;"></div>
-                                </div>
-                                <div class="col text-center" style="border-radius: 25px;max-width: none;width: 100%;background-color: rgba(242,242,242,0.52);">
-                                    <div style="text-align: center;border-radius: 25px;background-color: rgba(0,0,0,0);margin: auto;height: 100%;font-size: 16px;"><span style="display: inline-block;vertical-align: middle;text-align: center;border-radius: 25px;background-color: rgba(0,0,0,0);font-size: 16px;margin-top: 1%;">KFC</span></div>
-                                </div>
-                                <div class="col text-center" style="border-radius: 25px;max-width: none;width: 100%;background-color: rgba(242,242,242,0.52);margin-left: 15px;">
-                                    <div class="center" style="text-align: center;border-radius: 25px;background-color: rgba(0,0,0,0);margin: auto;height: 100%;font-size: 16px;"><img src="assets/img/Group%20126.svg" style="width: 25px;margin-left: 5px;"><span style="display: inline-block;vertical-align: middle;text-align: center;border-radius: 25px;background-color: rgba(0,0,0,0);font-size: 15px;margin-top: 1%;margin-left: 2px;">x3</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <div id="showImage-1" class="center" style="/*display: none;*/border: 1px solid #e6e6e6;border-radius: 15px;height: 250px;width: 250px;margin-top: 25px;"><img style="border-radius: 250px;width: 100%;height: 100%;" src="assets/img/tour_img-1884867-146.jpg"></div>
+                    <div class="text-center" style="border-radius: 0px;margin: 30px;background-color: #f7f7f7;height: 250px;"><textarea style="border-radius: 10px;border: 0px solid #000000;width: 100%;height: 100%;" placeholder="   Descripción del propósito"></textarea></div>
+                    <div style="display: none;"><span style="margin-left: 20px;">Agregar imagen</span><img id="addImage" src="assets/img/image-add-regular-204.png" style="width: 25px;margin-left: 20px;"></div>
+                    <div id="qrImage" class="center" style="border: 1px solid #e6e6e6;border-radius: 15px;margin-top: 25px;width: 250px;"><span style="margin-bottom: 15px;">Código QR del propósito</span><img style="border-radius: 10px;width: 100%;height: 100%;" src="assets/img/qr-code.png"></div>
+                </main>
             </div>
-        </section>
-    </main>
+        </div>
+        <div>
+            <!-- Start: Previous --><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"></a>
+            <!-- End: Previous -->
+            <!-- Start: Next --><a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next"></a>
+            <!-- End: Next -->
+        </div>
+        <ol class="carousel-indicators" style="display: none;">
+            <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+        </ol>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
