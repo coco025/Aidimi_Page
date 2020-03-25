@@ -1,0 +1,55 @@
+.group_cyan {
+  position: relative;
+  /*margin-bottom: 45px;*/
+}
+
+input.inputData_cyan {
+  width: 100%;
+  background-color: rgba(0,0,0,0);
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #108b8b;
+}
+
+input.inputData_cyan:focus {
+  outline: none;
+}
+
+label.labelData_cyan {
+  color: #108B8B;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  font-family: 'Roboto';
+}
+
+input.inputData_cyan:focus ~ label, input.inputData_cyan:valid ~ label.labelData_cyan {
+  top: -20px;
+  font-size: 14px;
+  color: #108B8B;
+}
+
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  /*width: 50%;*/
+}
+
+.highlight_cyan {
+  /*position: absolute;*/
+  /*height: 60%;*/
+  width: 100%;
+  /*top: 25%;*/
+  /*left: 0;*/
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+input:focus ~ .highlight_cyan {
+  /*animation: inputHighlighter 0.3s ease;*/
+}
+
