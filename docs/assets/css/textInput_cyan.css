@@ -5,7 +5,6 @@
 
 input.inputData_cyan {
   width: 100%;
-  background-color: rgba(0,0,0,0);
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   display: block;
@@ -14,7 +13,7 @@ input.inputData_cyan {
 }
 
 input.inputData_cyan:focus {
-  outline: none;
+  border-bottom: 1px solid #108b8b;
 }
 
 label.labelData_cyan {
@@ -30,9 +29,9 @@ label.labelData_cyan {
 }
 
 input.inputData_cyan:focus ~ label, input.inputData_cyan:valid ~ label.labelData_cyan {
-  top: -20px;
+  top: -10px;
   font-size: 14px;
-  color: #108B8B;
+  color: #108b8b;
 }
 
 input:focus ~ .bar:before, input:focus ~ .bar:after {
@@ -42,11 +41,11 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 .highlight_cyan {
   /*position: absolute;*/
   /*height: 60%;*/
-  width: 100%;
+  /*width: 100%;*/
   /*top: 25%;*/
   /*left: 0;*/
-  pointer-events: none;
-  opacity: 0.5;
+  /*pointer-events: none;*/
+  /*opacity: 0.5;*/
 }
 
 input:focus ~ .highlight_cyan {
