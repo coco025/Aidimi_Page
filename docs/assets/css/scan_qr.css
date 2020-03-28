@@ -15,12 +15,14 @@
 }
 
 .div_upRight {
-  /*border-radius: 4px;*/
   right: 0px;
   top: 0px;
-  border-top: 4px solid #1faeae;
-  border-right: 4px solid #1faeae;
+  border-top: 12px solid rgba(31,174,174,0.5);
+  border-right: 12px solid rgba(31,174,174,0.5);
   position: absolute;
+}
+
+.div_upLeft.div_scan {
 }
 
 .div_upLeft {
@@ -28,8 +30,8 @@
   left: 0px;
   top: 0px;
   position: absolute;
-  border-left: 4px solid #1faeae;
-  border-top: 4px solid #1faeae;
+  border-left: 12px solid rgba(31,174,174,0.5);
+  border-top: 12px solid rgba(31,174,174,0.5);
 }
 
 .div_bottomLeft {
@@ -37,8 +39,8 @@
   left: 0px;
   bottom: 0px;
   position: absolute;
-  border-left: 4px solid #1faeae;
-  border-bottom: 4px solid #1faeae;
+  border-left: 12px solid rgba(31,174,174,0.5);
+  border-bottom: 12px solid rgba(31,174,174,0.5);
 }
 
 .div_bottomRight {
@@ -46,8 +48,8 @@
   right: 0px;
   bottom: 0px;
   position: absolute;
-  border-right: 4px solid #1faeae;
-  border-bottom: 4px solid #1faeae;
+  border-right: 12px solid rgba(31,174,174,0.5);
+  border-bottom: 12px solid rgba(31,174,174,0.5);
 }
 
 .div_scan {

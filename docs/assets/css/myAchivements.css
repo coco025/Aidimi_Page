@@ -1,0 +1,33 @@
+label.comunity {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+label.user {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  color: #A9A9A9;
+  top: 0px;
+}
+
+.row.myAch_row {
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+label.myAch_QtyHearts {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
