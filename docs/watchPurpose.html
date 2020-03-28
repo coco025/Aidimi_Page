@@ -68,41 +68,40 @@
         </div>
     </nav>
     <div class="container" id="sideNav_Main" style="padding: 0px;margin: 0px;">
-        <div class="border rounded shadow-lg" id="sideNav_Options" style="top: 0;position: fixed;z-index: 150;transition: all 0.3s;background-color: #ffffff;height: 100%;width: 300px;margin-left: -100%;">
-            <div class="text-center" id="myID" style="border-radius: 30px;/*margin-left: 10px;*//*background-color: rgba(255,255,255,0);*/padding: 10px;padding-left: 5%;padding-bottom: 0px;margin-top: 10px;">
+        <div class="border rounded shadow-lg" id="sideNav_Options" style="top: 0;position: fixed;z-index: 150;transition: all 0.3s;background-color: #ffffff;height: 100%;width: 300px;margin-left: 0%;">
+            <div class="text-center" id="myID" style="border-radius: 30px;/*background-color: rgba(255,255,255,0);*/margin-top: 20px;padding-left: 20px;">
                 <div>
-                    <div class="text-left" style="margin-top: 10px;width: 100%;"><img class="border rounded-circle pulse animated" src="assets/img/one-piece-calavera-pegatina_large.png" width="100px" height="100px" style="height: 75px;width: 75px;margin-left: 5px;"><img data-bs-hover-animate="swing" id="edit_user" class="right" src="assets/img/bx-pencil.svg"
-                            style="width: 22px;background-color: rgba(255,255,255,0);opacity: 0.40;margin-left: 150px;"></div>
+                    <div class="text-left" style="margin-top: 10px;width: 100%;"><img class="border rounded-circle pulse animated" src="assets/img/one-piece-calavera-pegatina_large.png" width="100px" height="100px" style="height: 75px;width: 75px;margin-left: 5px;"></div>
                 </div>
                 <div class="text-left" id="myID_Name" style="margin-bottom: 0px;margin-top: 10px;"><span data-bs-hover-animate="rubberBand" style="font-family: Roboto, sans-serif;">Monkey D. Luffy</span></div>
+                <div class="text-left"><label style="font-family: Roboto;font-style: normal;font-weight: 500;font-size: 13px;line-height: 15px;color: #A9A9A9;">@usuario</label></div>
             </div>
-            <div id="Items" style="border-width: 5px;border-top: 5px;margin-top: 5px;background-color: #ffffff;height: 100%;">
-                <div id="divisor" style="margin-top: 15px;margin-bottom: 15px;">
-                    <h1 class="border rounded-0 border-primary shadow-sm"></h1>
+            <div id="Items" style="border-width: 5px;border-top: 5px;margin-top: 15px;background-color: #ffffff;height: 100%;">
+                <div class="row item" style="margin: 0px;">
+                    <div class="col text-center" style="width: 10px;max-width: 50px;margin: 0px;padding: 0px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABeUlEQVRIS82WPy5HQRDHP79GdCoVCScQjYTENTQSNJyAhA4dCRdAQ6FxDUGiwQkoVCoqoZFJJrLm2X1vZ5+sLV9m57Pz531nBlQ6g0pcvOBRYFkffQa85AbgAQv0FphQ2BMwkwv3gNeBAxPhBnCYE3UKPAUsAu/AMfCsjtvAY8AaMAycAw+/PSgGFqikc0gvPQLTwCuQSvUIcAdM6r0PLUMDHgPvAZvmpRLFiX6LNdeqZie8ug9s2ahj4B1g2xivANLBqSOdfmoMdgHx9+PEwFKnyyBlN8Bcx+a5BmaDEs0H/fHtItVcUq8FQOrUFql9k0Qu/XGhfdF4s+d36hh42syCixXJ4KL+QnAvihSAk/5CcJsw5KY46e9fgKulWlJZpblya1hk/1cCshQIyFvOdCqRzKtAXmWqZUlmtSHhHYsyOo9MarPGYskicB/sY5+6CMi3TmNRjLyrz7hZfRpQce6ZTr1Iqwfci8J5wL0onBdcpFreGhdDxcEXvw9wHzfaw18AAAAASUVORK5CYII="><img style="width: 24px;" src="assets/img/bx-cog.svg"></div>
+                    <div class="col"><a href="my_achivements.html" style="color: #000000;font-size: 18px;padding-left: 0px;font-family: Roboto, sans-serif;">Ajustes</a></div>
                 </div>
-                <div class="row item">
-                    <div class="col" style="padding-right: 0px;">
-                        <div><a href="#" style="color: #1faeae;font-size: 18px;padding-left: 0px;font-family: Roboto, sans-serif;margin-left: 15px;">Administrar comunidad&nbsp;<img src="assets/img/plus-regular-240.png" style="color: rgb(186,94,133);margin-left: 5px;width: 30px;margin-top: -5px;"></a></div>
-                    </div>
+                <div class="shadow-lg" id="divisor-1" style="margin-top: 15px;margin-bottom: 15px;background-color: #f3f3f3;margin-right: 5px;height: 1px;">
+                    <h1 class="border rounded-0 border-primary" style="background-color: #f6f6f6;height: 1px;"></h1>
                 </div>
-                <div class="row item">
-                    <div class="col text-center" style="width: 10px;max-width: 50px;margin: auto;padding-right: 0px;margin-left: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABeUlEQVRIS82WPy5HQRDHP79GdCoVCScQjYTENTQSNJyAhA4dCRdAQ6FxDUGiwQkoVCoqoZFJJrLm2X1vZ5+sLV9m57Pz531nBlQ6g0pcvOBRYFkffQa85AbgAQv0FphQ2BMwkwv3gNeBAxPhBnCYE3UKPAUsAu/AMfCsjtvAY8AaMAycAw+/PSgGFqikc0gvPQLTwCuQSvUIcAdM6r0PLUMDHgPvAZvmpRLFiX6LNdeqZie8ug9s2ahj4B1g2xivANLBqSOdfmoMdgHx9+PEwFKnyyBlN8Bcx+a5BmaDEs0H/fHtItVcUq8FQOrUFql9k0Qu/XGhfdF4s+d36hh42syCixXJ4KL+QnAvihSAk/5CcJsw5KY46e9fgKulWlJZpblya1hk/1cCshQIyFvOdCqRzKtAXmWqZUlmtSHhHYsyOo9MarPGYskicB/sY5+6CMi3TmNRjLyrz7hZfRpQce6ZTr1Iqwfci8J5wL0onBdcpFreGhdDxcEXvw9wHzfaw18AAAAASUVORK5CYII="><img style="width: 24px;" src="assets/img/bx-star.svg"></div>
+                <div class="row item" style="margin: 0px;margin-bottom: 15px;">
+                    <div class="col text-center" style="width: 10px;max-width: 50px;margin: 0px;padding: 0px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABeUlEQVRIS82WPy5HQRDHP79GdCoVCScQjYTENTQSNJyAhA4dCRdAQ6FxDUGiwQkoVCoqoZFJJrLm2X1vZ5+sLV9m57Pz531nBlQ6g0pcvOBRYFkffQa85AbgAQv0FphQ2BMwkwv3gNeBAxPhBnCYE3UKPAUsAu/AMfCsjtvAY8AaMAycAw+/PSgGFqikc0gvPQLTwCuQSvUIcAdM6r0PLUMDHgPvAZvmpRLFiX6LNdeqZie8ug9s2ahj4B1g2xivANLBqSOdfmoMdgHx9+PEwFKnyyBlN8Bcx+a5BmaDEs0H/fHtItVcUq8FQOrUFql9k0Qu/XGhfdF4s+d36hh42syCixXJ4KL+QnAvihSAk/5CcJsw5KY46e9fgKulWlJZpblya1hk/1cCshQIyFvOdCqRzKtAXmWqZUlmtSHhHYsyOo9MarPGYskicB/sY5+6CMi3TmNRjLyrz7hZfRpQce6ZTr1Iqwfci8J5wL0onBdcpFreGhdDxcEXvw9wHzfaw18AAAAASUVORK5CYII="><img style="width: 25px;" src="assets/img/plus-regular-24.png"></div>
+                    <div class="col"><a class="stretched-link" href="my_achivements.html" style="color: #1faeae;font-size: 18px;padding-left: 0px;font-family: Roboto, sans-serif;">Agregar cuenta</a></div>
+                </div>
+                <div class="row item" style="margin: 0px;margin-bottom: 15px;">
+                    <div class="col text-center" style="width: 10px;max-width: 50px;margin: 0px;padding: 0px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABeUlEQVRIS82WPy5HQRDHP79GdCoVCScQjYTENTQSNJyAhA4dCRdAQ6FxDUGiwQkoVCoqoZFJJrLm2X1vZ5+sLV9m57Pz531nBlQ6g0pcvOBRYFkffQa85AbgAQv0FphQ2BMwkwv3gNeBAxPhBnCYE3UKPAUsAu/AMfCsjtvAY8AaMAycAw+/PSgGFqikc0gvPQLTwCuQSvUIcAdM6r0PLUMDHgPvAZvmpRLFiX6LNdeqZie8ug9s2ahj4B1g2xivANLBqSOdfmoMdgHx9+PEwFKnyyBlN8Bcx+a5BmaDEs0H/fHtItVcUq8FQOrUFql9k0Qu/XGhfdF4s+d36hh42syCixXJ4KL+QnAvihSAk/5CcJsw5KY46e9fgKulWlJZpblya1hk/1cCshQIyFvOdCqRzKtAXmWqZUlmtSHhHYsyOo9MarPGYskicB/sY5+6CMi3TmNRjLyrz7hZfRpQce6ZTr1Iqwfci8J5wL0onBdcpFreGhdDxcEXvw9wHzfaw18AAAAASUVORK5CYII="><img style="width: 24px;" src="assets/img/bx-star.svg"></div>
                     <div class="col"><a class="stretched-link" href="my_achivements.html" style="color: #000000;font-size: 18px;padding-left: 0px;font-family: Roboto, sans-serif;">Mis logros</a></div>
                 </div>
-                <div class="row item">
-                    <div class="col text-center" style="width: 10px;max-width: 50px;margin: auto;padding-right: 0px;margin-left: 5px;"><img src="assets/img/bx-lock-alt.svg" style="width: 24px;height: 24px;"></div>
-                    <div class="col"><a style="color: #000000;font-size: 18px;padding-left: 0px;font-family: Roboto, sans-serif;" href="#">Mis Accesos - Pendiente</a></div>
+                <div class="row item" style="margin: 0px;margin-bottom: 15px;">
+                    <div class="col text-center" style="width: 10px;max-width: 50px;margin: 0px;padding: 0px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABeUlEQVRIS82WPy5HQRDHP79GdCoVCScQjYTENTQSNJyAhA4dCRdAQ6FxDUGiwQkoVCoqoZFJJrLm2X1vZ5+sLV9m57Pz531nBlQ6g0pcvOBRYFkffQa85AbgAQv0FphQ2BMwkwv3gNeBAxPhBnCYE3UKPAUsAu/AMfCsjtvAY8AaMAycAw+/PSgGFqikc0gvPQLTwCuQSvUIcAdM6r0PLUMDHgPvAZvmpRLFiX6LNdeqZie8ug9s2ahj4B1g2xivANLBqSOdfmoMdgHx9+PEwFKnyyBlN8Bcx+a5BmaDEs0H/fHtItVcUq8FQOrUFql9k0Qu/XGhfdF4s+d36hh42syCixXJ4KL+QnAvihSAk/5CcJsw5KY46e9fgKulWlJZpblya1hk/1cCshQIyFvOdCqRzKtAXmWqZUlmtSHhHYsyOo9MarPGYskicB/sY5+6CMi3TmNRjLyrz7hZfRpQce6ZTr1Iqwfci8J5wL0onBdcpFreGhdDxcEXvw9wHzfaw18AAAAASUVORK5CYII="><img style="width: 24px;" src="assets/img/bx-key.svg"></div>
+                    <div class="col"><a class="stretched-link" href="my_achivements.html" style="color: #000000;font-size: 18px;padding-left: 0px;font-family: Roboto, sans-serif;">Mis accesos</a></div>
                 </div>
-                <div class="shadow-lg" id="divisor" style="margin-top: 15px;margin-bottom: 15px;background-color: #eeeeee;margin-right: 5px;margin-left: 5px;">
-                    <h1 class="border rounded-0 border-primary shadow"></h1>
+                <div class="shadow-lg" id="divisor" style="position: fixed;bottom: 55px;margin-top: 15px;margin-bottom: 15px;background-color: #f3f3f3;margin-right: 5px;width: 300px;height: 1px;">
+                    <h1 class="border rounded-0 border-primary" style="background-color: #f6f6f6;margin-bottom: 15px;"></h1>
                 </div>
-                <div class="row item">
-                    <div class="col text-center" style="width: 10px;max-width: 50px;margin: auto;padding-right: 0px;margin-left: 5px;"><img src="assets/img/bx-question-mark.svg" style="width: 24px;height: 24px;"></div>
-                    <div class="col"><a href="#" style="color: #000000;font-size: 18px;padding-left: 0px;font-family: Roboto, sans-serif;">Preguntas frequentes</a></div>
-                </div>
-                <div class="row item">
-                    <div class="col text-center" style="width: 10px;max-width: 50px;margin: auto;padding-right: 0px;margin-left: 5px;"><img src="assets/img/subdirectory-right-regular-96.png" style="width: 24px;"></div>
-                    <div class="col"><a class="stretched-link" href="login.html" style="color: #e10000;font-size: 16px;padding-left: 0px;font-family: Roboto, sans-serif;">Cerrar sesión</a></div>
+                <div class="row item" style="position: fixed;/*left: 20px;*/bottom: 20px;margin: 0px;margin-bottom: 15px;width: 300px;">
+                    <div class="col text-center" style="width: 10px;max-width: 50px;margin: 0px;padding: 0px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABeUlEQVRIS82WPy5HQRDHP79GdCoVCScQjYTENTQSNJyAhA4dCRdAQ6FxDUGiwQkoVCoqoZFJJrLm2X1vZ5+sLV9m57Pz531nBlQ6g0pcvOBRYFkffQa85AbgAQv0FphQ2BMwkwv3gNeBAxPhBnCYE3UKPAUsAu/AMfCsjtvAY8AaMAycAw+/PSgGFqikc0gvPQLTwCuQSvUIcAdM6r0PLUMDHgPvAZvmpRLFiX6LNdeqZie8ug9s2ahj4B1g2xivANLBqSOdfmoMdgHx9+PEwFKnyyBlN8Bcx+a5BmaDEs0H/fHtItVcUq8FQOrUFql9k0Qu/XGhfdF4s+d36hh42syCixXJ4KL+QnAvihSAk/5CcJsw5KY46e9fgKulWlJZpblya1hk/1cCshQIyFvOdCqRzKtAXmWqZUlmtSHhHYsyOo9MarPGYskicB/sY5+6CMi3TmNRjLyrz7hZfRpQce6ZTr1Iqwfci8J5wL0onBdcpFreGhdDxcEXvw9wHzfaw18AAAAASUVORK5CYII="><img style="width: 24px;" src="assets/img/bx-log-out-circle%201.svg"></div>
+                    <div class="col"><a class="stretched-link" href="my_achivements.html" style="color: #FF3C5F;font-size: 18px;padding-left: 0px;font-family: Roboto, sans-serif;">Cerrar sesión</a></div>
                 </div>
             </div>
         </div>
