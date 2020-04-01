@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="height: 100%;color: rgb(0,0,0);background-color: #0c0c0c;width: 100%;">
+<html style="height: 100%;width: 100%;">
 
 <head>
     <meta charset="utf-8">
@@ -55,26 +55,37 @@
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
-<body id="body_reader" style="z-index: 999;background-color: rgb(0,0,0);width: 100%;height: 100%;opacity: 1;">
-    <nav class="navbar navbar-light navbar-expand-md border-primary border rounded-0 shadow-sm" id="navBar-1" style="top: 0px;z-index: 10;position: fixed;background-color: #000000;margin: 0px;height: 80px;width: 100%;padding-top: 30px;">
+<body id="body_reader" style="z-index: 999;width: 100%;height: 100%;opacity: 1;background-color: rgb(0,0,0);">
+    <nav class="navbar navbar-light navbar-expand-md border-primary border rounded-0 shadow-sm" id="navBar-1" style="top: 0px;z-index: 50;position: fixed;margin: 0px;height: 80px;width: 100%;padding-top: 30px;background-color: rgb(0,0,0);">
         <div class="container-fluid">
             <div style="height: 50%;"><img id="backPage" src="assets/img/arrow-back-regular-240.png" style="margin-top: -5px;width: 25px;"><span class="open-sidebar" style="margin-left: 20px;font-family: Roboto, sans-serif;font-weight: 500;font-size: 22px;line-height: 26px;margin-top: 1px;color: rgb(255,255,255);">Escanea el código</span></div>
         </div>
     </nav>
-    <main id="main_qrReader" style="background-color: rgba(255,255,255,0);width: 100%;height: 100%;padding: 0px;opacity: 1;margin-top: 80px;">
-        <div class="center" style="/*display: none;*/width: 100%;padding: 15px;" display="none"><span style="color: rgb(255,255,255);margin-left: 10px;font-size: 15px;">QR Detectado:&nbsp;</span><span class="text-left" id="cam-qr-result" style="color: rgb(210,236,255);line-height: 15px;height: 20px;">Ningún QR detectado</span>
+    <main id="main_qrReader" style="width: 100%;height: 100%;padding: 0px;opacity: 1;margin-top: 80px;padding-top: 30px;">
+        <div style="margin-top: 20px;">
+            <div class="text-center tada animated center" id="divImage-1" style="border: 1px solid #f3f3f3;border-radius: 50px;width: 80px;height: 80px;"><input type="file" id="openFile-1" style="display: none;">
+                <div class="row text-center" style="height: 100%;margin: 0px;">
+                    <div class="col" style="margin: auto;"><img data-bs-hover-animate="rubberBand" src="assets/img/Group%20255.svg" style="width: 40px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="center" style="display: none;width: 100%;padding: 15px;" display="none"><span style="color: rgb(255,255,255);margin-left: 10px;font-size: 15px;">QR Detectado:&nbsp;</span><span class="text-left" id="cam-qr-result" style="color: rgb(210,236,255);line-height: 15px;height: 20px;">Ningún QR detectado</span>
             <div><a class="btn btn-secondary" role="button" style="color: rgb(255,255,255);background-color: rgb(0,0,0);font-style: bold;" href="thanks.html">Continuar</a></div>
         </div>
-        <div class="center" style="z-index: 10;display: flex;position: absolute;width: 100%;height: 100%;">
+        <div class="center" style="z-index: 10;display: flex;width: 100%;">
             <div style="position: relative;/*border: 3px solid rgba(255,255,255,0.53);*/width: 250px;height: 200px;margin: auto;margin-top: 50px;">
-                <div class="div_upLeft div_scan"></div>
-                <div class="div_scan div_upRight"></div>
-                <div class="div_bottomLeft div_scan"></div>
-                <div class="div_bottomRight div_scan"></div>
+                <div class="div_upLeft div_scan div_Scan_Style"></div>
+                <div class="div_scan div_upRight div_Scan_Style"></div>
+                <div class="div_bottomLeft div_scan div_Scan_Style"></div>
+                <div class="div_bottomRight div_Scan_Style div_scan"></div>
                 <div class="laser" style="z-index: 5;color: #000000;"></div>
             </div>
         </div>
-        <div style="width: 100%;height: 100%;color: rgb(0,0,0);"><video id="qr-video" style="z-index: 0;background-color: rgba(0,0,0,0.74);height: 100%;width: 100%;color: rgb(0,53,106);" muted="" height="100%" width="100%"></video></div>
+        <div class="row" style="margin: 0px;margin-right: 10%;margin-left: 10%;margin-top: 10%;">
+            <div class="col-1 text-center center" style="width: 0px;padding: 0px;"><img src="assets/img/bx-info-circle.svg"></div>
+            <div class="col" style="padding: 0px;margin-left: 15px;"><label class="col-form-label" style="font-family: Roboto, sans-serif;font-weight: 500;color: rgb(255,255,255);padding: 0px;">Este código es único e inigualable para cada comunidad con la que te vincules.<br></label></div>
+        </div>
+        <div style="width: 100%;color: rgb(0,0,0);"><video id="qr-video" style="z-index: 0;background-color: rgba(0,0,0,0.74);height: 100%;width: 100%;color: rgb(0,53,106);" muted="" height="100%" width="100%"></video></div>
     </main>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
