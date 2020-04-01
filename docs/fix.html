@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="height: 100%;width: 100%;">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -55,40 +55,14 @@
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
-<body id="body_reader" style="z-index: 999;width: 100%;height: 100%;opacity: 1;background-color: rgb(0,0,0);">
-    <nav class="navbar navbar-light navbar-expand-md border-primary border rounded-0 shadow-sm" id="navBar-1" style="top: 0px;z-index: 50;position: fixed;margin: 0px;height: 80px;width: 100%;background-color: rgb(0,0,0);">
-        <div class="container-fluid">
-            <div style="height: 50%;"><a href="main_page.html"><img src="assets/img/arrow-back-regular-240.png" style="margin-top: -5px;width: 25px;"></a><span class="open-sidebar" style="margin-left: 20px;font-family: Roboto, sans-serif;font-weight: 500;font-size: 22px;line-height: 26px;margin-top: 1px;color: rgb(255,255,255);">Escanea el código</span></div>
-            <a
-                class="btn btn-secondary" role="button" style="color: rgb(255,255,255);background-color: rgb(0,0,0);font-style: bold;" href="thanks.html">Continuar</a>
+<body>
+    <div class="center" style="margin-top: 100px;width: 100%;"><label style="font-size: 25px;font-weight: 500;font-family: Roboto, sans-serif;">Página no encontrada</label></div>
+    <div class="center" style="width: 100%;height: 100%;margin-top: 25px;"><img src="assets/img/1147129.svg" style="width: 300px;"></div>
+    <nav class="navbar navbar-light navbar-expand" id="navBar-2" style="border: 0px solid #ffffff;box-shadow: 0px 0px 0px #ffffff;top: 0px;z-index: 10;position: fixed;background-color: rgba(104,104,104,0);width: 100%;margin: 0px;height: 80px;padding-top: 30px;">
+        <div class="container">
+            <div style="height: 50%;font-size: 20px;font-family: Roboto, sans-serif;"><a href="main_page.html"><img src="assets/img/bx-arrow-back.svg"></a></div>
         </div>
     </nav>
-    <main id="main_qrReader" style="width: 100%;height: 100%;opacity: 1;margin-top: 80px;">
-        <div id="image" style="display: none;z-index: 10;position: absolute;width: 100%;">
-            <div class="text-center tada animated center" id="divImage-1" style="border: 1px solid #f3f3f3;border-radius: 50px;width: 80px;height: 80px;"><input type="file" id="openFile-1" style="display: none;">
-                <div class="row text-center" style="height: 100%;margin: 0px;">
-                    <div class="col" style="margin: auto;"><img data-bs-hover-animate="rubberBand" src="assets/img/Group%20255.svg" style="width: 40px;"></div>
-                </div>
-            </div>
-        </div>
-        <div id="info" class="center" style="display: none;width: 100%;padding: 15px;" display="none"><span style="color: rgb(255,255,255);margin-left: 10px;font-size: 15px;">QR Detectado:&nbsp;</span><span class="text-left" id="cam-qr-result" style="color: rgb(210,236,255);line-height: 15px;height: 20px;">Ningún QR detectado</span>
-            <div><a class="btn btn-secondary" role="button" style="color: rgb(255,255,255);background-color: rgb(0,0,0);font-style: bold;" href="thanks.html">Continuar</a></div>
-        </div>
-        <div id="scanner" class="center" style="position: absolute;z-index: 10;display: flex;width: 100%;">
-            <div style="position: relative;/*border: 3px solid rgba(255,255,255,0.53);*/width: 250px;height: 200px;margin: auto;margin-top: 150px;">
-                <div class="div_upLeft div_scan div_Scan_Style"></div>
-                <div class="div_scan div_upRight div_Scan_Style"></div>
-                <div class="div_bottomLeft div_scan div_Scan_Style"></div>
-                <div class="div_bottomRight div_Scan_Style div_scan"></div>
-                <div class="laser" style="z-index: 5;color: #000000;"></div>
-            </div>
-        </div>
-        <div class="row" style="z-index: 10;bottom: 30px;position: absolute;margin: 0px;margin-right: 15px;margin-left: 15px;">
-            <div class="col-1 text-center center" style="width: 0px;padding: 0px;"><img src="assets/img/bx-info-circle.svg"></div>
-            <div class="col" style="padding: 0px;margin-left: 15px;"><label class="col-form-label" style="font-family: Roboto, sans-serif;font-weight: 500;color: rgb(255,255,255);padding: 0px;">Este código es único e inigualable para cada comunidad con la que te vincules.<br></label></div>
-        </div>
-        <div id="video" style="width: 100%;color: rgb(0,0,0);height: 100%;"><video id="qr-video" style="z-index: 0;background-color: rgba(0,0,0,0.74);height: 100%;width: 100%;color: rgb(0,53,106);" muted="" height="100%" width="100%"></video></div>
-    </main>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
