@@ -49,9 +49,8 @@ textarea {
 
 textarea:focus {
   border: 0 !important;
-  border-bottom: 1px solid #48CCFF !important;
   outline: none !important;
-  color: #48CCFF;
+  color: #108b8b;
 }
 
 .field {
