@@ -23,7 +23,7 @@ async function indexPage(ms){
     element.classList.remove("slower");
     element.classList.add("zoomOutLeft");
     await sleep(1000);
-    window.location.replace("login.html");
+    window.location.replace("both_login.html");
 }
 
 document.getElementById("body_start_page").setAttribute("onload", "indexPage(3000);");
