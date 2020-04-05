@@ -47,6 +47,12 @@ textarea {
   border-bottom: 1px solid #E0E0E0;
 }
 
+textarea.focusColor:focus {
+  border: 0 !important;
+  outline: none !important;
+  color: #108b8b;
+}
+
 textarea:focus {
   border: 0 !important;
   outline: none !important;

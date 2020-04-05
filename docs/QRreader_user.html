@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html style="height: 100%;">
+<html style="height: 100%;width: 100%;">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Register - AIDIMI</title>
+    <title>AIDIMI-backup-03-04-2020</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
@@ -57,35 +57,41 @@
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
-<body style="width: 100%;height: 100%;">
-    <nav class="navbar navbar-light navbar-expand-md border-primary border rounded-0 shadow-sm" id="navBar" style="top: 0px;z-index: 10;position: fixed;background-color: #ffffff;width: 100%;margin: 0px;height: 80px;padding-top: 30px;">
+<body id="body_reader" style="z-index: 999;width: 100%;height: 100%;opacity: 1;background-color: rgb(0,0,0);">
+    <nav class="navbar navbar-light navbar-expand-md border-primary border rounded-0 shadow-sm" id="navBar-1" style="top: 0px;z-index: 50;position: fixed;margin: 0px;height: 80px;width: 100%;background-color: rgb(0,0,0);">
         <div class="container-fluid">
-            <div style="height: 50%;font-size: 20px;font-family: Roboto, sans-serif;"><img id="backPage" src="assets/img/bx-arrow-back.svg"><span class="open-sidebar" style="margin-left: 20px;font-size: 22px;font-family: Roboto, sans-serif;">Edita tu ID</span></div>
+            <div style="height: 50%;"><a href="mainPage_user.html"><img src="assets/img/arrow-back-regular-240.png" style="margin-top: -5px;width: 25px;"></a><span class="open-sidebar" style="margin-left: 20px;font-family: Roboto, sans-serif;font-weight: 500;font-size: 22px;line-height: 26px;margin-top: 1px;color: rgb(255,255,255);">Escanea el código</span></div>
+            <a
+                class="btn btn-secondary" role="button" style="color: rgb(255,255,255);background-color: rgb(0,0,0);font-style: bold;" href="thanks_user.html">Continuar</a>
         </div>
     </nav>
-    <main class="page registration-page" style="height: 100%;margin-top: 80px;">
-        <section class="clean-block clean-form dark" style="/*height: 100%;*/width: 100%;">
-            <div class="container" style="background-color: #f9f9f9;height: 100%;padding-top: 10px;padding-bottom: 15px;">
-                <div style="margin-left: 15px;margin-top: 15px;"><label style="font-family: Roboto;font-style: normal;font-size: 18px;font-weight: 500;">Cambiar mi foto</label></div>
-                <div class="text-center tada animated center" id="divImage" style="border: 1px solid #ffffff;border-radius: 50px;width: 100px;background-color: #ffffff;height: 100px;margin: auto;margin-top: 0px;margin-bottom: 20px;"><input type="file" id="openFile-2" style="display: none;">
-                    <div class="row text-center" style="height: 100%;">
-                        <div class="col" style="margin: auto;"><img data-bs-hover-animate="rubberBand" src="assets/img/Group%20131.png" style="width: 40px;"></div>
-                    </div>
+    <main id="main_qrReader" style="width: 100%;height: 100%;opacity: 1;margin-top: 80px;">
+        <div id="image" style="display: none;z-index: 10;position: absolute;width: 100%;">
+            <div class="text-center tada animated center" id="divImage-1" style="border: 1px solid #f3f3f3;border-radius: 50px;width: 80px;height: 80px;"><input type="file" id="openFile-1" style="display: none;">
+                <div class="row text-center" style="height: 100%;margin: 0px;">
+                    <div class="col" style="margin: auto;"><img data-bs-hover-animate="rubberBand" src="assets/img/Group%20255.svg" style="width: 40px;"></div>
                 </div>
-                <form style="border-radius: 15px;background-color: rgba(198,198,198,0);margin-bottom: 0px;height: 100%;padding: 5px;padding-top: 20px;">
-                    <div class="form-group" style="width: 100%;">
-                        <div class="roundedDiv" style="margin-top: 0px;"><label>Mi nombre</label><input class="form-control" type="text" style="border-radius: 15px;width: 100%;"></div>
-                        <div class="roundedDiv"><label>Email</label><input class="form-control" type="text" style="border-radius: 15px;width: 100%;"></div>
-                        <div class="roundedDiv"><label>Contraseña</label><input class="form-control" type="text" style="border-radius: 15px;width: 100%;"></div>
-                        <div class="roundedDiv"><label>Nombre usuario</label>
-                            <div><input class="form-control" type="text" style="background-image: url(&quot;assets/img/pencil-regular-24.png&quot;);background-repeat: no-repeat;background-position: right;"></div>
-                        </div>
-                        <div style="margin-top: 40px;"><a class="btn text-center focusCyan" role="button" data-bs-hover-animate="pulse" style="width: 500px;display: table-cell;border-radius: 12px;border-color: #bfbfbf;height: 30px;font-family: Roboto, sans-serif;font-weight: bold;"
-                                href="mainPage_user.html">Listo</a></div>
-                    </div>
-                </form>
             </div>
-        </section>
+        </div>
+        <div id="info" class="center" style="display: none;width: 100%;padding: 15px;" display="none"><span style="color: rgb(255,255,255);margin-left: 10px;font-size: 15px;">QR Detectado:&nbsp;</span><span class="text-left" id="cam-qr-result" style="color: rgb(210,236,255);line-height: 15px;height: 20px;">Ningún QR detectado</span>
+            <div><a class="btn btn-secondary" role="button" style="color: rgb(255,255,255);background-color: rgb(0,0,0);font-style: bold;" href="thanks_user.html">Continuar</a></div>
+        </div>
+        <div id="scanner" class="center" style="position: absolute;z-index: 10;display: flex;width: 100%;">
+            <div style="position: relative;/*border: 3px solid rgba(255,255,255,0.53);*/width: 250px;height: 200px;margin: auto;margin-top: 150px;">
+                <div class="div_upLeft div_scan div_Scan_Style"></div>
+                <div class="div_scan div_upRight div_Scan_Style"></div>
+                <div class="div_bottomLeft div_scan div_Scan_Style"></div>
+                <div class="div_bottomRight div_Scan_Style div_scan"></div>
+                <div class="laser" style="z-index: 5;color: #000000;"></div>
+            </div>
+        </div>
+        <div class="center" style="width: 100%;margin: 15px;">
+            <div class="row" style="z-index: 10;bottom: 30px;position: absolute;margin: 0px;">
+                <div class="col-1 text-center center" style="width: 0px;padding: 0px;"><img src="assets/img/bx-info-circle.svg"></div>
+                <div class="col" style="padding: 0px;margin-left: 15px;"><label class="col-form-label" style="font-family: Roboto, sans-serif;font-weight: 500;color: rgb(255,255,255);padding: 0px;">Este código es único e inigualable para cada comunidad con la que te vincules.<br></label></div>
+            </div>
+        </div>
+        <div id="video" style="width: 100%;color: rgb(0,0,0);height: 100%;"><video id="qr-video" style="z-index: 0;background-color: rgba(0,0,0,0.74);height: 100%;width: 100%;color: rgb(0,53,106);" muted="" height="100%" width="100%"></video></div>
     </main>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
