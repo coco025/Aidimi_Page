@@ -1,5 +1,5 @@
 function endPurpose (){
-    var end = confirm("Ingrese el correo del nuevo miembro del equipo");
+    var end = confirm("¿Desea finalizar el propósito?");
     if(end == true){
         window.location.replace("thanks_comunity.html");
     }
