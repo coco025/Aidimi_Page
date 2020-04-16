@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/Collapsible-sidebar-left-or-right--Content-overlay.css">
     <link rel="stylesheet" href="assets/css/div_rounded_input.css">
     <link rel="stylesheet" href="assets/css/divider-text-middle.css">
+    <link rel="stylesheet" href="assets/css/fieldLabelCountPurposes.css">
     <link rel="stylesheet" href="assets/css/float_button.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/Horizontal-scrolling-cards-for-mobile-apps-1.css">
@@ -47,6 +48,7 @@
     <link rel="stylesheet" href="assets/css/Simple-Slider.css">
     <link rel="stylesheet" href="assets/css/smoothproducts.css">
     <link rel="stylesheet" href="assets/css/Social-Icon-Circle.css">
+    <link rel="stylesheet" href="assets/css/spanHeader.css">
     <link rel="stylesheet" href="assets/css/Steps-Progressbar.css">
     <link rel="stylesheet" href="assets/css/textarea.css">
     <link rel="stylesheet" href="assets/css/textInput_black.css">
@@ -68,7 +70,7 @@
                     <div>
                         <div class="row" style="margin: 0px;">
                             <div class="col text-left" style="padding: 0px;height: 25px;">
-                                <div><span>Nombre comunidad</span><img src="assets/img/Verification.svg" style="margin-left: 10px;margin-top: -4px;"><label class="switch" style="right: 50px;position: fixed;margin-top: 3px;"><input type="checkbox"><span class="slider round"></span></label>
+                                <div><span class="headerDesign" style="margin-left: 0px;">Nombre comunidad</span><img src="assets/img/Verification.svg" style="margin-left: 10px;margin-top: -4px;"><label class="switch" style="right: 50px;position: fixed;margin-top: 3px;"><input type="checkbox"><span class="slider round"></span></label>
                                     <a
                                         id="endPurpose" href="#" style="right: 10px;position: fixed;margin-top: -2px;"><img src="assets/img/bx-trash-alt%20(1)%201.svg"></a>
                                 </div>
@@ -121,7 +123,7 @@
         </div>
         <div class="border rounded order-1" id="sideNav_Back" style="top: 0;position: fixed;z-index: 100;transition: all 0s;background-color: rgba(44,44,44,0.51);padding-left: 0px;padding-top: 0px;width: 100%;height: 100%;margin-left: -100%;"></div>
     </div>
-    <div class="carousel slide" data-ride="carousel" data-interval="false" id="carousel-1" style="margin-bottom: 20px;">
+    <div class="carousel slide" data-ride="carousel" data-interval="false" id="carousel-1" style="margin-bottom: 50px;">
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
                 <main id="main" style="height: 100%;background-color: rgba(255,255,255,0);width: 100%;padding: 0px;margin-top: 80px;padding-top: 20px;">
@@ -129,7 +131,7 @@
                         <div class="row">
                             <div class="col text-left">
                                 <div class="row" style="margin: 0px;">
-                                    <div class="col" style="padding: 0px;"><span class="span_text" style="font-size: 20px;color: rgb(0,0,0);font-weight: 700;font-family: Roboto, sans-serif;filter: blur(0px) grayscale(0%) hue-rotate(0deg) invert(0%) sepia(0%);">Nombre del Propósito</span></div>
+                                    <div class="col" style="padding: 0px;"><span class="span_text" style="filter: blur(0px) grayscale(0%) hue-rotate(0deg) invert(0%) sepia(0%);font-family: Roboto, sans-serif;font-size: 20px;">Nombre del Propósito</span></div>
                                 </div>
                                 <div class="row" style="margin: 0px;">
                                     <div class="col" style="padding: 0px;">
@@ -139,24 +141,40 @@
                                 </div>
                             </div>
                             <div class="col-3 col-sm-2 col-md-2 col-lg-1 col-xl-1 center" style="padding: 0px;margin-right: 10px;">
-                                <div class="trophy" style="padding: 5px;width: 80px;"><input type="text" style="background-image: url(&quot;assets/img/bx-trophy%201.svg&quot;);background-repeat: no-repeat;background-position: right;width: 100%;background-color: rgba(255,255,255,0);color: rgb(255,255,255);" value="25/50"></div>
+                                <div class="trophy" style="padding: 5px;width: 90px;background-color: #FF8CAF;"><input type="text" style="background-image: url(&quot;assets/img/Group%20126.svg&quot;);background-repeat: no-repeat;background-position: right;width: 100%;background-color: rgba(255,255,255,0);color: rgb(255,255,255);" value="25/50"></div>
                             </div>
                         </div>
                     </div>
                     <div id="showImage-1" class="center" style="/*display: none;*/border: 0px solid #e6e6e6;border-radius: 15px;width: 150px;margin-top: 25px;"><img style="border-radius: 250px;width: 100%;height: 100%;" src="assets/img/tour_img-1884867-146.jpg"></div>
-                    <div class="text-center" style="border-radius: 25px;margin: 30px;background-color: #ffffff;height: 250px;padding: 10px;"><textarea style="border-radius: 10px;border: 0px solid #000000;width: 100%;height: 100%;background-color: rgba(255,255,255,0);" placeholder="   Descripción del propósito"></textarea></div>
+                    <div class="text-center" style="border-radius: 25px;margin: 30px;background-color: #ffffff;height: 250px;padding: 10px;"><textarea style="border-radius: 10px;border: 0px solid #000000;width: 100%;height: 100%;background-color: rgba(255,255,255,0);" placeholder="  Detalle de propósito + (opción) imagen"></textarea></div>
                     <div style="display: none;"><span style="margin-left: 20px;">Agregar imagen</span><img id="addImage" src="assets/img/image-add-regular-204.png" style="width: 25px;margin-left: 20px;"></div>
                     <div id="qrImage" class="center" style="border: 0px solid #e6e6e6;border-radius: 15px;margin-top: 25px;width: 225px;"><span style="margin-bottom: 15px;font-size: 20px;font-family: Roboto, sans-serif;font-weight: 700;">Código QR del propósito</span><img style="border-radius: 10px;width: 100%;height: 100%;" src="assets/img/qr-code.png"></div>
                 </main>
             </div>
             <div class="carousel-item">
                 <main id="main" style="height: 100%;background-color: rgba(255,255,255,0);width: 100%;padding: 0px;margin-top: 80px;padding-top: 20px;">
-                    <section style="padding: 15px;"><label style="font-size: 30px;font-family: Roboto, sans-serif;line-height: 35px;">¡Ups!</label>
-                        <p style="font-size: 18px;font-family: Roboto, sans-serif;color: rgb(0,0,0);line-height: 21px;margin-top: 10px;">En este momento no tienes acceso, el propósito podría estar desactivado. Inténtalo más tarde.<br></p>
-                        <div class="col center" style="border-radius: 150px;padding: 0px;background-color: #ffffff;width: 165px;height: 165px;margin-top: 50px;">
-                            <div><img src="assets/img/bx-lock-alt%20(1)%201.svg" style="border-radius: 100px;width: 150px;"></div>
+                    <div class="text-center" style="margin: 15px;font-size: -6px;margin-top: 10px;color: rgb(0,0,0);font-weight: bold;margin-bottom: 5px;">
+                        <div class="row">
+                            <div class="col text-left">
+                                <div class="row" style="margin: 0px;">
+                                    <div class="col" style="padding: 0px;"><span class="span_text" style="filter: blur(0px) grayscale(0%) hue-rotate(0deg) invert(0%) sepia(0%);font-family: Roboto, sans-serif;font-size: 20px;">Nombre del Propósito</span></div>
+                                </div>
+                                <div class="row" style="margin: 0px;">
+                                    <div class="col" style="padding: 0px;">
+                                        <div class="text-left" style="font-size: 5px;color: rgb(0,0,0);font-weight: bold;"><span class="span_text" style="font-size: 18px;color: rgb(0,0,0);font-family: Roboto, sans-serif;filter: blur(0px) grayscale(0%) hue-rotate(0deg) invert(0%) sepia(0%);font-weight: 700};">Código:</span><span class="span_text"
+                                                style="font-size: 18px;color: rgb(0,0,0);font-family: Roboto, sans-serif;filter: blur(0px) grayscale(0%) hue-rotate(0deg) invert(0%) sepia(0%);font-weight: 700;">&nbsp;######</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-2 col-md-2 col-lg-1 col-xl-1 center" style="padding: 0px;margin-right: 10px;">
+                                <div class="trophy" style="padding: 5px;width: 90px;background-color: #FF8CAF;"><input type="text" style="background-image: url(&quot;assets/img/Group%20126.svg&quot;);background-repeat: no-repeat;background-position: right;width: 100%;background-color: rgba(255,255,255,0);color: rgb(255,255,255);" value="25/50"></div>
+                            </div>
                         </div>
-                    </section>
+                    </div>
+                    <div id="showImage-1" class="center" style="/*display: none;*/border: 0px solid #e6e6e6;border-radius: 15px;width: 150px;margin-top: 25px;"><img style="border-radius: 250px;width: 100%;height: 100%;" src="assets/img/tour_img-1884867-146.jpg"></div>
+                    <div class="text-center" style="border-radius: 25px;margin: 30px;background-color: #ffffff;height: 250px;padding: 10px;"><textarea style="border-radius: 10px;border: 0px solid #000000;width: 100%;height: 100%;background-color: rgba(255,255,255,0);" placeholder="  Detalle de propósito + (opción) imagen"></textarea></div>
+                    <div style="display: none;"><span style="margin-left: 20px;">Agregar imagen</span><img id="addImage" src="assets/img/image-add-regular-204.png" style="width: 25px;margin-left: 20px;"></div>
+                    <div id="qrImage" class="center" style="border: 0px solid #e6e6e6;border-radius: 15px;margin-top: 25px;width: 225px;"><span style="margin-bottom: 15px;font-size: 20px;font-family: Roboto, sans-serif;font-weight: 700;">Código QR del propósito</span><img style="border-radius: 10px;width: 100%;height: 100%;" src="assets/img/qr-code.png"></div>
                 </main>
             </div>
         </div>
@@ -167,6 +185,7 @@
             <!-- End: Next -->
         </div>
     </div>
+    <div class="center" style="bottom: 0px;position: fixed;width: 100%;"><label style="border: 1px solid #989898;border-radius: 25px;background-color: rgba(255,255,255,0.71);padding: 5px 10px;width: 70px;">1/2</label></div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
@@ -199,6 +218,7 @@
     <script src="assets/js/sideNav.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>
     <script src="assets/js/sleep.js"></script>
+    <script src="assets/js/untitled-1.js"></script>
     <script src="assets/js/untitled.js"></script>
 </body>
 

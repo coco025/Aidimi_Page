@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/Collapsible-sidebar-left-or-right--Content-overlay.css">
     <link rel="stylesheet" href="assets/css/div_rounded_input.css">
     <link rel="stylesheet" href="assets/css/divider-text-middle.css">
+    <link rel="stylesheet" href="assets/css/fieldLabelCountPurposes.css">
     <link rel="stylesheet" href="assets/css/float_button.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/Horizontal-scrolling-cards-for-mobile-apps-1.css">
@@ -47,6 +48,7 @@
     <link rel="stylesheet" href="assets/css/Simple-Slider.css">
     <link rel="stylesheet" href="assets/css/smoothproducts.css">
     <link rel="stylesheet" href="assets/css/Social-Icon-Circle.css">
+    <link rel="stylesheet" href="assets/css/spanHeader.css">
     <link rel="stylesheet" href="assets/css/Steps-Progressbar.css">
     <link rel="stylesheet" href="assets/css/textarea.css">
     <link rel="stylesheet" href="assets/css/textInput_black.css">
@@ -57,7 +59,7 @@
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
-<body id="body" style="width: 100%;">
+<body id="body" style="width: 100%;background-color: #FAFAFA;">
     <div class="container" id="sideNav_Main" style="padding: 0px;margin: 0px;">
         <div class="border rounded shadow-none" id="sideNav_Options" style="top: 0;position: fixed;z-index: 150;transition: all 0.3s;background-color: #ffffff;height: 100%;width: 300px;margin-left: -100%;">
             <div class="text-center" id="myID" style="border-radius: 30px;/*background-color: rgba(255,255,255,0);*/margin-top: 30px;padding-left: 20px;">
@@ -104,7 +106,7 @@
                 <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 center"><img class="border rounded-circle pulse animated" id="openSideNav" src="assets/img/one-piece-calavera-pegatina_large.png" style="width: 40px;height: 40px;"></div>
                 <div class="col text-left" style="width: 100%;">
                     <div class="row">
-                        <div class="col"><span class="open-sidebar" style="font-size: 22px;">Monkey. D Luffy</span></div>
+                        <div class="col"><span class="open-sidebar headerDesign" style="margin-left: 0px;">Monkey. D Luffy</span></div>
                     </div>
                     <div class="row">
                         <div class="col"><label class="col-form-label" style="font-family: Roboto;font-style: normal;font-weight: 500;font-size: 13px;color: #A9A9A9;line-height: -5px;padding-top: 0px;margin-top: -10px;">@usuario</label></div>
@@ -114,14 +116,16 @@
             </div>
         </div>
     </nav>
-    <main id="main" style="height: 100%;background-color: rgba(104,104,104,0.07);width: 100%;padding: 0px;margin-top: 70px;">
+    <main id="main" style="height: 100%;background-color: #FAFAFA;width: 100%;padding: 0px;margin-top: 70px;">
         <section class="shadow-lg" style="width: 100%;margin-top: 0px;height: 100%;">
             <div class="container text-left border rounded" style="margin-left: 0%;margin-right: 0%;width: 100%;padding: 0px;max-width: none;height: 100%;">
-                <div data-bs-hover-animate="jello" id="scan_QR_code" class="float" style="background-color: #1faeae;">
-                    <div class="row text-center" style="height: 100%;margin: 0px;">
-                        <div class="col" style="margin: auto;"><img src="assets/img/vector.png" style="width: 50px;"></div>
+                <a href="#">
+                    <div data-bs-hover-animate="jello" id="scan_QR_code" class="float" style="background-color: #1faeae;">
+                        <div class="row text-center" style="height: 100%;margin: 0px;">
+                            <div class="col" style="margin: auto;"><img src="assets/img/vector.png" style="width: 50px;"></div>
+                        </div>
                     </div>
-                </div>
+                </a>
                 <div class="row justify-content-center" style="width: auto;margin: 0px;margin-top: 3%;">
                     <div class="col-sm-7 col-md-6 col-lg-5 text-left" data-bs-hover-animate="pulse" id="purpose" style="border-radius: 25px;margin: 10px;width: 100%;background-color: #ffffff;height: 100%;max-width: none;padding: 0px;padding-top: 3px;">
                         <div class="row" style="margin: 5px;">
@@ -139,20 +143,17 @@
                             </div>
                         </div>
                         <div class="row" style="margin: 0px;">
-                            <div class="col-7" style="padding: 0px 20px;">
+                            <div class="col-8" style="padding: 0px 20px;">
                                 <div class="row" style="margin: 0px;">
-                                    <div class="col center" style="padding: 0px;"><label class="col-form-label text-left" style="font-family: Roboto;font-style: normal;font-weight: 500;font-size: 18px;line-height: 21px;padding: 0px;width: 100%;">Nombre propósito</label></div>
+                                    <div class="col center" style="padding: 0px;"><label class="col-form-label text-left" style="font-family: Roboto;font-style: normal;font-weight: 600;font-size: 18px;line-height: 21px;padding: 0px;width: 100%;">Nombre propósito</label></div>
                                 </div>
                                 <div class="row" style="margin: 0px;">
-                                    <div class="col" style="width: 100%;padding: 0px;"><label class="col-form-label" style="font-family: Roboto;font-style: normal;font-weight: 500;font-size: 18px;line-height: 21px;">Código ######</label></div>
+                                    <div class="col" style="width: 100%;padding: 0px;"><label class="col-form-label" style="font-family: Roboto;font-style: normal;font-weight: 600;font-size: 18px;line-height: 21px;">Código ######</label></div>
                                 </div>
                             </div>
-                            <div class="col-5 center" style="width: 100%;">
-                                <div class="row">
-                                    <div class="col-3" style="margin: 0px;padding: 0px;width: 100%;height: 100%;"><label class="col-form-label" style="right: 0px;padding: 0px;">n</label></div>
-                                    <div class="col-4 center" style="margin: 0px;padding: 0px;"><img src="assets/img/bx-trophy.svg" style="width: 25px;"></div>
-                                    <div class="col-5 center" style="margin: 0px;"><img src="assets/img/Group%20126.svg"></div>
-                                </div>
+                            <div class="col-4 text-right center">
+                                <div class="trophy" style="padding: 4px;width: 80px;background-color: #FAFAFA;"><input type="text" style="background-image: url(&quot;assets/img/Group%20126.svg&quot;);background-repeat: no-repeat;background-position: right;width: 100%;background-color: rgba(255,255,255,0);color: rgb(128,128,128);font-size: 16px;background-size: contain;"
+                                        value="25/50"></div>
                             </div>
                         </div>
                     </div>
@@ -172,20 +173,17 @@
                             </div>
                         </div>
                         <div class="row" style="margin: 0px;">
-                            <div class="col-7" style="padding: 0px 20px;">
+                            <div class="col-8" style="padding: 0px 20px;">
                                 <div class="row" style="margin: 0px;">
-                                    <div class="col center" style="padding: 0px;"><label class="col-form-label text-left" style="font-family: Roboto;font-style: normal;font-weight: 500;font-size: 18px;line-height: 21px;padding: 0px;width: 100%;">Nombre propósito</label></div>
+                                    <div class="col center" style="padding: 0px;"><label class="col-form-label text-left" style="font-family: Roboto;font-style: normal;font-weight: 600;font-size: 18px;line-height: 21px;padding: 0px;width: 100%;">Nombre propósito</label></div>
                                 </div>
                                 <div class="row" style="margin: 0px;">
-                                    <div class="col" style="width: 100%;padding: 0px;"><label class="col-form-label" style="font-family: Roboto;font-style: normal;font-weight: 500;font-size: 18px;line-height: 21px;">Código ######</label></div>
+                                    <div class="col" style="width: 100%;padding: 0px;"><label class="col-form-label" style="font-family: Roboto;font-style: normal;font-weight: 600;font-size: 18px;line-height: 21px;">Código ######</label></div>
                                 </div>
                             </div>
-                            <div class="col-5 center" style="width: 100%;">
-                                <div class="row">
-                                    <div class="col-3 center" style="margin: 0px;padding: 0px;width: 100%;height: 100%;"><label class="col-form-label" style="padding: 0px;">n</label></div>
-                                    <div class="col-4 center" style="margin: 0px;padding: 0px;"><img src="assets/img/bx-trophy.svg" style="width: 25px;"></div>
-                                    <div class="col-5 center" style="margin: 0px;"><img src="assets/img/Group%20126.svg"></div>
-                                </div>
+                            <div class="col-4 text-right center">
+                                <div class="trophy" style="padding: 4px;width: 80px;background-color: #FAFAFA;color: #108b8b;"><input type="text" style="background-image: url(&quot;assets/img/Group%20126.svg&quot;);background-repeat: no-repeat;background-position: right;width: 100%;background-color: rgba(255,255,255,0);color: rgb(128,128,128);font-size: 16px;background-size: contain;"
+                                        value="25/50"></div>
                             </div>
                         </div>
                     </div>
@@ -225,6 +223,7 @@
     <script src="assets/js/sideNav.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>
     <script src="assets/js/sleep.js"></script>
+    <script src="assets/js/untitled-1.js"></script>
     <script src="assets/js/untitled.js"></script>
 </body>
 

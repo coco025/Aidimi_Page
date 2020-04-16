@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/Collapsible-sidebar-left-or-right--Content-overlay.css">
     <link rel="stylesheet" href="assets/css/div_rounded_input.css">
     <link rel="stylesheet" href="assets/css/divider-text-middle.css">
+    <link rel="stylesheet" href="assets/css/fieldLabelCountPurposes.css">
     <link rel="stylesheet" href="assets/css/float_button.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/Horizontal-scrolling-cards-for-mobile-apps-1.css">
@@ -47,6 +48,7 @@
     <link rel="stylesheet" href="assets/css/Simple-Slider.css">
     <link rel="stylesheet" href="assets/css/smoothproducts.css">
     <link rel="stylesheet" href="assets/css/Social-Icon-Circle.css">
+    <link rel="stylesheet" href="assets/css/spanHeader.css">
     <link rel="stylesheet" href="assets/css/Steps-Progressbar.css">
     <link rel="stylesheet" href="assets/css/textarea.css">
     <link rel="stylesheet" href="assets/css/textInput_black.css">
@@ -105,7 +107,7 @@
                 <div class="col text-left" style="width: 100%;">
                     <div class="row">
                         <div class="col">
-                            <div><span class="open-sidebar" style="font-size: 22px;font-weight: 500;font-family: Roboto, sans-serif;">Nombre comunidad</span><img src="assets/img/Verification.svg" style="margin-left: 10px;margin-top: -5px;"></div>
+                            <div><span class="open-sidebar headerDesign" style="margin-left: 0px;">Nombre comunidad</span><img src="assets/img/Verification.svg" style="margin-left: 10px;margin-top: -5px;"></div>
                         </div>
                     </div>
                     <div class="row">
@@ -116,13 +118,6 @@
         </div>
     </nav>
     <main id="main" style="height: 100%;background-color: rgba(230,230,230,0.07);width: 100%;padding: 0px;margin-top: 80px;">
-        <a href="#">
-            <div data-bs-hover-animate="jello" id="publishPurpose" class="floatComunity" style="background-color: #108b8b;width: 60px;height: 60px;">
-                <div class="row text-center" style="height: 100%;margin: 0px;">
-                    <div class="col" style="margin: auto;padding: 0px;margin-left: -1px;"><img src="assets/img/send.svg" style="width: 35px;height: 35px;"></div>
-                </div>
-            </div>
-        </a>
         <a href="purposes_comunity.html">
             <div data-bs-hover-animate="jello" id="qtyPurpose" class="floatQtyComunity" style="background-color: #108b8b;width: 30px;height: 30px;">
                 <div class="row text-center" style="height: 100%;margin: 0px;width: 100%;">
@@ -132,14 +127,27 @@
         </a>
         <section class="shadow-lg" style="width: 100%;margin-top: 0px;height: 100%;">
             <div class="container text-left border rounded" style="margin-left: 0%;margin-right: 0%;width: 100%;padding: 0px;max-width: none;height: 100%;padding-right: 10px;padding-left: 10px;">
+                <a href="purposes_comunity.html">
+                    <div data-bs-hover-animate="jello" class="floatQtyComunity" style="z-index: 25;background-color: #1faeae;">
+                        <div class="row text-center" style="height: 25px;margin: 0px;">
+                            <div class="col" style="margin: auto;"><label class="col-form-label">2</label></div>
+                        </div>
+                    </div>
+                </a>
+                <a href="purposes_comunity.html">
+                    <div data-bs-hover-animate="jello" class="float" style="z-index: 20;background-color: #1faeae;">
+                        <div class="row text-center" style="height: 100%;margin: 0px;">
+                            <div class="col" style="margin: auto;"><img src="assets/img/send.svg" style="margin-top: 7px;width: 50px;"></div>
+                        </div>
+                    </div>
+                </a>
                 <div id="intro">
                     <div class="row" style="margin: 0px;margin-top: 10px;">
-                        <div class="col"><label class="col-form-label" style="font-family: Roboto, sans-serif;font-size: 17px;">Crea tu propósito</label></div>
+                        <div class="col"><label class="col-form-label" style="font-family: Roboto, sans-serif;font-size: 22px;">Crea tu propósito</label></div>
                         <div class="col-3 col-sm-2 col-md-2 col-lg-1 col-xl-1" style="width: 100%;padding: 0px;">
-                            <div style="border-radius: 15px;background-color: #ffffff;padding: 5px;width: 60px;"><input type="text" style="width: 100%;background-image: url(&quot;assets/img/bx-trophy2.svg&quot;);background-repeat: no-repeat;background-position: right;background-color: rgba(255,255,255,0);color: #108b8b;font-weight: bold;font-family: Roboto, sans-serif;"
+                            <div style="border-radius: 15px;background-color: #ffffff;padding: 5px;width: 60px;"><input type="text" style="background-image: url(&quot;assets/img/Group%20126.svg&quot;);background-repeat: no-repeat;background-position: right;background-color: rgba(255,255,255,0);color: #FF2D53;font-weight: bold;font-family: Roboto, sans-serif;background-size: contain;width: 60px;"
                                     value="50"></div>
                         </div>
-                        <div class="col-2 center"><img src="assets/img/Group%20126.svg" style="margin-left: -5px;"></div>
                     </div>
                 </div>
                 <div id="name" style="margin-top: 10px;">
@@ -147,7 +155,7 @@
                         <div class="col"><label class="col-form-label" style="padding: 7px 0px;margin: 0px;font-family: Roboto, sans-serif;font-size: 17PX;">Nombre</label></div>
                     </div>
                     <div class="row" style="margin: 0px;padding: 0px 15px;font-family: Roboto, sans-serif;">
-                        <div class="col" style="background-color: #ffffff;border-radius: 8px;"><input type="text" placeholder="Algo que llame la atención de tus clientes" style="background-color: rgba(0,0,0,0);width: 100%;font-size: 16px;"></div>
+                        <div class="col" style="background-color: #ffffff;border-radius: 8px;"><input type="text" placeholder="Algo que llame la atención de tus clientes" style="background-color: rgba(0,0,0,0);width: 100%;font-size: 18px;"></div>
                     </div>
                 </div>
                 <div id="detail" style="margin-top: 10px;">
@@ -156,7 +164,7 @@
                         <div class="col text-right"><img src="assets/img/bx-paperclip.svg"></div>
                     </div>
                     <div class="row" style="margin: 0px;font-family: Roboto, sans-serif;">
-                        <div class="col" style="height: 250px;"><textarea style="color: #000000;resize: none;border-radius: 8px;width: 100%;height: 100%;font-size: 16px;" placeholder="¿Qué deseas notificarle a tus clientes y qué les ofreces a cambio de su participación?"></textarea></div>
+                        <div class="col" style="height: 250px;"><textarea style="color: #000000;resize: none;border-radius: 8px;width: 100%;height: 100%;font-size: 18px;" placeholder="¿Qué deseas notificarle a tus clientes y qué les ofreces a cambio de su participación?"></textarea></div>
                     </div>
                 </div>
                 <div id="time" style="margin-top: 10px;">
@@ -210,6 +218,7 @@
     <script src="assets/js/sideNav.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>
     <script src="assets/js/sleep.js"></script>
+    <script src="assets/js/untitled-1.js"></script>
     <script src="assets/js/untitled.js"></script>
 </body>
 
