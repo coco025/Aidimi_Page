@@ -1,9 +1,9 @@
 .floatQtyComunity {
   z-index: 10;
   position: fixed;
-  width: 40px;
-  height: 40px;
-  bottom: 130px;
+  width: 30px;
+  height: 30px;
+  bottom: 100px;
   right: 40px;
   background-color: #45d6b3;
   color: #FFF;
@@ -28,15 +28,15 @@
 
 .float {
   position: fixed;
-  width: 80px;
-  height: 80px;
-  bottom: 40px;
-  right: 40px;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
   background-color: #45d6b3;
   color: #FFF;
   border-radius: 50px;
   text-align: center;
-  box-shadow: 2px 2px 3px #999;
+  /*box-shadow: 2px 2px 3px #999;*/
 }
 
 .my-float {
