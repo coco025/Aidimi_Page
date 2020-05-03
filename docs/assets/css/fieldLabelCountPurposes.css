@@ -7,7 +7,7 @@ div.label qtyPurposes {
 }
 
 .qtyPurposes {
-  bottom: 0px;
+  bottom: 0;
   position: fixed;
   width: 100%;
 }
