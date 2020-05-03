@@ -14,10 +14,13 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/--mp---Masonry-Gallery-with-Loader.css">
+    <link rel="stylesheet" href="assets/css/addTeamMemberComunity.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/Bootstrap-4-Custom-Radio.css">
     <link rel="stylesheet" href="assets/css/button_focus_cyan.css">
     <link rel="stylesheet" href="assets/css/Collapsible-sidebar-left-or-right--Content-overlay.css">
+    <link rel="stylesheet" href="assets/css/deletePurposeComunity.css">
+    <link rel="stylesheet" href="assets/css/disclaimer.css">
     <link rel="stylesheet" href="assets/css/div_rounded_input.css">
     <link rel="stylesheet" href="assets/css/divider-text-middle.css">
     <link rel="stylesheet" href="assets/css/fieldLabelCountPurposes.css">
@@ -63,7 +66,7 @@
 <body style="width: 100%;height: 100%;">
     <nav class="navbar navbar-light navbar-expand-md border-primary border rounded-0 shadow-sm" id="navBar" style="top: 0px;z-index: 10;position: fixed;background-color: #ffffff;width: 100%;margin: 0px;height: 80px;padding-top: 30px;">
         <div class="container-fluid">
-            <div style="height: 50%;font-size: 20px;font-family: Roboto, sans-serif;"><a href="mainPage_comunity.html"><img src="assets/img/bx-arrow-back.svg"></a><span class="open-sidebar headerDesign">Nuestro equipo</span></div><a id="addTeamMember" href="#"><img src="assets/img/bx-plus%20(1).svg" style="width: 30px;"></a></div>
+            <div style="height: 50%;font-size: 20px;font-family: Roboto, sans-serif;"><a href="mainPage_comunity.html"><img src="assets/img/bx-arrow-back.svg"></a><span class="open-sidebar headerDesign">Nuestro equipo</span></div><a id="exec_addTeamMemberComunity" href="#"><img src="assets/img/bx-plus%20(1).svg" style="width: 30px;"></a></div>
     </nav>
     <main class="page registration-page" style="height: 100%;margin-top: 80px;">
         <section class="clean-block clean-form dark" style="/*height: 100%;*/width: 100%;min-height: 100%;background-color: #f9f9f9;">
@@ -87,6 +90,28 @@
             </div>
         </section>
     </main>
+    <div id="addTeamMemberComunity_Main" class="addTeamMemberComunity_Main" style="transition-delay: 0s;transition: all 0.1s;">
+        <div class="border rounded order-1 addTeamMemberComunity_Back" id="addTeamMemberComunity_Back"></div>
+        <div id="addTeamMemberComunity" class="animated fadeOutRightBig addTeamMemberComunity" style="-webkit-animation-duration: 0.7s;">
+            <div style="padding: 10px;border-radius: 15px;background-color: #ffffff;"><img id="close_addTeamMemberComunity" src="assets/img/bx-arrow-back.svg">
+                <div class="row">
+                    <div class="col center"><img src="assets/img/black.svg" style="left: 0;width: 100px;"></div>
+                </div>
+                <div class="row center" style="display: flex;width: 100%;height: 80px;">
+                    <div class="col center" style="width: 100%;padding: 0px;">
+                        <p style="width: 100%;height: 100%;margin: auto;font-size: 17px;color: #0c0c0c;font-family: Roboto, sans-serif;">Ingrese el nombre de usuario o correo del colaborador<br></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col center" style="padding: 0px 50px;"><input type="email" style="border: solid 0.4px #ececec;width: 100%;/*border-width: 0px;*/border-radius: 10px;background-image: url(&quot;assets/img/pencil-regular-24.png&quot;);background-repeat: no-repeat;background-position: right;width: 100%;padding: 4px 5px;"
+                            required=""></div>
+                </div>
+                <div class="row" style="margin-top: 15px;">
+                    <div class="col center"><button class="btn focusCyan styleButton" type="button" style="width: 200px;">Invitar</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
@@ -100,7 +125,10 @@
     <script src="assets/js/Collapsible-sidebar-left-or-right--Content-overlay.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/3D_CSS_PROGRESS_BAR_BY_REDSTAPLER.js"></script>
+    <script src="assets/js/addTeamMemberComunity.js"></script>
     <script src="assets/js/backPage.js"></script>
+    <script src="assets/js/delete_purpose_comunity.js"></script>
+    <script src="assets/js/disclaimer_comunity.js"></script>
     <script src="assets/js/endPurpose.js"></script>
     <script src="assets/js/explore.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
@@ -116,6 +144,7 @@
     <script src="assets/js/qr_reader.js"></script>
     <script src="assets/js/qr-scanner-worker.min.js"></script>
     <script src="assets/js/registration.js"></script>
+    <script src="assets/js/showPass.js"></script>
     <script src="assets/js/sideNav.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>
     <script src="assets/js/sleep.js"></script>

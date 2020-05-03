@@ -14,10 +14,13 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/--mp---Masonry-Gallery-with-Loader.css">
+    <link rel="stylesheet" href="assets/css/addTeamMemberComunity.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/Bootstrap-4-Custom-Radio.css">
     <link rel="stylesheet" href="assets/css/button_focus_cyan.css">
     <link rel="stylesheet" href="assets/css/Collapsible-sidebar-left-or-right--Content-overlay.css">
+    <link rel="stylesheet" href="assets/css/deletePurposeComunity.css">
+    <link rel="stylesheet" href="assets/css/disclaimer.css">
     <link rel="stylesheet" href="assets/css/div_rounded_input.css">
     <link rel="stylesheet" href="assets/css/divider-text-middle.css">
     <link rel="stylesheet" href="assets/css/fieldLabelCountPurposes.css">
@@ -71,9 +74,9 @@
                     <div>
                         <div class="row" style="margin: 0px;">
                             <div class="col text-left" style="padding: 0px;height: 25px;">
-                                <div><span class="headerDesign" style="margin-left: 0px;">Nombre comunidad</span><img src="assets/img/Verification.svg" style="margin-left: 10px;margin-top: -4px;"><label class="switch" style="right: 50px;position: fixed;margin-top: 3px;"><input type="checkbox"><span class="slider round"></span></label>
+                                <div><span class="headerDesign" style="margin-left: 0px;">Nombre comunidad<img src="assets/img/Verification.svg" style="margin-left: 5px;margin-top: -4px;"></span><label class="switch" style="right: 50px;position: fixed;margin-top: 3px;"><input type="checkbox"><span class="slider round"></span></label>
                                     <a
-                                        id="endPurpose" href="#" style="right: 10px;position: fixed;margin-top: -2px;"><img src="assets/img/bx-trash-alt%20(1)%201.svg"></a>
+                                        id="exec_delete_purpose" href="#" style="right: 10px;position: fixed;margin-top: -2px;"><img src="assets/img/bx-trash-alt%20(1)%201.svg"></a>
                                 </div>
                             </div>
                         </div>
@@ -82,6 +85,18 @@
             </div>
         </div>
     </nav>
+    <div id="delete_PurposeComunity_Main" class="delete_PurposeComunity_Main" style="transition-delay: 0s;transition: all 0.1s;">
+        <div class="border rounded order-1 delete_PurposeComunity_Back" id="delete_PurposeComunity_Back"></div>
+        <div id="delete_PurposeComunity" class="animated fadeOutRightBig delete_PurposeComunity" style="-webkit-animation-duration: 0.2s;">
+            <div class="row center" style="display: flex;width: 100%;height: 80px;">
+                <div class="col-2 center" style="padding: 0px;width: 100%;margin: auto;"><a id="close_delete_purpose" href="#"><img src="assets/img/bx-arrow-back%203.svg"></a></div>
+                <div class="col center" style="width: 100%;padding: 0px;">
+                    <p style="width: 100%;height: 100%;margin: auto;font-size: 16px;color: rgb(255,255,255);">¿Deseas eliminar este propósito?<br></p>
+                </div>
+                <div class="col-2 center" style="width: 100%;"><a id="delete_purpose" href="#"><img src="assets/img/bx-trash-alt_white.svg"></a></div>
+            </div>
+        </div>
+    </div>
     <div class="container" id="sideNav_Main" style="padding: 0px;margin: 0px;">
         <div class="border rounded shadow-lg" id="sideNav_Options" style="top: 0;position: fixed;z-index: 150;transition: all 0.3s;background-color: #ffffff;height: 100%;width: 300px;margin-left: -100%;">
             <div class="text-center" id="myID" style="border-radius: 30px;/*margin-left: 10px;*//*background-color: rgba(255,255,255,0);*/padding: 10px;padding-left: 5%;padding-bottom: 0px;margin-top: 10px;">
@@ -181,9 +196,9 @@
         </div>
     </div>
     <div>
-        <!-- Start: Previous --><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"></a>
+        <!-- Start: Previous --><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev" style="position: fixed;height: 100%;"><img src="assets/img/bx-chevron-right%201.svg" style="transform: scale(-1);"></a>
         <!-- End: Previous -->
-        <!-- Start: Next --><a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next"></a>
+        <!-- Start: Next --><a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next" style="position: fixed;height: 100%;"><img src="assets/img/bx-chevron-right%201.svg"></a>
         <!-- End: Next -->
     </div>
     </div>
@@ -201,7 +216,10 @@
     <script src="assets/js/Collapsible-sidebar-left-or-right--Content-overlay.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/3D_CSS_PROGRESS_BAR_BY_REDSTAPLER.js"></script>
+    <script src="assets/js/addTeamMemberComunity.js"></script>
     <script src="assets/js/backPage.js"></script>
+    <script src="assets/js/delete_purpose_comunity.js"></script>
+    <script src="assets/js/disclaimer_comunity.js"></script>
     <script src="assets/js/endPurpose.js"></script>
     <script src="assets/js/explore.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
@@ -217,6 +235,7 @@
     <script src="assets/js/qr_reader.js"></script>
     <script src="assets/js/qr-scanner-worker.min.js"></script>
     <script src="assets/js/registration.js"></script>
+    <script src="assets/js/showPass.js"></script>
     <script src="assets/js/sideNav.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>
     <script src="assets/js/sleep.js"></script>

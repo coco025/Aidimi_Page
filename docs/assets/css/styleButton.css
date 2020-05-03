@@ -1,4 +1,10 @@
 .styleButton {
+  width: 500px;
+  display: table-cell;
+  border-radius: 12px;
+  border-color: #bfbfbf;
   height: 50px;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
 }
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="width: 100%;">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -63,31 +63,21 @@
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
-<body id="body" style="width: 100%;">
-    <nav class="navbar navbar-light navbar-expand" id="navBar-1" style="border: 0px solid #ffffff;box-shadow: 0px 0px 0px #ffffff;top: 0px;z-index: 10;position: fixed;background-color: rgba(104,104,104,0);width: 100%;margin: 0px;height: 80px;padding-top: 30px;">
-        <div class="container">
-            <div style="height: 50%;font-size: 20px;font-family: Roboto, sans-serif;"><a href="mainPage_user.html"><img src="assets/img/bx-arrow-back.svg"></a></div>
-        </div>
-    </nav>
-    <main class="shadow-none content" id="main" style="height: 100%;background-color: rgba(104,104,104,0);width: 100%;padding: 0px;margin-top: 100px;">
-        <section class="shadow-none" style="width: 100%;margin-top: 10px;height: 100%;">
-            <div class="container text-left" style="margin-left: 0%;margin-right: 0%;width: 100%;max-width: none;height: 100%;">
-                <div class="row row2" style="/*margin: 0px;*/margin-top: 10%;">
-                    <div class="col text-right"><span class="text-right" style="line-height: 37px;height: 100%;font-size: 30px;font-weight: 600;font-family: Roboto, sans-serif;"><br>¡Gracias!<br><br></span></div>
-                    <div class="col text-left"><img src="assets/img/leadership.svg" style="height: 100%;"></div>
+<body>
+    <div id="disclaimerMain" style="display: none;z-index: 25;width: 0px;height: 0px;">
+        <div class="border rounded order-1" id="disclaimerComunity_Back" style="top: 0;position: fixed;z-index: 24;transition: all 0s;background-color: rgba(113,113,113,0.2);padding-left: 0px;padding-top: 0px;width: 100%;height: 100%;/*margin-left: -100%;*/"></div>
+        <div id="disclaimer" class="animated disclaimer faster fadeOutDown" style="border-radius: 5px;transition: all 0.2s;overflow-y: hidden;z-index: 25;background-color: #0094FF;width: 100%;height: 190px;">
+            <div class="row" style="margin: 0px;margin-top: 20px;">
+                <div class="col-1" style="padding: 0px;margin-left: 5px;"><a id="close_disclaimer" href="#"><img src="assets/img/bx-arrow-back%203.svg"></a></div>
+                <div class="col" style="padding: 0px;">
+                    <p class="text-left" style="font-family: Roboto, sans-serif;font-size: 16px;color: rgb(255,255,255);margin: 0px 5px;">Recuerda plantear tu propósito lo más específico posible para evitar inconvenientes con tus clientes. Una vez enviado, no podrás editarlo.<br></p>
                 </div>
-                <div class="row" style="margin: 0px;margin-top: 8%;margin-bottom: 8%;">
-                    <div class="col text-center"><img src="assets/img/favicon-512.png" style="border-radius: 100px;position: initial;margin-left: 40px;width: 125px;"><img src="assets/img/Group%20126.svg" style="width: 50px;height: 75;margin-top: -20%;margin-left: -20px;"></div>
-                </div>
-                <div class="row" style="/*position: fixed;*/bottom: 120px;margin-left: 5%;margin-right: 5%;margin-top: 100px;">
-                    <div class="col-1 text-center center" style="width: 0px;padding: 0px;"><i class="icon ion-ios-information-outline"></i></div>
-                    <div class="col"><label class="col-form-label" style="font-family: Roboto, sans-serif;font-weight: 500;font-size: 18px;">Continúa acumulando logros y cumpliendo propósitos.<br></label></div>
-                </div>
-                <div class="center" style="position: fixed;bottom: 5px;margin-bottom: 5%;margin-top: 5%;width: 100%;padding: 0px;padding-right: 10%;padding-left: 10%;"><a class="btn btn-primary text-break text-center shadow" role="button" style="width: 500px;display: table-cell;margin: auto;/*border-width: 0px;*/border-radius: 15px;border-color: #bfbfbf;background-color: #1faeae;/*width: 420px;*/height: 50px;font-weight: bold;font-family: Roboto, sans-serif;color: rgb(255,255,255);"
-                        href="myAchivements_user.html">Ver mis logros</a></div>
             </div>
-        </section>
-    </main>
+            <div class="row" style="position: fixed;bottom: 15px;margin-top: 10px;width: 100%;">
+                <div class="col text-right"><a class="btn" role="button" style="color: rgb(255,255,255);font-family: Roboto, sans-serif;" href="purposes_comunity.html">¡Entendido!</a></div>
+            </div>
+        </div>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>

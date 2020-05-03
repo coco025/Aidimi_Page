@@ -14,10 +14,13 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/--mp---Masonry-Gallery-with-Loader.css">
+    <link rel="stylesheet" href="assets/css/addTeamMemberComunity.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/Bootstrap-4-Custom-Radio.css">
     <link rel="stylesheet" href="assets/css/button_focus_cyan.css">
     <link rel="stylesheet" href="assets/css/Collapsible-sidebar-left-or-right--Content-overlay.css">
+    <link rel="stylesheet" href="assets/css/deletePurposeComunity.css">
+    <link rel="stylesheet" href="assets/css/disclaimer.css">
     <link rel="stylesheet" href="assets/css/div_rounded_input.css">
     <link rel="stylesheet" href="assets/css/divider-text-middle.css">
     <link rel="stylesheet" href="assets/css/fieldLabelCountPurposes.css">
@@ -61,6 +64,20 @@
 </head>
 
 <body id="body" style="width: 100%;height: 100%;">
+    <div id="disclaimerMain" style="display: none;z-index: 25;width: 0px;height: 0px;">
+        <div class="border rounded order-1" id="disclaimerComunity_Back" style="top: 0;position: fixed;z-index: 24;transition: all 0s;background-color: rgba(113,113,113,0.2);padding-left: 0px;padding-top: 0px;width: 100%;height: 100%;/*margin-left: -100%;*/"></div>
+        <div id="disclaimer" class="animated disclaimer faster fadeOutDown" style="border-radius: 5px;transition: all 0.2s;overflow-y: hidden;z-index: 25;background-color: #0094FF;width: 100%;height: 190px;">
+            <div class="row" style="margin: 0px;margin-top: 20px;">
+                <div class="col-1" style="padding: 0px;margin-left: 5px;"><a id="close_disclaimer" href="#"><img src="assets/img/bx-arrow-back%203.svg"></a></div>
+                <div class="col" style="padding: 0px;">
+                    <p class="text-left" style="font-family: Roboto, sans-serif;font-size: 16px;color: rgb(255,255,255);margin: 0px 5px;">Recuerda plantear tu propósito lo más específico posible para evitar inconvenientes con tus clientes. Una vez enviado, no podrás editarlo.<br></p>
+                </div>
+            </div>
+            <div class="row" style="position: fixed;bottom: 15px;margin-top: 10px;width: 100%;">
+                <div class="col text-right"><a class="btn" role="button" style="color: rgb(255,255,255);font-family: Roboto, sans-serif;" href="purposes_comunity.html">¡Entendido!</a></div>
+            </div>
+        </div>
+    </div>
     <div class="container" id="sideNav_Main_Comunity" style="padding: 0px;margin: 0px;">
         <div class="border rounded shadow-none" id="sideNav_Options" style="top: 0;position: fixed;z-index: 150;transition: all 0.3s;background-color: #ffffff;height: 100%;width: 300px;margin-left: -100%;">
             <div class="text-center" id="myID" style="border-radius: 30px;/*background-color: rgba(255,255,255,0);*/margin-top: 30px;padding-left: 20px;">
@@ -68,7 +85,7 @@
                     <div class="text-left" style="margin-top: 10px;width: 100%;"><img class="border rounded-circle pulse animated" src="assets/img/one-piece-calavera-pegatina_large.png" width="100px" height="100px" style="height: 75px;width: 75px;margin-left: 5px;"></div>
                 </div>
                 <div class="text-left" id="myID_Name" style="margin-bottom: 0px;margin-top: 10px;"><span data-bs-hover-animate="rubberBand" style="font-family: Roboto, sans-serif;">Nombre comunidad</span><img src="assets/img/Verification.svg" style="margin-left: 10px;margin-top: -2px;"></div>
-                <div class="text-left" data-bs-hover-animate="swing"><label class="pulse animated" style="font-family: Roboto;font-style: normal;font-weight: 500;font-size: 13px;line-height: 15px;color: #A9A9A9;">@usuario</label></div>
+                <div class="text-left"><label class="pulse animated" style="font-family: Roboto;font-style: normal;font-weight: 500;font-size: 13px;line-height: 15px;color: #A9A9A9;">@usuario</label></div>
             </div>
             <div id="Items" style="border-width: 5px;border-top: 5px;margin-top: 15px;background-color: #ffffff;height: 100%;">
                 <div class="row item" style="margin: 0px;">
@@ -99,7 +116,7 @@
                 </div>
             </div>
         </div>
-        <div class="border rounded order-1" id="sideNav_Back" style="top: 0;position: fixed;z-index: 100;transition: all 0s;background-color: rgba(44,44,44,0.51);padding-left: 0px;padding-top: 0px;width: 100%;height: 100%;margin-left: -100%;"></div>
+        <div class="border rounded order-1" id="sideNav_Back" style="top: 0;position: fixed;z-index: 100;transition: all 0s;background-color: rgba(113,113,113,0.2);padding-left: 0px;padding-top: 0px;width: 100%;height: 100%;margin-left: -100%;"></div>
     </div>
     <nav class="navbar navbar-light navbar-expand-md border-primary border rounded-0 shadow-sm" id="navBar" style="top: 0px;z-index: 1;position: fixed;background-color: #ffffff;margin: 0px;height: 80px;width: 100%;padding: 0px;">
         <div class="container-fluid">
@@ -108,13 +125,14 @@
                 <div class="col text-left center" style="width: 100%;">
                     <div><span class="open-sidebar headerDesign" style="margin-left: 0px;">Nombre comunidad</span><img src="assets/img/Verification.svg" style="margin-left: 10px;margin-top: -5px;"></div>
                 </div>
+                <div class="col-2 text-right center"><a href="purposes_comunity.html"><img src="assets/img/bx-carousel%201.svg" style="margin-top: -2px;"><div id="numberOfPurposes" class="center" style="top: 0;right: 0;position: absolute;border-radius: 25px;width: 20px;height: 20px;margin: 0px;margin-right: 10px;"><div class="col center" style="border-radius: 25px;width: 100%;height: 100%;background-color: #ff2d53;padding: 0px;"><label class="col-form-label" style="align-self: center;text-align: center;vertical-align: middle;width: 100%;height: 100%;padding: 0px;font-size: 12px;color: #ffffff;line-height: 9px;">1</label></div></div></a></div>
             </div>
         </div>
     </nav>
     <main id="main" style="height: 100%;background-color: rgba(230,230,230,0.07);width: 100%;padding: 0px;margin-top: 80px;">
         <section class="shadow-lg" style="width: 100%;margin-top: 0px;height: 100%;">
             <div class="container text-left border rounded" style="margin-left: 0%;margin-right: 0%;width: 100%;padding: 0px 16px;max-width: none;height: 100%;">
-                <a href="purposes_comunity.html">
+                <a id="exec_disclaimer" href="#">
                     <div data-bs-hover-animate="jello" class="float" style="z-index: 20;background-color: #1faeae;/*width: 60px;*//*height: 60px;*/">
                         <div class="row text-center" style="height: 100%;margin: 0px;">
                             <div class="col" style="margin: auto;"><img src="assets/img/send.svg" style="margin-top: 8px;width: 35px;margin-left: -5px;height: 35px;"></div>
@@ -166,7 +184,10 @@
     <script src="assets/js/Collapsible-sidebar-left-or-right--Content-overlay.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/3D_CSS_PROGRESS_BAR_BY_REDSTAPLER.js"></script>
+    <script src="assets/js/addTeamMemberComunity.js"></script>
     <script src="assets/js/backPage.js"></script>
+    <script src="assets/js/delete_purpose_comunity.js"></script>
+    <script src="assets/js/disclaimer_comunity.js"></script>
     <script src="assets/js/endPurpose.js"></script>
     <script src="assets/js/explore.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
@@ -182,6 +203,7 @@
     <script src="assets/js/qr_reader.js"></script>
     <script src="assets/js/qr-scanner-worker.min.js"></script>
     <script src="assets/js/registration.js"></script>
+    <script src="assets/js/showPass.js"></script>
     <script src="assets/js/sideNav.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>
     <script src="assets/js/sleep.js"></script>

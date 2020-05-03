@@ -14,10 +14,13 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/--mp---Masonry-Gallery-with-Loader.css">
+    <link rel="stylesheet" href="assets/css/addTeamMemberComunity.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/Bootstrap-4-Custom-Radio.css">
     <link rel="stylesheet" href="assets/css/button_focus_cyan.css">
     <link rel="stylesheet" href="assets/css/Collapsible-sidebar-left-or-right--Content-overlay.css">
+    <link rel="stylesheet" href="assets/css/deletePurposeComunity.css">
+    <link rel="stylesheet" href="assets/css/disclaimer.css">
     <link rel="stylesheet" href="assets/css/div_rounded_input.css">
     <link rel="stylesheet" href="assets/css/divider-text-middle.css">
     <link rel="stylesheet" href="assets/css/fieldLabelCountPurposes.css">
@@ -66,7 +69,7 @@
             <section class="clean-block clean-form dark" style="background-position: top;background-size: contain;padding-bottom: 0px;color: rgba(33,37,41,0);height: auto;width: 100%;background-color: rgba(246,246,246,0);background-repeat: repeat;">
                 <div class="container" style="border-width: 0px;background-size: contain;background-position: bottom;padding-right: 0px;padding-left: 0px;background-color: rgba(0,0,0,0);height: auto;width: 100%;max-width: none;">
                     <form class="text-left" style="background-color: rgb(255,255,255);padding-top: 5px;margin-top: 20px;" method="post">
-                        <div style="margin-bottom: 25px;">
+                        <div style="margin-bottom: 35px;">
                             <div class="text-left block-heading" style="width: 100%;padding-top: 5px;margin-bottom: 5px;font-family: Roboto, sans-serif;font-weight: 500;font-size: 20px;line-height: 23px;margin-top: 20px;"><img src="assets/img/onlylogo.png" style="width: 53px;height: 64px;"></div>
                             <div class="center" style="width: 250px;margin-top: 20px;margin-left: 0px;"><label class="text-left center" style="text-align: center;color: #108B8B;font-size: 25px;font-family: Muli, sans-serif;line-height: 31px;font-weight: bold;width: 100%;">¡Te damos la bienvenida a Aidimi!<br></label></div>
                         </div>
@@ -77,8 +80,11 @@
                         </div>
                         <div class="form-group" style="margin-bottom: 5px;margin-top: 60px;">
                             <div class="text-right" style="margin-top: -25px;">
-                                <div class="group_cyan"><input class="form-control inputData_cyan" type="text" required=""><label class="labelData_cyan" style="margin-top: -10px;">Contraseña</label></div><a class="btn btn-primary" role="button" data-bs-hover-animate="pulse"
-                                    style="border-width: 0px;border-radius: 0px;font-size: 13px;background-color: rgba(255,255,255,0);color: #108B8B;font-family: Roboto, sans-serif;font-weight: bold;" href="both_recoverPassword.html">¿Olvidaste tu contraseña?<br></a></div>
+                                <div class="group_cyan"><label id="showPass" style="margin-top: -10px;color: #108b8b;font-family: Roboto, sans-serif;font-weight: bold;font-size: 12px;">Mostrar</label><input class="form-control inputData_cyan" type="password" id="password" required="">
+                                    <label
+                                        class="labelData_cyan" style="margin-top: -10px;">Contraseña</label>
+                                </div><a class="btn btn-primary" role="button" data-bs-hover-animate="pulse" style="border-width: 0px;border-radius: 0px;font-size: 13px;background-color: rgba(255,255,255,0);color: #108B8B;font-family: Roboto, sans-serif;font-weight: bold;"
+                                    href="both_recoverPassword.html">¿Olvidaste tu contraseña?<br></a></div>
                         </div>
                         <div>
                             <div class="form-group text-center" style="margin-top: 0px;margin-bottom: 0px;">
@@ -89,7 +95,7 @@
                                         <div class="col center"><label class="col-form-label" style="color: rgba(0,0,0,0.8);font-size: 12px;">¿No tienes cuenta?</label></div>
                                         <div class="col text-right center">
                                             <div class="text-right"><a class="btn btn-primary text-break text-right shadow" role="button" style="display: table-cell;/*border-width: 0px;*/border-radius: 15px;border-color: #bfbfbf;background-color: #108B8B;height: 35px;font-family: Roboto, sans-serif;"
-                                                    href="info_user.html">Únete aquí</a></div>
+                                                    href="info_comunity.html">Únete aquí</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -116,7 +122,10 @@
     <script src="assets/js/Collapsible-sidebar-left-or-right--Content-overlay.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/3D_CSS_PROGRESS_BAR_BY_REDSTAPLER.js"></script>
+    <script src="assets/js/addTeamMemberComunity.js"></script>
     <script src="assets/js/backPage.js"></script>
+    <script src="assets/js/delete_purpose_comunity.js"></script>
+    <script src="assets/js/disclaimer_comunity.js"></script>
     <script src="assets/js/endPurpose.js"></script>
     <script src="assets/js/explore.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
@@ -132,6 +141,7 @@
     <script src="assets/js/qr_reader.js"></script>
     <script src="assets/js/qr-scanner-worker.min.js"></script>
     <script src="assets/js/registration.js"></script>
+    <script src="assets/js/showPass.js"></script>
     <script src="assets/js/sideNav.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>
     <script src="assets/js/sleep.js"></script>

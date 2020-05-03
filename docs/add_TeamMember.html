@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="width: 100%;">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -63,31 +63,29 @@
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
-<body id="body" style="width: 100%;">
-    <nav class="navbar navbar-light navbar-expand" id="navBar-1" style="border: 0px solid #ffffff;box-shadow: 0px 0px 0px #ffffff;top: 0px;z-index: 10;position: fixed;background-color: rgba(104,104,104,0);width: 100%;margin: 0px;height: 80px;padding-top: 30px;">
-        <div class="container">
-            <div style="height: 50%;font-size: 20px;font-family: Roboto, sans-serif;"><a href="mainPage_user.html"><img src="assets/img/bx-arrow-back.svg"></a></div>
-        </div>
-    </nav>
-    <main class="shadow-none content" id="main" style="height: 100%;background-color: rgba(104,104,104,0);width: 100%;padding: 0px;margin-top: 100px;">
-        <section class="shadow-none" style="width: 100%;margin-top: 10px;height: 100%;">
-            <div class="container text-left" style="margin-left: 0%;margin-right: 0%;width: 100%;max-width: none;height: 100%;">
-                <div class="row row2" style="/*margin: 0px;*/margin-top: 10%;">
-                    <div class="col text-right"><span class="text-right" style="line-height: 37px;height: 100%;font-size: 30px;font-weight: 600;font-family: Roboto, sans-serif;"><br>¡Gracias!<br><br></span></div>
-                    <div class="col text-left"><img src="assets/img/leadership.svg" style="height: 100%;"></div>
+<body><button class="btn btn-primary" id="exec_addTeamMember" type="button">Button</button>
+    <div id="addTeamMemberComunity_Main" class="addTeamMemberComunity_Main" style="transition-delay: 0s;transition: all 0.1s;">
+        <div class="border rounded order-1 addTeamMemberComunity_Back" id="addTeamMemberComunity_Back"></div>
+        <div id="addTeamMemberComunity" class="animated fadeOutRightBig addTeamMemberComunity" style="-webkit-animation-duration: 0.7s;">
+            <div style="padding: 10px;border-radius: 15px;background-color: #ffffff;"><img id="close_addTeamMemberComunity" src="assets/img/bx-arrow-back.svg">
+                <div class="row">
+                    <div class="col center"><img src="assets/img/black.svg" style="left: 0;width: 100px;"></div>
                 </div>
-                <div class="row" style="margin: 0px;margin-top: 8%;margin-bottom: 8%;">
-                    <div class="col text-center"><img src="assets/img/favicon-512.png" style="border-radius: 100px;position: initial;margin-left: 40px;width: 125px;"><img src="assets/img/Group%20126.svg" style="width: 50px;height: 75;margin-top: -20%;margin-left: -20px;"></div>
+                <div class="row center" style="display: flex;width: 100%;height: 80px;">
+                    <div class="col center" style="width: 100%;padding: 0px;">
+                        <p style="width: 100%;height: 100%;margin: auto;font-size: 17px;color: #0c0c0c;font-family: Roboto, sans-serif;">Ingrese el nombre de usuario o correo del colaborador<br></p>
+                    </div>
                 </div>
-                <div class="row" style="/*position: fixed;*/bottom: 120px;margin-left: 5%;margin-right: 5%;margin-top: 100px;">
-                    <div class="col-1 text-center center" style="width: 0px;padding: 0px;"><i class="icon ion-ios-information-outline"></i></div>
-                    <div class="col"><label class="col-form-label" style="font-family: Roboto, sans-serif;font-weight: 500;font-size: 18px;">Continúa acumulando logros y cumpliendo propósitos.<br></label></div>
+                <div class="row">
+                    <div class="col center" style="padding: 0px 50px;"><input type="email" style="border: solid 0.4px #ececec;width: 100%;/*border-width: 0px;*/border-radius: 10px;background-image: url(&quot;assets/img/pencil-regular-24.png&quot;);background-repeat: no-repeat;background-position: right;width: 100%;padding: 4px 5px;"
+                            required=""></div>
                 </div>
-                <div class="center" style="position: fixed;bottom: 5px;margin-bottom: 5%;margin-top: 5%;width: 100%;padding: 0px;padding-right: 10%;padding-left: 10%;"><a class="btn btn-primary text-break text-center shadow" role="button" style="width: 500px;display: table-cell;margin: auto;/*border-width: 0px;*/border-radius: 15px;border-color: #bfbfbf;background-color: #1faeae;/*width: 420px;*/height: 50px;font-weight: bold;font-family: Roboto, sans-serif;color: rgb(255,255,255);"
-                        href="myAchivements_user.html">Ver mis logros</a></div>
+                <div class="row" style="margin-top: 15px;">
+                    <div class="col center"><button class="btn focusCyan styleButton" type="button" style="width: 200px;">Invitar</button></div>
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
