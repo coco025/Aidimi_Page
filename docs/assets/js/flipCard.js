@@ -5,7 +5,7 @@ card.addEventListener( 'click', async function() {
     if(document.getElementById('generalInfo').style.display === 'none'){
         document.getElementById('generalInfo').style.display = '';
     }else{
-        await sleep(500);
+        await sleep(400);
         document.getElementById('generalInfo').style.display = 'none';
     }
 });
