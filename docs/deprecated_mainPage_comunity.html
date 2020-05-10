@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="width: 100%;height: 100%;background-color: #fafafa;">
+<html style="width: 100%;height: 100%;">
 
 <head>
     <meta charset="utf-8">
@@ -63,7 +63,7 @@
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
-<body id="body" style="width: 100%;height: 100%;background-color: transparent;">
+<body id="body" style="width: 100%;height: 100%;">
     <div id="disclaimerMain" style="display: none;z-index: 25;width: 0px;height: 0px;">
         <div class="border rounded order-1" id="disclaimerComunity_Back" style="top: 0;position: fixed;z-index: 24;transition: all 0s;background-color: rgba(113,113,113,0.2);padding-left: 0px;padding-top: 0px;width: 100%;height: 100%;/*margin-left: -100%;*/"></div>
         <div id="disclaimer" class="animated disclaimer faster fadeOutDown" style="/*border-radius: 5px;*/transition: all 0.2s;overflow-y: hidden;z-index: 25;background-color: #0094FF;width: 100%;height: 190px;">
@@ -144,41 +144,31 @@
                         <div id="intro">
                             <div class="form-row" style="margin: 0px;margin-top: 10px;">
                                 <div class="col" style="padding-left: 0px;"><label class="col-form-label" style="font-family: Roboto, sans-serif;font-size: 22px;">Crea tu propósito</label></div>
-                            </div>
-                        </div>
-                        <div class="col center" style="width: 300px;padding: 0px;">
-                            <div id="name" style="margin-top: 10px;height: 250px;">
-                                <div class="center" style="height: 100%;width: 100%;">
-                                    <div id="divAddImage" class="center" style="border-radius: 10px;width: 100%;background-color: #ffffff;background-size: cover;background-repeat: no-repeat;background-position: center;height: 100%;"><img id="addImage" style="/*position: absolute;*/width: 150px;height: 100%;" src="assets/img/addImage.svg">
-                                        <div class="form-row" style="bottom: 0;position: absolute;border-radius: 10px;background-color: rgb(0,0,0,0.3);margin: 0px;height: 50px;">
-                                            <div class="col center" style="border-radius: 15px;"><input class="form-control" type="text" id="purposeName" style="color: red;border-width: 0px;background-color: transparent;color: rgb(255,255,255);font-family: Roboto, sans-serif;" value="Pónle nombre a tu propósito"
-                                                    minlength="5" maxlength="25" required=""></div>
-                                            <div class="col" style="width: 1px;height: 100%;min-width: 0px;max-width: 1px;">
-                                                <div style="width: 1px;height: 100%;background-color: #f0f0f0;"></div>
-                                            </div>
-                                            <div class="col-3 center" style="border-radius: 15px;">
-                                                <div class="form-row">
-                                                    <div class="col-6" style="padding: 0px;"><input class="form-control" type="text" id="inputHearts" style="border-width: 0px;background-color: transparent;background-image: url(&quot;assets/img/bx-pencil-white.svg&quot;);background-repeat: no-repeat;background-position: center;font-family: Roboto, sans-serif;color: rgb(255,255,255);width: 100%;padding: 0px;"
-                                                            inputmode="numeric" maxlength="3" minlength="1" required=""></div>
-                                                    <div class="col center"><img src="assets/img/Group%20126.svg" style="width: 25px;"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="col-3 col-sm-2 col-md-2 col-lg-1 col-xl-1 center" style="width: 100%;padding: 0px;">
+                                    <div class="trophy" style="padding: 5px;width: 85px;background-color: #ffffff;"><input class="form-control" type="text" style="background-image: url(&quot;assets/img/Group%20126.svg&quot;);background-repeat: no-repeat;width: 100%;background-color: rgba(255,255,255,0);color: #ff2d53;font-family: Roboto, sans-serif;background-position: right;padding-left: 0px;font-weight: bold;font-size: 18px;background-size: contain;"
+                                            value="20"></div>
                                 </div>
                             </div>
                         </div>
+                        <div id="name" style="margin-top: 10px;">
+                            <div class="roundedDivNoImage" style="margin-top: 0px;"><label style="font-size: 16px;">Nombre</label><input class="form-control" type="text" style="border-radius: 15px;width: 100%;font-family: Roboto, sans-serif;font-size: 16px;padding-left: 10px;" placeholder="Algo que llame la atencion de tus clientes"
+                                    maxlength="15" minlength="5" required=""></div>
+                        </div>
                         <div id="detail" style="margin-top: 10px;">
                             <div class="form-row" style="margin: 0px;font-family: Roboto, sans-serif;">
-                                <div class="col" style="padding-left: 0px;"><label class="col-form-label" style="font-family: Roboto, sans-serif;font-size: 16px;">Detalle y otras condiciones</label></div>
+                                <div class="col" style="padding-left: 0px;"><label class="col-form-label" style="font-family: Roboto, sans-serif;font-size: 16px;">Detalle</label></div>
+                                <div class="col text-right center"><img src="assets/img/bx-paperclip.svg"></div>
                             </div>
                             <div class="form-row" style="margin: 0px;font-family: Roboto, sans-serif;">
                                 <div class="col" style="height: 250px;padding: 0px;"><textarea class="form-control" style="color: #000000;resize: none;border-radius: 8px;width: 100%;height: 100%;font-size: 16px;background-repeat: no-repeat;background-position: 100% 0%;" placeholder="¿Qué deseas notificarle a tus clientes y qué les ofreces a cambio de su participación?"></textarea></div>
                             </div>
                         </div>
                         <div id="time" style="margin-top: 10px;">
-                            <div class="roundedDivNoImage" style="margin-top: 0px;"><label style="margin-left: 10px;font-size: 16px;font-family: Roboto, sans-serif;">Horario habilitado</label><input class="form-control" type="text" style="border-radius: 15px;width: 100%;font-family: Roboto, sans-serif;font-size: 16px;padding-left: 10px;background-color: rgb(255,255,255);"
-                                    maxlength="15" minlength="5" required="" placeholder="Horario habilitado del propósito"></div>
+                            <div class="roundedDivNoImage" style="margin-top: 0px;"><label style="margin-left: 10px;font-size: 16px;">Horario habilitado</label><input class="form-control" type="text" style="border-radius: 15px;width: 100%;font-family: Roboto, sans-serif;font-size: 16px;padding-left: 10px;"
+                                    maxlength="15" minlength="5" required=""></div>
+                        </div>
+                        <div id="others" style="margin-top: 15px;">
+                            <div class="roundedDiv" style="margin-top: 0px;"><label style="margin-left: 10px;">Otras condiciones</label><textarea class="form-control" style="color: #000000;resize: none;border-radius: 8px;width: 100%;height: 100px;font-size: 16px;"></textarea></div>
                         </div>
                     </div>
                 </form>

@@ -1,0 +1,22 @@
+.cardFlip {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.cardFlip.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  /*-webkit-backface-visibility: hidden;*/
+  /*backface-visibility: hidden;*/
+  border-radius: 15px;
+  border: 0px solid #ffffff;
+}
+
+.card__face--back {
+  animation-duration: 0s;
+  transform: rotateY(180deg);
+}
+

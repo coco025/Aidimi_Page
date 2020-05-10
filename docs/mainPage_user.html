@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html style="width: 100%;">
+<html style="width: 100%;height: 100%;background-color: #fafafa;">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>AIDIMI-backup-03-05-2020</title>
+    <title>AIDIMI-backup-09-05-2020</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="assets/css/div_rounded_input.css">
     <link rel="stylesheet" href="assets/css/divider-text-middle.css">
     <link rel="stylesheet" href="assets/css/fieldLabelCountPurposes.css">
+    <link rel="stylesheet" href="assets/css/flipCard.css">
     <link rel="stylesheet" href="assets/css/float_button.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/Horizontal-scrolling-cards-for-mobile-apps-1.css">
@@ -62,7 +63,7 @@
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
-<body id="body" style="width: 100%;background-color: #FAFAFA;">
+<body id="body" style="width: 100%;height: 100%;background-color: transparent;">
     <div class="container" id="sideNav_Main" style="padding: 0px;margin: 0px;">
         <div class="border rounded shadow-none" id="sideNav_Options" style="top: 0;position: fixed;z-index: 150;transition: all 0.3s;background-color: #ffffff;height: 100%;width: 300px;margin-left: -100%;">
             <div class="text-center" id="myID" style="border-radius: 30px;/*background-color: rgba(255,255,255,0);*/margin-top: 30px;padding-left: 20px;">
@@ -112,78 +113,226 @@
             </div>
         </div>
     </nav>
-    <main id="main" style="height: 100%;background-color: #FAFAFA;width: 100%;padding: 0px;margin-top: 70px;">
-        <section class="shadow-lg" style="width: 100%;margin-top: 0px;height: 100%;">
-            <div class="container text-left border rounded" style="margin-left: 0%;margin-right: 0%;width: 100%;padding: 0px;max-width: none;height: 100%;">
+    <main class="shadow-none" id="main" style="height: 100%;background-color: #FAFAFA;width: 100%;padding: 0px;margin-top: 80px;">
+        <section class="border-white shadow-none" style="width: 100%;margin-top: 0px;height: 100%;">
+            <div class="container text-left shadow-none" style="margin-left: 0%;margin-right: 0%;width: 100%;padding: 0px;max-width: none;height: 100%;">
                 <a href="#">
-                    <div data-bs-hover-animate="jello" id="scan_QR_code" class="float" style="background-color: #45d6b3;/*width: 60px;*//*height: 60px;*/">
+                    <div data-bs-hover-animate="jello" id="scan_QR_code" class="float" style="z-index: 100;background-color: #45d6b3;/*width: 60px;*//*height: 60px;*/">
                         <div class="row text-center" style="margin: 0px;height: 100%;width: 100%;">
                             <div class="col" style="width: 40px;margin: auto;padding: 0px;"><img src="assets/img/vector.png" style="width: 35px;"></div>
                         </div>
                     </div>
                 </a>
-                <div class="row justify-content-center" style="width: auto;margin: 0px;margin-top: 3%;">
-                    <div class="col-sm-7 col-md-6 col-lg-5 text-left" data-bs-hover-animate="pulse" id="purpose" style="border-radius: 25px;margin: 10px;width: 100%;background-color: #ffffff;height: 100%;max-width: none;padding: 0px;padding-top: 3px;">
-                        <div class="row" style="margin: 5px;">
-                            <div class="col-3 center" style="margin: auto;margin-right: 5px;"><img src="assets/img/12376843_1023777191043033_6631672907787240693_n.svg" style="border-radius: 50px;width: 60px;"></div>
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col" style="padding: 0px;"><label class="col-form-label" style="padding: 0px;width: 100%;font-family: Roboto, sans-serif;font-size: 18px;">Nombre comunidad</label></div>
-                                    <div class="col-2 center" style="/*text-align: left;*/padding: 0px;">
-                                        <div><img src="assets/img/Verification.svg" style="width: 20px;"></div>
+                <div class="row row-cols-4 justify-content-center" style="width: 100%;height: 100%;margin: 0px;padding: 15px;">
+                    <div class="col" id="purpose1" style="border-radius: 25px;background-color: #ffffff;max-width: none;width: 275px;height: 250px;padding: 0px;margin: 10px;">
+                        <div class="cardFlip center" style="border-width: 0px;width: 275px;height: 250px;">
+                            <div id="generalInfo" class="center card__face card__face--front" style="border-width: 0px;width: 275px;height: 250px;background-color: transparent;">
+                                <div class="row" style="border-radius: 15px;position: absolute;margin: 0px;width: 275px;background-color: rgb(0,0,0,0.3);">
+                                    <div class="col-2 col-sm-3 center" style="height: 100%;width: 100%;"><img src="assets/img/favicon-512.png" style="border-radius: 50px;width: 35px;"></div>
+                                    <div class="col" style="padding: 0px;">
+                                        <div class="row" style="margin: 0px;">
+                                            <div class="col text-left" style="height: 25px;"><label class="col-form-label" style="color: rgb(255,255,255);font-family: Roboto, sans-serif;font-weight: 500;font-size: 14px;line-height: 10px;">Restaurante Carnes Ricas</label></div>
+                                        </div>
+                                        <div class="row" style="margin: 0px;height: 20px;">
+                                            <div class="col text-left" style="height: 20px;"><label style="color: rgb(255,255,255);font-weight: 500;font-size: 13px;margin: 0px;line-height: 15px;margin-top: -15px;">carnesricas</label><img src="assets/img/bx-certification_white.svg" style="margin-left: 5px;margin-top: -13px;"></div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="row" style="font-family: Roboto;font-style: normal;font-weight: 500;font-size: 13px;line-height: 15px;height: 20px;">
-                                    <div class="col" style="height: 100%;font-size: 15px;padding: 0px;"><label class="col-form-label" style="/*font-family: Roboto;*/font-style: normal;font-weight: 500;font-size: 13px;line-height: 15px;padding: 0px;">@usuario</label></div>
-                                </div>
+                                <div style="width: 100%;height: 100%;"><img style="/*display: none;*/border: 0px solid #ffffff;border-radius: 15px;width: 275px;height: 100%;background-image: url(&quot;assets/img/hamburguesa-1.jpg&quot;);background-size: cover;background-position: center;"></div>
+                                <div
+                                    class="row" style="bottom: 0;border-radius: 15px;position: absolute;margin: 0px;width: 275px;background-color: rgb(0,0,0,0.3);">
+                                    <div class="col" style="padding: 0px;">
+                                        <div class="row" style="margin: 0px;">
+                                            <div class="col text-left center" style="height: 25px;"><label class="col-form-label" style="color: rgb(255,255,255);font-family: Roboto, sans-serif;font-weight: 500;font-size: 14px;height: 100%;width: 100%;line-height: 10px;">Finde-burguesa</label></div>
+                                        </div>
+                                        <div class="row" style="margin: 0px;">
+                                            <div class="col text-left" style="height: 25px;margin-top: -5px;"><label class="col-form-label text-left center" style="color: rgb(255,255,255);font-weight: 500;font-size: 13px;margin: 0px;height: 100%;width: 100%;line-height: 10px;">Código 012345</label></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 center" style="width: 100%;margin: 0px;padding: 0px;">
+                                        <div class="center" style="width: 100%;height: 100%;padding-right: 8px;"><input type="text" style="width: 100%;background-image: url(&quot;assets/img/Group%20126.svg&quot;);background-repeat: no-repeat;background-size: contain;background-position: right;font-family: Roboto, sans-serif;color: rgb(255,255,255);background-color: transparent;margin-top: 10px;padding: 0px 5px;padding-left: 20px;font-size: 16px;"
+                                                value="123"></div>
+                                    </div>
                             </div>
                         </div>
-                        <div class="row" style="margin: 0px;">
-                            <div class="col-8" style="padding: 0px 20px;">
-                                <div class="row" style="margin: 0px;">
-                                    <div class="col center" style="padding: 0px;"><label class="col-form-label text-left" style="font-family: Roboto;font-style: normal;font-weight: 600;font-size: 16px;padding: 0px;width: 100%;">Nombre propósito</label></div>
-                                </div>
-                                <div class="row" style="margin: 0px;">
-                                    <div class="col" style="width: 100%;padding: 0px;"><label class="col-form-label" style="font-family: Roboto;font-style: normal;font-weight: 600;font-size: 16px;line-height: 21px;">Código ######</label></div>
-                                </div>
-                            </div>
-                            <div class="col-4 text-right center">
-                                <div class="trophy" style="padding: 4px;width: 80px;background-color: rgba(255,255,255,0);"><input type="text" style="background-image: url(&quot;assets/img/Group%20126.svg&quot;);background-repeat: no-repeat;background-position: right;background-color: rgba(255,255,255,0);color: #FF2D53;font-size: 16px;background-size: contain;width: 70px;font-weight: bold;font-family: Roboto, sans-serif;"
-                                        value="1000"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-7 col-md-6 col-lg-5 text-left" data-bs-hover-animate="pulse" id="purpose-1" style="border-radius: 25px;margin: 10px;width: 100%;background-color: #ffffff;height: 100%;max-width: none;padding: 0px;padding-top: 3px;">
-                        <div class="row" style="margin: 5px;">
-                            <div class="col-3 center" style="margin: auto;margin-right: 5px;"><img src="assets/img/62069_0.jpg" style="border-radius: 50px;width: 60px;"></div>
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col" style="padding: 0px;"><label class="col-form-label" style="padding: 0px;width: 100%;font-family: Roboto, sans-serif;font-size: 18px;">Nombre comunidad</label></div>
-                                    <div class="col-2 center" style="/*text-align: left;*/padding: 0px;">
-                                        <div><img src="assets/img/Verification.svg" style="width: 20px;"></div>
+                        <div id="detailInfo" class="center card__face card__face--back" style="border-width: 0px;width: 275px;height: 250px;background-color: #ffffff;">
+                            <div class="row" style="border-radius: 15px;position: absolute;margin: 0px;width: 275px;background-color: rgb(0,0,0,0.3);">
+                                <div class="col-2 col-sm-3 center" style="height: 100%;width: 100%;"><img src="assets/img/favicon-512.png" style="border-radius: 50px;width: 35px;"></div>
+                                <div class="col" style="/*position: absolute;*/padding: 0px;">
+                                    <div class="row" style="margin: 0px;">
+                                        <div class="col text-left" style="height: 25px;"><label class="col-form-label" style="color: rgb(255,255,255);font-family: Roboto, sans-serif;font-weight: 500;font-size: 14px;line-height: 10px;">Restaurante Carnes Ricas</label></div>
+                                    </div>
+                                    <div class="row" style="margin: 0px;height: 20px;">
+                                        <div class="col text-left" style="height: 20px;"><label style="color: rgb(255,255,255);font-weight: 500;font-size: 13px;margin: 0px;line-height: 15px;margin-top: -15px;">carnesricas</label><img src="assets/img/bx-certification_white.svg" style="margin-left: 5px;margin-top: -13px;"></div>
                                     </div>
                                 </div>
-                                <div class="row" style="font-family: Roboto;font-style: normal;font-weight: 500;font-size: 13px;line-height: 15px;height: 20px;">
-                                    <div class="col" style="height: 100%;font-size: 15px;padding: 0px;"><label class="col-form-label" style="/*font-family: Roboto;*/font-style: normal;font-weight: 500;font-size: 13px;line-height: 15px;padding: 0px;">@usuario</label></div>
-                                </div>
                             </div>
-                        </div>
-                        <div class="row" style="margin: 0px;">
-                            <div class="col-8" style="padding: 0px 20px;">
-                                <div class="row" style="margin: 0px;">
-                                    <div class="col center" style="padding: 0px;"><label class="col-form-label text-left" style="font-family: Roboto;font-style: normal;font-weight: 600;font-size: 16px;padding: 0px;width: 100%;">Nombre propósito</label></div>
+                            <div class="row" style="top: 45px;/*bottom: 0;*/border-radius: 15px;position: absolute;margin: 0px;width: 275px;background-color: rgb(0,0,0,0.3);height: 195px;margin-top: 10px;">
+                                <div class="col" style="padding: 0px;"><label style="color: rgb(255,255,255);font-family: Roboto, sans-serif;font-weight: 500;font-size: 14px;width: 100%;line-height: 10px;margin-top: 10px;height: 15px;">Detalles y otras condiciones</label>
+                                    <p class="text-left"
+                                        style="font-size: 14px;padding: 15px;">¿Qué deseas notificarle a tus clientes y qué les ofreces a cambio de su participación?<br></p>
                                 </div>
-                                <div class="row" style="margin: 0px;">
-                                    <div class="col" style="width: 100%;padding: 0px;"><label class="col-form-label" style="font-family: Roboto;font-style: normal;font-weight: 600;font-size: 16px;line-height: 21px;">Código ######</label></div>
-                                </div>
-                            </div>
-                            <div class="col-4 text-right center">
-                                <div class="trophy" style="padding: 4px;width: 80px;background-color: rgba(255,255,255,0);"><input type="text" style="background-image: url(&quot;assets/img/Group%20126.svg&quot;);background-repeat: no-repeat;background-position: right;background-color: rgba(255,255,255,0);color: #FF2D53;font-size: 16px;background-size: contain;width: 70px;font-weight: bold;font-family: Roboto, sans-serif;"
-                                        value="1000"></div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="col" id="purpose1" style="border-radius: 25px;background-color: #ffffff;max-width: none;width: 275px;height: 250px;padding: 0px;margin: 10px;">
+                    <div class="cardFlip center" style="border-width: 0px;width: 275px;height: 250px;">
+                        <div id="generalInfo" class="center card__face card__face--front" style="border-width: 0px;width: 275px;height: 250px;background-color: transparent;">
+                            <div class="row" style="border-radius: 15px;position: absolute;margin: 0px;width: 275px;background-color: rgb(0,0,0,0.3);">
+                                <div class="col-2 col-sm-3 center" style="height: 100%;width: 100%;"><img src="assets/img/favicon-512.png" style="border-radius: 50px;width: 35px;"></div>
+                                <div class="col" style="padding: 0px;">
+                                    <div class="row" style="margin: 0px;">
+                                        <div class="col text-left" style="height: 25px;"><label class="col-form-label" style="color: rgb(255,255,255);font-family: Roboto, sans-serif;font-weight: 500;font-size: 14px;line-height: 10px;">Restaurante Carnes Ricas</label></div>
+                                    </div>
+                                    <div class="row" style="margin: 0px;height: 20px;">
+                                        <div class="col text-left" style="height: 20px;"><label style="color: rgb(255,255,255);font-weight: 500;font-size: 13px;margin: 0px;line-height: 15px;margin-top: -15px;">carnesricas</label><img src="assets/img/bx-certification_white.svg" style="margin-left: 5px;margin-top: -13px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="width: 100%;height: 100%;"><img style="/*display: none;*/border: 0px solid #ffffff;border-radius: 15px;width: 275px;height: 100%;background-image: url(&quot;assets/img/como-hacer-tortillas-de-maiz.jpg&quot;);background-size: cover;background-position: center;"></div>
+                            <div class="row"
+                                style="bottom: 0;border-radius: 15px;position: absolute;margin: 0px;width: 275px;background-color: rgb(0,0,0,0.3);">
+                                <div class="col" style="padding: 0px;">
+                                    <div class="row" style="margin: 0px;">
+                                        <div class="col text-left center" style="height: 25px;"><label class="col-form-label" style="color: rgb(255,255,255);font-family: Roboto, sans-serif;font-weight: 500;font-size: 14px;height: 100%;width: 100%;line-height: 10px;">Finde-burguesa</label></div>
+                                    </div>
+                                    <div class="row" style="margin: 0px;">
+                                        <div class="col text-left" style="height: 25px;margin-top: -5px;"><label class="col-form-label text-left center" style="color: rgb(255,255,255);font-weight: 500;font-size: 13px;margin: 0px;height: 100%;width: 100%;line-height: 10px;">Código 012345</label></div>
+                                    </div>
+                                </div>
+                                <div class="col-4 center" style="width: 100%;margin: 0px;padding: 0px;">
+                                    <div class="center" style="width: 100%;height: 100%;padding-right: 8px;"><input type="text" style="width: 100%;background-image: url(&quot;assets/img/Group%20126.svg&quot;);background-repeat: no-repeat;background-size: contain;background-position: right;font-family: Roboto, sans-serif;color: rgb(255,255,255);background-color: transparent;margin-top: 10px;padding: 0px 5px;padding-left: 20px;font-size: 16px;"
+                                            value="123"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="detailInfo" class="center card__face card__face--back" style="border-width: 0px;width: 275px;height: 250px;background-color: #ffffff;">
+                            <div class="row" style="border-radius: 15px;position: absolute;margin: 0px;width: 275px;background-color: rgb(0,0,0,0.3);">
+                                <div class="col-2 col-sm-3 center" style="height: 100%;width: 100%;"><img src="assets/img/favicon-512.png" style="border-radius: 50px;width: 35px;"></div>
+                                <div class="col" style="/*position: absolute;*/padding: 0px;">
+                                    <div class="row" style="margin: 0px;">
+                                        <div class="col text-left" style="height: 25px;"><label class="col-form-label" style="color: rgb(255,255,255);font-family: Roboto, sans-serif;font-weight: 500;font-size: 14px;line-height: 10px;">Restaurante Carnes Ricas</label></div>
+                                    </div>
+                                    <div class="row" style="margin: 0px;height: 20px;">
+                                        <div class="col text-left" style="height: 20px;"><label style="color: rgb(255,255,255);font-weight: 500;font-size: 13px;margin: 0px;line-height: 15px;margin-top: -15px;">carnesricas</label><img src="assets/img/bx-certification_white.svg" style="margin-left: 5px;margin-top: -13px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="top: 45px;/*bottom: 0;*/border-radius: 15px;position: absolute;margin: 0px;width: 275px;background-color: rgb(0,0,0,0.3);height: 195px;margin-top: 10px;">
+                                <div class="col" style="padding: 0px;"><label style="color: rgb(255,255,255);font-family: Roboto, sans-serif;font-weight: 500;font-size: 14px;width: 100%;line-height: 10px;margin-top: 10px;height: 15px;">Detalles y otras condiciones</label>
+                                    <p class="text-left"
+                                        style="font-size: 14px;padding: 15px;">¿Qué deseas notificarle a tus clientes y qué les ofreces a cambio de su participación?<br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="purpose-1" style="border-radius: 25px;background-color: #ffffff;max-width: none;width: 275px;height: 250px;padding: 0px;margin: 10px;">
+                    <div class="cardFlip center" style="border-width: 0px;width: 275px;height: 250px;">
+                        <div id="generalInfo" class="center card__face card__face--front" style="border-width: 0px;width: 275px;height: 250px;background-color: transparent;">
+                            <div class="row" style="border-radius: 15px;position: absolute;margin: 0px;width: 275px;background-color: rgb(0,0,0,0.3);">
+                                <div class="col-2 col-sm-3 center" style="height: 100%;width: 100%;"><img src="assets/img/favicon-512.png" style="border-radius: 50px;width: 35px;"></div>
+                                <div class="col" style="padding: 0px;">
+                                    <div class="row" style="margin: 0px;">
+                                        <div class="col text-left" style="height: 25px;"><label class="col-form-label" style="color: rgb(255,255,255);font-family: Roboto, sans-serif;font-weight: 500;font-size: 14px;line-height: 10px;">Restaurante Carnes Ricas</label></div>
+                                    </div>
+                                    <div class="row" style="margin: 0px;height: 20px;">
+                                        <div class="col text-left" style="height: 20px;"><label style="color: rgb(255,255,255);font-weight: 500;font-size: 13px;margin: 0px;line-height: 15px;margin-top: -15px;">carnesricas</label><img src="assets/img/bx-certification_white.svg" style="margin-left: 5px;margin-top: -13px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="width: 100%;height: 100%;"><img style="/*display: none;*/border: 0px solid #ffffff;border-radius: 15px;width: 275px;height: 100%;background-image: url(&quot;assets/img/image_carnesRicas.svg&quot;);background-size: cover;background-position: center;"></div>
+                            <div class="row"
+                                style="bottom: 0;border-radius: 15px;position: absolute;margin: 0px;width: 275px;background-color: rgb(0,0,0,0.3);">
+                                <div class="col" style="padding: 0px;">
+                                    <div class="row" style="margin: 0px;">
+                                        <div class="col text-left center" style="height: 25px;"><label class="col-form-label" style="color: rgb(255,255,255);font-family: Roboto, sans-serif;font-weight: 500;font-size: 14px;height: 100%;width: 100%;line-height: 10px;">Finde-burguesa</label></div>
+                                    </div>
+                                    <div class="row" style="margin: 0px;">
+                                        <div class="col text-left" style="height: 25px;margin-top: -5px;"><label class="col-form-label text-left center" style="color: rgb(255,255,255);font-weight: 500;font-size: 13px;margin: 0px;height: 100%;width: 100%;line-height: 10px;">Código 012345</label></div>
+                                    </div>
+                                </div>
+                                <div class="col-4 center" style="width: 100%;margin: 0px;padding: 0px;">
+                                    <div class="center" style="width: 100%;height: 100%;padding-right: 8px;"><input type="text" style="width: 100%;background-image: url(&quot;assets/img/Group%20126.svg&quot;);background-repeat: no-repeat;background-size: contain;background-position: right;font-family: Roboto, sans-serif;color: rgb(255,255,255);background-color: transparent;margin-top: 10px;padding: 0px 5px;padding-left: 20px;font-size: 16px;"
+                                            value="123"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="detailInfo" class="center card__face card__face--back" style="border-width: 0px;width: 275px;height: 250px;background-color: #ffffff;">
+                            <div class="row" style="border-radius: 15px;position: absolute;margin: 0px;width: 275px;background-color: rgb(0,0,0,0.3);">
+                                <div class="col-2 col-sm-3 center" style="height: 100%;width: 100%;"><img src="assets/img/favicon-512.png" style="border-radius: 50px;width: 35px;"></div>
+                                <div class="col" style="/*position: absolute;*/padding: 0px;">
+                                    <div class="row" style="margin: 0px;">
+                                        <div class="col text-left" style="height: 25px;"><label class="col-form-label" style="color: rgb(255,255,255);font-family: Roboto, sans-serif;font-weight: 500;font-size: 14px;line-height: 10px;">Restaurante Carnes Ricas</label></div>
+                                    </div>
+                                    <div class="row" style="margin: 0px;height: 20px;">
+                                        <div class="col text-left" style="height: 20px;"><label style="color: rgb(255,255,255);font-weight: 500;font-size: 13px;margin: 0px;line-height: 15px;margin-top: -15px;">carnesricas</label><img src="assets/img/bx-certification_white.svg" style="margin-left: 5px;margin-top: -13px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="top: 45px;/*bottom: 0;*/border-radius: 15px;position: absolute;margin: 0px;width: 275px;background-color: rgb(0,0,0,0.3);height: 195px;margin-top: 10px;">
+                                <div class="col" style="padding: 0px;"><label style="color: rgb(255,255,255);font-family: Roboto, sans-serif;font-weight: 500;font-size: 14px;width: 100%;line-height: 10px;margin-top: 10px;height: 15px;">Detalles y otras condiciones</label>
+                                    <p class="text-left"
+                                        style="font-size: 14px;padding: 15px;">¿Qué deseas notificarle a tus clientes y qué les ofreces a cambio de su participación?<br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="purpose-2" style="border-radius: 25px;background-color: #ffffff;max-width: none;width: 275px;height: 250px;padding: 0px;margin: 10px;">
+                    <div class="cardFlip center" style="border-width: 0px;width: 275px;height: 250px;">
+                        <div id="generalInfo" class="center card__face card__face--front" style="border-width: 0px;width: 275px;height: 250px;background-color: transparent;">
+                            <div class="row" style="border-radius: 15px;position: absolute;margin: 0px;width: 275px;background-color: rgb(0,0,0,0.3);">
+                                <div class="col-2 col-sm-3 center" style="height: 100%;width: 100%;"><img src="assets/img/favicon-512.png" style="border-radius: 50px;width: 35px;"></div>
+                                <div class="col" style="padding: 0px;">
+                                    <div class="row" style="margin: 0px;">
+                                        <div class="col text-left" style="height: 25px;"><label class="col-form-label" style="color: rgb(255,255,255);font-family: Roboto, sans-serif;font-weight: 500;font-size: 14px;line-height: 10px;">Restaurante Carnes Ricas</label></div>
+                                    </div>
+                                    <div class="row" style="margin: 0px;height: 20px;">
+                                        <div class="col text-left" style="height: 20px;"><label style="color: rgb(255,255,255);font-weight: 500;font-size: 13px;margin: 0px;line-height: 15px;margin-top: -15px;">carnesricas</label><img src="assets/img/bx-certification_white.svg" style="margin-left: 5px;margin-top: -13px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="width: 100%;height: 100%;"><img style="/*display: none;*/border: 0px solid #ffffff;border-radius: 15px;width: 275px;height: 100%;background-image: url(&quot;assets/img/scenery/image5.jpg&quot;);background-size: cover;background-position: center;"></div>
+                            <div class="row"
+                                style="bottom: 0;border-radius: 15px;position: absolute;margin: 0px;width: 275px;background-color: rgb(0,0,0,0.3);">
+                                <div class="col" style="padding: 0px;">
+                                    <div class="row" style="margin: 0px;">
+                                        <div class="col text-left center" style="height: 25px;"><label class="col-form-label" style="color: rgb(255,255,255);font-family: Roboto, sans-serif;font-weight: 500;font-size: 14px;height: 100%;width: 100%;line-height: 10px;">Finde-burguesa</label></div>
+                                    </div>
+                                    <div class="row" style="margin: 0px;">
+                                        <div class="col text-left" style="height: 25px;margin-top: -5px;"><label class="col-form-label text-left center" style="color: rgb(255,255,255);font-weight: 500;font-size: 13px;margin: 0px;height: 100%;width: 100%;line-height: 10px;">Código 012345</label></div>
+                                    </div>
+                                </div>
+                                <div class="col-4 center" style="width: 100%;margin: 0px;padding: 0px;">
+                                    <div class="center" style="width: 100%;height: 100%;padding-right: 8px;"><input type="text" style="width: 100%;background-image: url(&quot;assets/img/Group%20126.svg&quot;);background-repeat: no-repeat;background-size: contain;background-position: right;font-family: Roboto, sans-serif;color: rgb(255,255,255);background-color: transparent;margin-top: 10px;padding: 0px 5px;padding-left: 20px;font-size: 16px;"
+                                            value="123"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="detailInfo" class="center card__face card__face--back" style="border-width: 0px;width: 275px;height: 250px;background-color: #ffffff;">
+                            <div class="row" style="border-radius: 15px;position: absolute;margin: 0px;width: 275px;background-color: rgb(0,0,0,0.3);">
+                                <div class="col-2 col-sm-3 center" style="height: 100%;width: 100%;"><img src="assets/img/favicon-512.png" style="border-radius: 50px;width: 35px;"></div>
+                                <div class="col" style="/*position: absolute;*/padding: 0px;">
+                                    <div class="row" style="margin: 0px;">
+                                        <div class="col text-left" style="height: 25px;"><label class="col-form-label" style="color: rgb(255,255,255);font-family: Roboto, sans-serif;font-weight: 500;font-size: 14px;line-height: 10px;">Restaurante Carnes Ricas</label></div>
+                                    </div>
+                                    <div class="row" style="margin: 0px;height: 20px;">
+                                        <div class="col text-left" style="height: 20px;"><label style="color: rgb(255,255,255);font-weight: 500;font-size: 13px;margin: 0px;line-height: 15px;margin-top: -15px;">carnesricas</label><img src="assets/img/bx-certification_white.svg" style="margin-left: 5px;margin-top: -13px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="top: 45px;/*bottom: 0;*/border-radius: 15px;position: absolute;margin: 0px;width: 275px;background-color: rgb(0,0,0,0.3);height: 195px;margin-top: 10px;">
+                                <div class="col" style="padding: 0px;"><label style="color: rgb(255,255,255);font-family: Roboto, sans-serif;font-weight: 500;font-size: 14px;width: 100%;line-height: 10px;margin-top: 10px;height: 15px;">Detalles y otras condiciones</label>
+                                    <p class="text-left"
+                                        style="font-size: 14px;padding: 15px;">¿Qué deseas notificarle a tus clientes y qué les ofreces a cambio de su participación?<br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
     </main>
@@ -200,12 +349,14 @@
     <script src="assets/js/Collapsible-sidebar-left-or-right--Content-overlay.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/3D_CSS_PROGRESS_BAR_BY_REDSTAPLER.js"></script>
+    <script src="assets/js/addImage.js"></script>
     <script src="assets/js/addTeamMemberComunity.js"></script>
     <script src="assets/js/backPage.js"></script>
     <script src="assets/js/delete_purpose_comunity.js"></script>
     <script src="assets/js/disclaimer_comunity.js"></script>
     <script src="assets/js/endPurpose.js"></script>
     <script src="assets/js/explore.js"></script>
+    <script src="assets/js/flipCard.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
     <script src="assets/js/join_purpose_image.js"></script>
     <script src="assets/js/join_purpose.js"></script>
@@ -219,11 +370,13 @@
     <script src="assets/js/qr_reader.js"></script>
     <script src="assets/js/qr-scanner-worker.min.js"></script>
     <script src="assets/js/registration.js"></script>
+    <script src="assets/js/showCardsPurposes.js"></script>
     <script src="assets/js/showPass.js"></script>
     <script src="assets/js/sideNav.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>
     <script src="assets/js/sleep.js"></script>
     <script src="assets/js/untitled-1.js"></script>
+    <script src="assets/js/untitled-2.js"></script>
     <script src="assets/js/untitled.js"></script>
 </body>
 

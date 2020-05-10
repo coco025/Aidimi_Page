@@ -8,4 +8,4 @@ function showImage(){
     }
 }
 
-document.getElementById("addImage").setAttribute("onclick", "showImage()");
+//document.getElementById("addImage").setAttribute("onclick", "showImage()");

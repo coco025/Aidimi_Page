@@ -1,4 +1,4 @@
-function deletePurposeComunity() {
+async function deletePurposeComunity() {
     var animationIn = "fadeInDown";
     var animationOut = "fadeOutRightBig";
     var x = document.getElementById("delete_PurposeComunity");
