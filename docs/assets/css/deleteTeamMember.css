@@ -1,4 +1,4 @@
-.delete_PurposeComunity_Back {
+.delete_TeamMember_Back {
   top: 0;
   position: fixed;
   z-index: 24;
@@ -9,7 +9,7 @@
   height: 100%;
 }
 
-.delete_PurposeComunity {
+.delete_TeamMember {
   -webkit-animation-duration: 0.2s;
   animation-duration: 0.2s;
   width: 100%;
@@ -19,7 +19,7 @@
   background-color: #ff2d53;
 }
 
-.delete_PurposeComunity_Main {
-  /*display: none;*/
+.delete_TeamMember_Main {
+  display: none;
 }
 

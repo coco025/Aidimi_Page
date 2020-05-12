@@ -14,6 +14,7 @@ div.roundedDiv input {
   background-image: url("../../assets/img/pencil-regular-24.png");
   background-repeat: no-repeat;
   background-position: right;
+  font-family: Roboto, sans-serif;
 }
 
 .roundedDiv label {
