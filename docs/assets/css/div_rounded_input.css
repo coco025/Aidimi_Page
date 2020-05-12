@@ -2,7 +2,7 @@ div.roundedDivNoImage input {
   width: 100%;
   border-width: 0px;
   border-radius: 10px;
-  /*background-image: url("../../assets/img/pencil-regular-24.png");*/
+  /*background-image: url("pencil-regular-24.png");*/
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -11,7 +11,7 @@ div.roundedDiv input {
   width: 100%;
   border-width: 0px;
   border-radius: 10px;
-  background-image: url("../../assets/img/pencil-regular-24.png");
+  background-image: url("../../assets/img/bx-pencil.svg");
   background-repeat: no-repeat;
   background-position: right;
   font-family: Roboto, sans-serif;
