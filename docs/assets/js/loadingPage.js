@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#body').show();
+    //$('#body').show();
     $('#loading').hide();
 });
 
