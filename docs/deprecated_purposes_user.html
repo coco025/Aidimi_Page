@@ -67,35 +67,21 @@
         <div class="container-fluid">
             <div class="row" style="width: 100%;">
                 <div class="col-2">
-                    <div style="height: 50%;"><a href="mainPage_comunity.html"><img src="assets/img/bx-arrow-back.svg" style="margin-top: -5px;"></a></div>
+                    <div style="height: 50%;"><a href="mainPage_user.html"><img src="assets/img/bx-arrow-back.svg" style="margin-top: -5px;"></a></div>
                 </div>
                 <div class="col text-left" style="padding: 0px;">
                     <div>
                         <div class="row" style="margin: 0px;">
                             <div class="col text-left" style="padding: 0px;height: 25px;">
-                                <div><span class="headerDesign" style="margin-left: 0px;">Nombre comunidad<img src="assets/img/Verification.svg" style="margin-left: 5px;margin-top: -4px;"></span><label class="switch" style="right: 50px;position: fixed;margin-top: 3px;"><input type="checkbox"><span class="slider round"></span></label>
-                                    <a
-                                        id="exec_delete_purpose" href="#" style="right: 10px;position: fixed;margin-top: -2px;"><img src="assets/img/bx-trash-alt.svg"></a>
-                                </div>
+                                <div><span class="headerDesign">Nombre comunidad</span><img src="assets/img/Verification.svg" style="margin-left: 10px;margin-top: -4px;"></div>
                             </div>
                         </div>
+                        <div class="col" style="height: 100%;font-size: 15px;padding: 0px;"><label class="col-form-label" style="/*font-family: Roboto;*/font-style: normal;font-weight: 500;font-size: 13px;line-height: 15px;padding: 0px;">@usuario</label></div>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
-    <div id="delete_PurposeComunity_Main" class="delete_PurposeComunity_Main" style="transition-delay: 0s;transition: all 0.1s;">
-        <div class="border rounded order-1 delete_PurposeComunity_Back" id="delete_PurposeComunity_Back"></div>
-        <div id="delete_PurposeComunity" class="animated delete_PurposeComunity fadeOutRightBig" style="-webkit-animation-duration: 0.2s;height: 80px;">
-            <div class="row center" style="position: absolute;bottom: 0px;display: flex;width: 100%;margin-bottom: 15px;">
-                <div class="col-1 center" style="padding: 0px;width: 100%;margin-left: 5px;"><a id="close_delete_purpose" href="#"><img src="assets/img/bx-arrow-back-white.svg"></a></div>
-                <div class="col center" style="width: 100%;padding: 0px;">
-                    <p class="text-left" style="width: 100%;height: 100%;margin: auto;font-size: 16px;color: rgb(255,255,255);font-family: Roboto, sans-serif;margin-left: 5px;">¿Deseas eliminar este propósito?<br></p>
-                </div>
-                <div class="col-1 center" style="width: 100%;padding: 0px;"><a id="delete_purpose" href="thanks_comunity.html"><img src="assets/img/bx-trash-alt_white.svg" style="margin-top: -10px;margin-left: -15px;"></a></div>
-            </div>
-        </div>
-    </div>
     <div class="container" id="sideNav_Main" style="padding: 0px;margin: 0px;">
         <div class="border rounded shadow-lg" id="sideNav_Options" style="top: 0;position: fixed;z-index: 150;transition: all 0.3s;background-color: #ffffff;height: 100%;width: 300px;margin-left: -100%;">
             <div class="text-center" id="myID" style="border-radius: 30px;/*margin-left: 10px;*//*background-color: rgba(255,255,255,0);*/padding: 10px;padding-left: 5%;padding-bottom: 0px;margin-top: 10px;">
@@ -140,77 +126,25 @@
     <main class="page registration-page" style="height: 100%;margin-top: 80px;">
         <section class="clean-block clean-form dark" style="/*height: 100%;*/width: 100%;background-color: transparent;">
             <div class="container" style="height: 100%;padding-top: 10px;padding-bottom: 15px;max-width: 700px;">
-                <div class="carousel slide" data-ride="carousel" data-interval="false" id="carousel-1" style="margin-bottom: 50px;">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <main id="main" style="height: 100%;background-color: rgba(255,255,255,0);width: 100%;padding: 0px;padding-top: 20px;">
-                                <div class="text-center" style="margin: 15px;font-size: -6px;margin-top: 10px;color: rgb(0,0,0);font-weight: bold;margin-bottom: 5px;">
-                                    <div class="row">
-                                        <div class="col text-left">
-                                            <div class="row" style="margin: 0px;">
-                                                <div class="col" style="padding: 0px;"><span class="span_text" style="filter: blur(0px) grayscale(0%) hue-rotate(0deg) invert(0%) sepia(0%);font-family: Roboto, sans-serif;font-size: 18px;">Nombre del Propósito</span></div>
-                                            </div>
-                                            <div class="row" style="margin: 0px;">
-                                                <div class="col" style="padding: 0px;">
-                                                    <div class="text-left" style="font-size: 5px;color: rgb(0,0,0);font-weight: bold;"><span class="span_text" style="font-size: 16px;color: rgb(0,0,0);font-family: Roboto, sans-serif;filter: blur(0px) grayscale(0%) hue-rotate(0deg) invert(0%) sepia(0%);font-weight: 700};">Código:</span>
-                                                        <span
-                                                            class="span_text" style="font-size: 16px;color: rgb(0,0,0);font-family: Roboto, sans-serif;filter: blur(0px) grayscale(0%) hue-rotate(0deg) invert(0%) sepia(0%);font-weight: 700;">&nbsp;######</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-3 col-sm-2 col-md-2 col-lg-1 col-xl-1 center" style="padding: 0px;margin-right: 10px;max-width: 100%;">
-                                            <div class="trophy" style="padding: 5px;width: 85px;background-color: #FF8CAF;"><input type="text" style="background-image: url(&quot;assets/img/hearts.svg&quot;);background-repeat: no-repeat;width: 100%;background-color: rgba(255,255,255,0);color: rgb(255,255,255);font-family: Roboto, sans-serif;background-position: right;padding-left: 0px;background-size: contain;"
-                                                    value="20"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="showImage-1" class="center" style="/*display: none;*/border: 0px solid #e6e6e6;border-radius: 15px;width: 150px;margin-top: 25px;"><img style="border-radius: 250px;width: 100%;height: 100%;" src="assets/img/slot.jpg"></div>
-                                <div class="text-center" style="border-radius: 25px;margin: 30px;background-color: #ffffff;height: 250px;padding: 10px;"><textarea style="border-radius: 10px;border: 0px solid #000000;width: 100%;height: 100%;background-color: rgba(255,255,255,0);font-size: 16px;font-family: Roboto, sans-serif;" placeholder="  Detalle de propósito + (opción) imagen"></textarea></div>
-                                <div
-                                    style="display: none;"><span style="margin-left: 20px;">Agregar imagen</span><img id="addImage" src="image-add-regular-204.png" style="width: 25px;margin-left: 20px;"></div>
-                        <div id="qrImage" class="center" style="border: 0px solid #e6e6e6;border-radius: 15px;margin-top: 25px;width: 225px;"><img style="border-radius: 10px;width: 100%;height: 100%;" src="assets/img/qr-code.png"></div>
-                        </main>
-                    </div>
-                    <div class="carousel-item">
-                        <main id="main" style="height: 100%;background-color: rgba(255,255,255,0);width: 100%;padding: 0px;padding-top: 20px;">
-                            <div class="text-center" style="margin: 15px;font-size: -6px;margin-top: 10px;color: rgb(0,0,0);font-weight: bold;margin-bottom: 5px;">
-                                <div class="row">
-                                    <div class="col text-left">
-                                        <div class="row" style="margin: 0px;">
-                                            <div class="col" style="padding: 0px;"><span class="span_text" style="filter: blur(0px) grayscale(0%) hue-rotate(0deg) invert(0%) sepia(0%);font-family: Roboto, sans-serif;font-size: 20px;">Nombre del Propósito</span></div>
-                                        </div>
-                                        <div class="row" style="margin: 0px;">
-                                            <div class="col" style="padding: 0px;">
-                                                <div class="text-left" style="font-size: 5px;color: rgb(0,0,0);font-weight: bold;"><span class="span_text" style="font-size: 18px;color: rgb(0,0,0);font-family: Roboto, sans-serif;filter: blur(0px) grayscale(0%) hue-rotate(0deg) invert(0%) sepia(0%);font-weight: 700};">Código:</span>
-                                                    <span
-                                                        class="span_text" style="font-size: 18px;color: rgb(0,0,0);font-family: Roboto, sans-serif;filter: blur(0px) grayscale(0%) hue-rotate(0deg) invert(0%) sepia(0%);font-weight: 700;">&nbsp;######</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3 col-sm-2 col-md-2 col-lg-1 col-xl-1 center" style="padding: 0px;margin-right: 10px;max-width: 100%;">
-                                        <div class="trophy" style="padding: 5px;width: 90px;background-color: #FF8CAF;"><input type="text" style="background-image: url(&quot;assets/img/hearts.svg&quot;);background-repeat: no-repeat;background-position: right;width: 100%;background-color: rgba(255,255,255,0);color: rgb(255,255,255);"
-                                                value="25/50"></div>
-                                    </div>
+                <div class="text-center" style="margin: 15px;font-size: -6px;margin-top: 10px;color: rgb(0,0,0);font-weight: bold;margin-bottom: 5px;">
+                    <div class="row">
+                        <div class="col text-left">
+                            <div class="row" style="margin: 0px;">
+                                <div class="col" style="padding: 0px;"><span class="span_text" style="font-size: 20px;color: rgb(0,0,0);font-weight: 700;font-family: Roboto, sans-serif;filter: blur(0px) grayscale(0%) hue-rotate(0deg) invert(0%) sepia(0%);">Nombre del Propósito</span></div>
+                            </div>
+                            <div class="row" style="margin: 0px;">
+                                <div class="col" style="padding: 0px;">
+                                    <div class="text-left" style="font-size: 5px;color: rgb(0,0,0);font-weight: bold;"><span class="span_text" style="font-size: 18px;color: rgb(0,0,0);font-family: Roboto, sans-serif;filter: blur(0px) grayscale(0%) hue-rotate(0deg) invert(0%) sepia(0%);font-weight: 700};">Código:</span><span class="span_text"
+                                            style="font-size: 18px;color: rgb(0,0,0);font-family: Roboto, sans-serif;filter: blur(0px) grayscale(0%) hue-rotate(0deg) invert(0%) sepia(0%);font-weight: 700;">&nbsp;######</span></div>
                                 </div>
                             </div>
-                            <div id="showImage-1" class="center" style="/*display: none;*/border: 0px solid #e6e6e6;border-radius: 15px;width: 150px;margin-top: 25px;"><img style="border-radius: 250px;width: 100%;height: 100%;" src="assets/img/slot.jpg"></div>
-                            <div class="text-center" style="border-radius: 25px;margin: 30px;background-color: #ffffff;height: 250px;padding: 10px;"><textarea style="border-radius: 10px;border: 0px solid #000000;width: 100%;height: 100%;background-color: rgba(255,255,255,0);" placeholder="  Detalle de propósito + (opción) imagen"></textarea></div>
-                            <div style="display: none;"><span style="margin-left: 20px;">Agregar imagen</span><img id="addImage" src="image-add-regular-204.png" style="width: 25px;margin-left: 20px;"></div>
-                            <div id="qrImage" class="center" style="border: 0px solid #e6e6e6;border-radius: 15px;margin-top: 25px;width: 225px;"><span style="margin-bottom: 15px;font-size: 20px;font-family: Roboto, sans-serif;font-weight: 700;">Código QR del propósito</span><img style="border-radius: 10px;width: 100%;height: 100%;" src="assets/img/qr-code.png"></div>
-                        </main>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <!-- Start: Previous --><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev" style="position: fixed;height: 100%;"><img src="assets/img/bx-chevron-right.svg" style="transform: scale(-1);"></a>
-                    <!-- End: Previous -->
-                    <!-- Start: Next --><a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next" style="position: fixed;height: 100%;"><img src="assets/img/bx-chevron-right.svg"></a>
-                    <!-- End: Next -->
-                </div>
+                <div id="showImage-1" class="center" style="/*display: none;*/border: 0px solid #e6e6e6;border-radius: 15px;width: 150px;margin-top: 25px;"><img style="border-radius: 250px;width: 100%;height: 100%;" src="assets/img/slot.jpg"></div>
+                <div class="text-center" style="border-radius: 25px;margin: 30px;background-color: #ffffff;height: 250px;padding: 10px;"><textarea style="border-radius: 10px;border: 0px solid #000000;width: 100%;height: 100%;background-color: rgba(255,255,255,0);" placeholder="   Descripción del propósito"></textarea></div>
+                <div style="display: none;"><span style="margin-left: 20px;">Agregar imagen</span><img id="addImage" src="image-add-regular-204.png" style="width: 25px;margin-left: 20px;"></div>
             </div>
-            </div>
-            <div class="center" style="bottom: 0px;position: fixed;width: 100%;"><label style="border: 1px solid #989898;border-radius: 25px;background-color: rgba(255,255,255,0.71);padding: 5px 10px;width: 70px;font-family: Roboto, sans-serif;">1/2</label></div>
         </section>
     </main>
     <script src="assets/js/jquery.min.js"></script>
