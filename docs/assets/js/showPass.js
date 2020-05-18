@@ -8,4 +8,4 @@ function showPass() {
 
 }
 
-document.getElementById("showPass").setAttribute("onclick","showPass();");
+document.getElementById("showPassBtn").setAttribute("onclick","showPass();");
