@@ -8,6 +8,7 @@ div.roundedDivNoImage input {
 }
 
 div.roundedDiv input {
+  height: 35px;
   width: 100%;
   border-width: 0px;
   border-radius: 10px;
