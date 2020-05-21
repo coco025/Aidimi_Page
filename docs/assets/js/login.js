@@ -4,7 +4,7 @@ function login()
 {	
 	xhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
-			window.location.href = "mainPage_comunity.html";
+			//window.location.href = "mainPage_comunity.html";
 			console.log(xhttp.responseText);
 		}
 	};
