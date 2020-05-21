@@ -8,6 +8,9 @@ function login()
 			console.log(xhttp.responseText);
 			console.log(xhttp.status);
 			console.log(xhttp.user);
+			alert(xhttp.responseText);
+			alert(xhttp.status);
+			alert(xhttp.user);
 		}
 	};
 	
