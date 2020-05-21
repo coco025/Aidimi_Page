@@ -11,7 +11,7 @@ alert("Hi");
     username: "xyz"
   };
     
-	xhttp.onreadystatechange = function() {
+	xhr.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
 			//window.location.href = "mainPage_comunity.html";
 			console.log(xhttp.responseText);
@@ -24,6 +24,6 @@ alert("Hi");
     //xhr.open("POST", "https://api-aidimi.herokuapp.com/user/create");
     //xhr.setRequestHeader("Content-Type", "application/json");
   
-	xhttp.open("post", "https://api-aidimi.herokuapp.com/user/create", true);
+	xhr.open("post", "https://api-aidimi.herokuapp.com/user/create", true);
 	xhr.send(json);
 }
