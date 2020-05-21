@@ -9,7 +9,8 @@ function login()
 		}
 	};
 	
-xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 	xhttp.open("post", "https://api-aidimi.herokuapp.com/auth/login", true);
+	
+xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 	xhttp.send();	
 }
