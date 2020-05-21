@@ -2,6 +2,7 @@ var xhr = new XMLHttpRequest();
 
 function register_user_api()
 {	
+alert("Hi");
   var data = {
     name: "ABC",
     lastName: "CDE",
