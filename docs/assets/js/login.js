@@ -6,6 +6,8 @@ function login()
 		if (this.readyState == 4 && this.status == 200) {
 			//window.location.href = "mainPage_comunity.html";
 			console.log(xhttp.responseText);
+			console.log(xhttp.status);
+			console.log(xhttp.user);
 		}
 	};
 	
