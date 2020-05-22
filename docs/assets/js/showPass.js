@@ -1,11 +1,13 @@
-function showPass() {
-    var x = document.getElementById("password");
+function showPass(){
+	
+  var x = document.getElementById("password");
+  
   if (x.type === "password") {
-    x.type = "text";
+	  x.type = "text";
   } else {
-    x.type = "password";
+	  x.type = "password";
   }
-
+  
 }
 
 document.getElementById("showPassBtn").setAttribute("onclick","showPass();");

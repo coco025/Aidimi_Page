@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>AIDIMI-backup-09-05-2020</title>
+    <title>AIDIMI-backup-21-05-2020_HTML</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
@@ -16,12 +16,15 @@
     <link rel="stylesheet" href="assets/css/addTeamMemberComunity.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/Bootstrap-4-Custom-Radio.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/Collapsible-sidebar-left-or-right--Content-overlay.css">
     <link rel="stylesheet" href="assets/css/deletePurposeComunity.css">
     <link rel="stylesheet" href="assets/css/deleteTeamMember.css">
     <link rel="stylesheet" href="assets/css/disclaimer.css">
     <link rel="stylesheet" href="assets/css/div_rounded_input.css">
     <link rel="stylesheet" href="assets/css/divider-text-middle.css">
+    <link rel="stylesheet" href="assets/css/editComunity.css">
+    <link rel="stylesheet" href="assets/css/editUser.css">
     <link rel="stylesheet" href="assets/css/fieldLabelCountPurposes.css">
     <link rel="stylesheet" href="assets/css/flipCard.css">
     <link rel="stylesheet" href="assets/css/float_button.css">
@@ -31,14 +34,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/Image_center.css">
+    <link rel="stylesheet" href="assets/css/infoComunity.css">
+    <link rel="stylesheet" href="assets/css/infoUser.css">
     <link rel="stylesheet" href="assets/css/Loading-Div-1.css">
     <link rel="stylesheet" href="assets/css/Loading-Div.css">
     <link rel="stylesheet" href="assets/css/Loading-Page-Animation-Style.css">
+    <link rel="stylesheet" href="assets/css/loginPage.css">
+    <link rel="stylesheet" href="assets/css/lostPassword.css">
+    <link rel="stylesheet" href="assets/css/mainUserFlipCards.css">
     <link rel="stylesheet" href="assets/css/ml-video.css">
     <link rel="stylesheet" href="assets/css/myAchivements.css">
     <link rel="stylesheet" href="assets/css/Navbar-Fixed-Side.css">
     <link rel="stylesheet" href="assets/css/navBar.css">
     <link rel="stylesheet" href="assets/css/QR_code.css">
+    <link rel="stylesheet" href="assets/css/registerComunity.css">
+    <link rel="stylesheet" href="assets/css/registerUser.css">
     <link rel="stylesheet" href="assets/css/scan_qr.css">
     <link rel="stylesheet" href="assets/css/sidebar-1.css">
     <link rel="stylesheet" href="assets/css/Sidebar-Menu-1.css">
@@ -59,7 +69,6 @@
     <link rel="stylesheet" href="assets/css/thropies.css">
     <link rel="stylesheet" href="assets/css/Toggle-Switch.css">
     <link rel="stylesheet" href="assets/css/tooltip.css">
-    <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
 <body style="background-repeat: no-repeat;background-size: cover;background-color: #ffffff;background-image: url(&quot;assets/img/image_back_company.svg&quot;);">
@@ -78,8 +87,7 @@
                 </div>
                 <div class="col" style="/*position: fixed;*/bottom: 20px;width: 100%;">
                     <div class="row">
-                        <div class="col left" style="padding: 0px 25px;"><a class="btn btn-primary" role="button" style="text-align: center;border-radius: 15px;border-color: rgba(0,0,0,0);background-color: #108b8b;font-family: Roboto, sans-serif;color: #ffffff;width: 150px;font-size: 18px;height: 40px;"
-                                href="register_comunity.html">Iniciar</a></div>
+                        <div class="col left" style="padding: 0px 25px;"><a class="btn btn-primary" role="button" id="beginComunity" href="register_comunity.html">Iniciar</a></div>
                     </div>
                     <div class="row" style="margin-top: 15px;">
                         <div class="col text-left center" style="margin-bottom: 10px;padding: 0px 25px;"><label class="col-form-label" style="color: #108b8b;font-family: Muli, sans-serif;font-size: 16px;">Ver usuario particular</label></div>
@@ -109,25 +117,21 @@
     <script src="assets/js/--mp---Masonry-Gallery-with-Loader.js"></script>
     <script src="assets/js/Collapsible-sidebar-left-or-right--Content-overlay.js"></script>
     <script src="assets/js/theme.js"></script>
-    <script src="assets/js/3D_CSS_PROGRESS_BAR_BY_REDSTAPLER.js"></script>
     <script src="assets/js/addImage.js"></script>
     <script src="assets/js/addTeamMemberComunity.js"></script>
     <script src="assets/js/backPage.js"></script>
     <script src="assets/js/delete_purpose_comunity.js"></script>
     <script src="assets/js/delete_TeamMember.js"></script>
     <script src="assets/js/disclaimer_comunity.js"></script>
-    <script src="assets/js/endPurpose.js"></script>
-    <script src="assets/js/explore.js"></script>
     <script src="assets/js/flipCard.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="assets/js/indexPage.js"></script>
     <script src="assets/js/join_purpose_image.js"></script>
-    <script src="assets/js/join_purpose.js"></script>
     <script src="assets/js/Loading-Page-Animation-Style.js"></script>
     <script src="assets/js/loadingPage.js"></script>
     <script src="assets/js/main_page.js"></script>
     <script src="assets/js/ml-video.js"></script>
     <script src="assets/js/navBar.js"></script>
-    <script src="assets/js/progress_bar.js"></script>
     <script src="assets/js/QR_Module.js"></script>
     <script src="assets/js/qr_reader.js"></script>
     <script src="assets/js/qr-scanner-worker.min.js"></script>
@@ -137,9 +141,6 @@
     <script src="assets/js/sideNav.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>
     <script src="assets/js/sleep.js"></script>
-    <script src="assets/js/untitled-1.js"></script>
-    <script src="assets/js/untitled-2.js"></script>
-    <script src="assets/js/untitled.js"></script>
 </body>
 
 </html>

@@ -16,12 +16,15 @@
     <link rel="stylesheet" href="assets/css/addTeamMemberComunity.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/Bootstrap-4-Custom-Radio.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/Collapsible-sidebar-left-or-right--Content-overlay.css">
     <link rel="stylesheet" href="assets/css/deletePurposeComunity.css">
     <link rel="stylesheet" href="assets/css/deleteTeamMember.css">
     <link rel="stylesheet" href="assets/css/disclaimer.css">
     <link rel="stylesheet" href="assets/css/div_rounded_input.css">
     <link rel="stylesheet" href="assets/css/divider-text-middle.css">
+    <link rel="stylesheet" href="assets/css/editComunity.css">
+    <link rel="stylesheet" href="assets/css/editUser.css">
     <link rel="stylesheet" href="assets/css/fieldLabelCountPurposes.css">
     <link rel="stylesheet" href="assets/css/flipCard.css">
     <link rel="stylesheet" href="assets/css/float_button.css">
@@ -31,14 +34,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/Image_center.css">
+    <link rel="stylesheet" href="assets/css/infoComunity.css">
+    <link rel="stylesheet" href="assets/css/infoUser.css">
     <link rel="stylesheet" href="assets/css/Loading-Div-1.css">
     <link rel="stylesheet" href="assets/css/Loading-Div.css">
     <link rel="stylesheet" href="assets/css/Loading-Page-Animation-Style.css">
+    <link rel="stylesheet" href="assets/css/loginPage.css">
+    <link rel="stylesheet" href="assets/css/lostPassword.css">
+    <link rel="stylesheet" href="assets/css/mainUserFlipCards.css">
     <link rel="stylesheet" href="assets/css/ml-video.css">
     <link rel="stylesheet" href="assets/css/myAchivements.css">
     <link rel="stylesheet" href="assets/css/Navbar-Fixed-Side.css">
     <link rel="stylesheet" href="assets/css/navBar.css">
     <link rel="stylesheet" href="assets/css/QR_code.css">
+    <link rel="stylesheet" href="assets/css/registerComunity.css">
+    <link rel="stylesheet" href="assets/css/registerUser.css">
     <link rel="stylesheet" href="assets/css/scan_qr.css">
     <link rel="stylesheet" href="assets/css/sidebar-1.css">
     <link rel="stylesheet" href="assets/css/Sidebar-Menu-1.css">
@@ -59,16 +69,14 @@
     <link rel="stylesheet" href="assets/css/thropies.css">
     <link rel="stylesheet" href="assets/css/Toggle-Switch.css">
     <link rel="stylesheet" href="assets/css/tooltip.css">
-    <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
-<body style="background-size: contain;background-repeat: repeat;background-position: top;background-color: rgba(255,255,255,0);height: auto;min-height: 0px;width: 100%;">
+<body id="loginPage_Body">
     <div style="width: 100%;height: 100%;">
-        <div id="loading" class="center" style="display: none;position: absolute;font-size: larger;width: 100%;height: 100%;"><img class="loadingdivimg" src="assets/img/unnamed.gif" style="width: 100px;height: 100px;"></div>
-        <div id="body" style="/*display: none;*/background-color: rgba(255,255,255,0.28);height: auto;max-height: 100%;">
-            <main class="page login-page" style="height: auto;/*width: 100%;*/">
-                <section class="clean-block clean-form dark" style="background-position: top;background-size: contain;padding-bottom: 0px;color: rgba(33,37,41,0);height: auto;width: 100%;background-color: rgba(246,246,246,0);background-repeat: repeat;">
-                    <div class="container" style="border-width: 0px;background-size: contain;background-position: bottom;padding-right: 0px;padding-left: 0px;background-color: rgba(0,0,0,0);height: auto;width: 100%;max-width: none;">
+        <div id="body" style="background-color: rgba(255,255,255,0.28);height: auto;max-height: 100%;">
+            <main class="page login-page" style="height: auto;">
+                <section id="loginSection" class="clean-block clean-form dark">
+                    <div class="container" id="loginContainer">
                         <form class="text-left" style="background-color: rgb(255,255,255);padding-top: 5px;margin-top: 20px;" method="post">
                             <div style="margin-bottom: 35px;">
                                 <div class="text-left block-heading" style="width: 100%;padding-top: 5px;margin-bottom: 5px;font-family: Roboto, sans-serif;font-weight: 500;font-size: 20px;line-height: 23px;margin-top: 20px;"><img src="assets/img/onlylogo.png" style="width: 53px;height: 64px;"></div>
@@ -76,30 +84,28 @@
                             </div>
                             <div class="form-group" style="margin-top: 0%;margin-bottom: 5px;">
                                 <!-- Start: input -->
-                                <div class="group_cyan">
-								<input id="email" class="form-control inputData_cyan" type="text" required=""><label class="labelData_cyan">Email</label></div>
+                                <div class="group_cyan"><input class="form-control inputData_cyan" type="text" required=""><label class="labelData_cyan">Email</label></div>
                                 <!-- End: input -->
                             </div>
                             <div class="form-group" style="margin-top: 30px;margin-bottom: 5px;">
                                 <!-- Start: input -->
                                 <div class="text-right group_cyan">
-                                    <div style="right: 0;position: absolute;"><button class="btn btn-primary border-white" id="showPassBtn" type="button" style="background-color: transparent;color: #108b8b;font-size: 13px;">Mostrar</button></div><input id="password" class="form-control inputData_cyan" type="password"
-                                        id="password" required=""><label class="text-left labelData_cyan">Contraseña</label></div>
+                                    <div style="right: 0;position: absolute;"><button class="btn btn-primary border-white" id="showPassBtn" type="button" style="font-family: Roboto, sans-serif;">Mostrar</button></div><input class="form-control inputData_cyan" type="password" id="password" required="">
+                                    <label
+                                        class="text-left labelData_cyan">Contraseña</label>
+                                </div>
                                 <!-- End: input -->
-                                <div class="text-right"><a class="btn btn-primary" role="button" data-bs-hover-animate="pulse" style="border-width: 0px;border-radius: 0px;font-size: 13px;background-color: rgba(255,255,255,0);color: #108B8B;font-family: Roboto, sans-serif;font-weight: bold;"
-                                        href="both_recoverPassword.html">¿Olvidaste tu contraseña?<br></a></div>
+                                <div class="text-right"><button class="btn lostPasswordButton lostPassClass" data-bs-hover-animate="pulse" type="button">¿Olvidaste tu contraseña?<br></button></div>
                             </div>
                             <div>
                                 <div class="form-group text-center" style="margin-top: 0px;margin-bottom: 0px;">
-                                    <div style="margin-top: 15px;">
-									<a onclick="login();" class="btn btn-primary btn-block text-break text-center" role="button" style="border-color: #1faeae;display: table-cell;border-width: 1px;border-radius: 15px;margin: auto;background-color: rgb(255,255,255);color: #108B8B;max-width: 100%;text-align: center;height: 45px;font-weight: bold;font-family: Roboto, sans-serif;padding-bottom: 6px;width: 500px;font-size: 18px;line-height: 23px;"
-                                            href="#">Iniciar sesión</a></div>
+                                    <div style="margin-top: 15px;"><button class="btn btn-primary btn-block text-break text-center" data-bs-hover-animate="pulse" style="border-color: #1faeae;display: table-cell;border-width: 1px;border-radius: 15px;margin: auto;background-color: rgb(255,255,255);color: #108B8B;max-width: 100%;text-align: center;height: 45px;font-weight: bold;font-family: Roboto, sans-serif;padding-bottom: 6px;width: 500px;font-size: 18px;line-height: 23px;"
+                                            type="submit">Iniciar sesión</button></div>
                                     <div style="margin-top: 30px;">
                                         <div class="form-row">
                                             <div class="col center"><label class="col-form-label" style="color: rgba(0,0,0,0.8);font-size: 12px;font-family: Roboto, sans-serif;">¿No tienes cuenta?</label></div>
                                             <div class="col text-right center">
-                                                <div class="text-right"><a class="btn btn-primary text-break text-right" role="button" style="display: table-cell;/*border-width: 0px;*/border-radius: 15px;border-color: rgba(255,255,255,0);background-color: #108B8B;height: 35px;font-family: Roboto, sans-serif;"
-                                                        href="info_comunity.html">Únete aquí</a></div>
+                                                <div class="text-right"><a class="btn btn-primary text-break text-right" role="button" data-toggle="tooltip" data-bs-tooltip="" data-bs-hover-animate="rubberBand" id="joinHere" href="info_comunity.html" title="Hi">Únete aquí</a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -114,7 +120,6 @@
             </main>
         </div>
     </div>
-	 <script src="assets/js/login.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
@@ -127,25 +132,21 @@
     <script src="assets/js/--mp---Masonry-Gallery-with-Loader.js"></script>
     <script src="assets/js/Collapsible-sidebar-left-or-right--Content-overlay.js"></script>
     <script src="assets/js/theme.js"></script>
-    <script src="assets/js/3D_CSS_PROGRESS_BAR_BY_REDSTAPLER.js"></script>
     <script src="assets/js/addImage.js"></script>
     <script src="assets/js/addTeamMemberComunity.js"></script>
     <script src="assets/js/backPage.js"></script>
     <script src="assets/js/delete_purpose_comunity.js"></script>
     <script src="assets/js/delete_TeamMember.js"></script>
     <script src="assets/js/disclaimer_comunity.js"></script>
-    <script src="assets/js/endPurpose.js"></script>
-    <script src="assets/js/explore.js"></script>
     <script src="assets/js/flipCard.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="assets/js/indexPage.js"></script>
     <script src="assets/js/join_purpose_image.js"></script>
-    <script src="assets/js/join_purpose.js"></script>
     <script src="assets/js/Loading-Page-Animation-Style.js"></script>
     <script src="assets/js/loadingPage.js"></script>
     <script src="assets/js/main_page.js"></script>
     <script src="assets/js/ml-video.js"></script>
     <script src="assets/js/navBar.js"></script>
-    <script src="assets/js/progress_bar.js"></script>
     <script src="assets/js/QR_Module.js"></script>
     <script src="assets/js/qr_reader.js"></script>
     <script src="assets/js/qr-scanner-worker.min.js"></script>
@@ -155,9 +156,6 @@
     <script src="assets/js/sideNav.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>
     <script src="assets/js/sleep.js"></script>
-    <script src="assets/js/untitled-1.js"></script>
-    <script src="assets/js/untitled-2.js"></script>
-    <script src="assets/js/untitled.js"></script>
 </body>
 
 </html>

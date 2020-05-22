@@ -1,7 +1,6 @@
 function openNav() {
     document.getElementById("sideNav_Options").style.marginLeft = "0%";
     document.getElementById("sideNav_Back").style.marginLeft = "0%";
-    //document.getElementById("sideNav_Main").style.marginLeft = "0%";
 }
 
 function closeNav() {

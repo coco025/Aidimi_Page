@@ -1,6 +1,5 @@
 function addDivImage(){
     document.getElementById('divAddImage').style.backgroundImage = 'url("image_carnesRicas.svg")';
-    //document.getElementById("addImage").style.display = 'none';
 }
 
 document.getElementById("addImage").setAttribute("onclick", "addDivImage()");

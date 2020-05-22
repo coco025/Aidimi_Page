@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>AIDIMI-backup-09-05-2020</title>
+    <title>AIDIMI-backup-21-05-2020_HTML</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
@@ -16,12 +16,15 @@
     <link rel="stylesheet" href="assets/css/addTeamMemberComunity.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/Bootstrap-4-Custom-Radio.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/Collapsible-sidebar-left-or-right--Content-overlay.css">
     <link rel="stylesheet" href="assets/css/deletePurposeComunity.css">
     <link rel="stylesheet" href="assets/css/deleteTeamMember.css">
     <link rel="stylesheet" href="assets/css/disclaimer.css">
     <link rel="stylesheet" href="assets/css/div_rounded_input.css">
     <link rel="stylesheet" href="assets/css/divider-text-middle.css">
+    <link rel="stylesheet" href="assets/css/editComunity.css">
+    <link rel="stylesheet" href="assets/css/editUser.css">
     <link rel="stylesheet" href="assets/css/fieldLabelCountPurposes.css">
     <link rel="stylesheet" href="assets/css/flipCard.css">
     <link rel="stylesheet" href="assets/css/float_button.css">
@@ -31,14 +34,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/Image_center.css">
+    <link rel="stylesheet" href="assets/css/infoComunity.css">
+    <link rel="stylesheet" href="assets/css/infoUser.css">
     <link rel="stylesheet" href="assets/css/Loading-Div-1.css">
     <link rel="stylesheet" href="assets/css/Loading-Div.css">
     <link rel="stylesheet" href="assets/css/Loading-Page-Animation-Style.css">
+    <link rel="stylesheet" href="assets/css/loginPage.css">
+    <link rel="stylesheet" href="assets/css/lostPassword.css">
+    <link rel="stylesheet" href="assets/css/mainUserFlipCards.css">
     <link rel="stylesheet" href="assets/css/ml-video.css">
     <link rel="stylesheet" href="assets/css/myAchivements.css">
     <link rel="stylesheet" href="assets/css/Navbar-Fixed-Side.css">
     <link rel="stylesheet" href="assets/css/navBar.css">
     <link rel="stylesheet" href="assets/css/QR_code.css">
+    <link rel="stylesheet" href="assets/css/registerComunity.css">
+    <link rel="stylesheet" href="assets/css/registerUser.css">
     <link rel="stylesheet" href="assets/css/scan_qr.css">
     <link rel="stylesheet" href="assets/css/sidebar-1.css">
     <link rel="stylesheet" href="assets/css/Sidebar-Menu-1.css">
@@ -59,13 +69,11 @@
     <link rel="stylesheet" href="assets/css/thropies.css">
     <link rel="stylesheet" href="assets/css/Toggle-Switch.css">
     <link rel="stylesheet" href="assets/css/tooltip.css">
-    <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
 <body style="width: 100%;height: 100%;background-color: transparent;">
     <div id="mainDiv" style="width: 100%;height: 100%;">
-        <div id="loading" class="center" style="display: none;position: absolute;font-size: larger;width: 100%;height: 100%;"><img class="loadingdivimg" src="assets/img/unnamed.gif" style="width: 100px;height: 100px;"></div>
-        <div id="body" style="/*display: none;*/background-color: rgba(255,255,255,0.28);height: auto;max-height: 100%;">
+        <div id="body" style="background-color: rgba(255,255,255,0.28);height: auto;max-height: 100%;">
             <div class="container" id="sideNav_Main" style="padding: 0px;margin: 0px;">
                 <div class="border rounded shadow-none" id="sideNav_Options" style="top: 0;position: fixed;z-index: 150;transition: all 0.3s;background-color: #ffffff;height: 100%;width: 300px;margin-left: -100%;">
                     <div class="text-center" id="myID" style="border-radius: 30px;/*background-color: rgba(255,255,255,0);*/margin-top: 30px;padding-left: 20px;">
@@ -118,15 +126,61 @@
             <main class="page registration-page" style="height: 100%;margin-top: 80px;width: 100%;">
                 <section class="clean-block clean-form dark" style="/*height: 100%;*/background-color: transparent;padding: 0px;width: 100%;">
                     <div class="container" style="height: 100%;padding: 0px;width: 100%;">
-                        <a href="#">
-                            <div data-bs-hover-animate="jello" id="scan_QR_code" class="float" style="z-index: 50;background-color: #14d3d3;/*width: 60px;*//*height: 60px;*/">
+                        <a href="QRreader_user.html">
+                            <div data-bs-hover-animate="jello" class="float" style="z-index: 50;background-color: #14d3d3;/*width: 60px;*//*height: 60px;*/">
                                 <div class="row text-center" style="margin: 0px;height: 100%;width: 100%;">
                                     <div class="col" style="width: 40px;margin: auto;padding: 0px;"><img src="assets/img/qr_Back.png" style="width: 35px;"></div>
                                 </div>
                             </div>
                         </a>
                         <div class="row justify-content-center" style="height: 100%;margin: 0px;width: 100%;">
-                            <div class="col" id="purpose1" style="border-radius: 15px;background-color: #ffffff;height: 250px;padding: 0px;margin: 10px;max-width: 350px;width: 350px;min-width: 350px;">
+                            <div class="col purpose">
+                                <div class="cardFlip center" style="border-width: 0px;height: 100%;width: 100%;">
+                                    <div id="generalInfo" class="center card__face card__face--front">
+                                        <div class="row" id="upFlipCard">
+                                            <div class="col-2 col-sm-3 center" style="height: 100%;width: 100%;"><img src="assets/img/McDonalds.png" style="border-radius: 50px;width: 35px;"></div>
+                                            <div class="col" style="padding: 0px;">
+                                                <div class="row" style="margin: 0px;">
+                                                    <div class="col text-left" style="height: 25px;"><label class="col-form-label" style="color: rgb(255,255,255);font-family: Roboto, sans-serif;font-weight: 500;font-size: 14px;line-height: 10px;">Restaurante Carnes Ricas</label></div>
+                                                </div>
+                                                <div class="row" style="margin: 0px;height: 20px;">
+                                                    <div class="col text-left" style="height: 20px;"><label style="color: rgb(255,255,255);font-weight: bold;font-size: 13px;margin: 0px;line-height: 15px;margin-top: -15px;font-family: Roboto, sans-serif;">carnesricas</label><img src="assets/img/bx-certification_white.svg"
+                                                            style="margin-left: 5px;margin-top: -13px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="width: 100%;height: 100%;"><img style="border: 0px solid #ffffff;border-radius: 15px;height: 100%;background-image: url(&quot;assets/img/hamburguesa-1.jpg&quot;);background-size: cover;background-position: center;width: 100%;"></div>
+                                        <div class="row"
+                                            id="downFlipCard">
+                                            <div class="col" style="padding: 0px;">
+                                                <div class="row" style="margin: 0px;">
+                                                    <div class="col text-left center" style="height: 25px;"><label class="col-form-label" style="color: rgb(255,255,255);font-family: Roboto, sans-serif;font-weight: 500;font-size: 14px;height: 100%;width: 100%;line-height: 10px;">Finde-burguesa</label></div>
+                                                </div>
+                                                <div class="row" style="margin: 0px;">
+                                                    <div class="col text-left" style="height: 25px;margin-top: -5px;"><label class="col-form-label text-left center" style="color: rgb(255,255,255);font-weight: 500;font-size: 13px;margin: 0px;height: 100%;width: 100%;line-height: 10px;font-family: Roboto, sans-serif;">Código 012345</label></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 center" style="width: 100%;margin: 0px;padding: 0px;">
+                                                <div class="center" style="width: 100%;height: 100%;padding-right: 8px;"><input type="text" style="width: 100%;background-image: url(&quot;assets/img/hearts.svg&quot;);background-repeat: no-repeat;background-size: contain;background-position: right;font-family: Roboto, sans-serif;color: rgb(255,255,255);background-color: transparent;margin-top: 10px;padding: 0px 5px;padding-left: 20px;font-size: 16px;"
+                                                        value="123" readonly=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border rounded border-white card__face card__face--back" id="detailInfo">
+                                        <div class="row row-cols-1 justify-content-center" style="border-radius: 15px;position: absolute;margin: 0px;width: 100%;background-color: transparent;height: 100%;">
+                                            <div class="col" style="padding: 0px;height: 150px;"><label class="text-left" style="color: rgb(0,0,0,0.8);font-family: Roboto, sans-serif;font-weight: 700;font-size: 14px;line-height: 10px;height: 15px;width: 100%;padding-right: 15px;padding-left: 15px;padding-top: 5px;">Detalle y otras condiciones</label>
+                                                <p
+                                                    class="text-left" style="border-radius: 15px;font-size: 14px;padding: 5px;background-color: #fafafa;height: 120px;margin-right: 5px;margin-left: 5px;">¿Qué deseas notificarle a tus clientes y qué les ofreces a cambio de su participación?<br></p>
+                                            </div>
+                                            <div class="col" style="padding: 0px;width: 100%;height: 60px;"><label class="text-left" style="color: rgb(0,0,0,0.8);font-family: Roboto, sans-serif;font-weight: 700;font-size: 14px;width: 100%;line-height: 10px;margin-top: 10px;height: 15px;padding-right: 15px;padding-left: 15px;">Horario habilitado</label>
+                                                <p
+                                                    class="text-left" style="border-radius: 15px;font-size: 14px;padding: 15px;background-color: #fafafa;margin-right: 5px;margin-left: 5px;height: 40px;"><br></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col" id="purpose-1" style="border-radius: 15px;background-color: #ffffff;height: 250px;padding: 0px;margin: 10px;max-width: 350px;width: 350px;min-width: 350px;">
                                 <div class="cardFlip center" style="border-width: 0px;height: 100%;width: 100%;">
                                     <div id="generalInfo" class="center card__face card__face--front" style="border-radius: 15px;/*display: none;*/border-width: 0px;height: 100%;background-color: #ffffff;width: 100%;">
                                         <div class="row" style="border-radius: 15px;position: absolute;margin: 0px;width: 100%;background-color: rgb(0,0,0,0.3);">
@@ -136,7 +190,7 @@
                                                     <div class="col text-left" style="height: 25px;"><label class="col-form-label" style="color: rgb(255,255,255);font-family: Roboto, sans-serif;font-weight: 500;font-size: 14px;line-height: 10px;">Restaurante Carnes Ricas</label></div>
                                                 </div>
                                                 <div class="row" style="margin: 0px;height: 20px;">
-                                                    <div class="col text-left" style="height: 20px;"><label style="color: rgb(255,255,255);font-weight: bold;font-size: 13px;margin: 0px;line-height: 15px;margin-top: -15px;font-family: Roboto, sans-serif;">carnesricas</label><img src="assets/img/bx-certification_white.svg"
+                                                    <div class="col text-left" style="height: 20px;"><label style="color: rgb(255,255,255);font-weight: 500;font-size: 13px;margin: 0px;line-height: 15px;margin-top: -15px;font-family: Roboto, sans-serif;">carnesricas</label><img src="assets/img/bx-certification_white.svg"
                                                             style="margin-left: 5px;margin-top: -13px;"></div>
                                                 </div>
                                             </div>
@@ -154,7 +208,7 @@
                                             </div>
                                             <div class="col-4 center" style="width: 100%;margin: 0px;padding: 0px;">
                                                 <div class="center" style="width: 100%;height: 100%;padding-right: 8px;"><input type="text" style="width: 100%;background-image: url(&quot;assets/img/hearts.svg&quot;);background-repeat: no-repeat;background-size: contain;background-position: right;font-family: Roboto, sans-serif;color: rgb(255,255,255);background-color: transparent;margin-top: 10px;padding: 0px 5px;padding-left: 20px;font-size: 16px;"
-                                                        value="123" readonly=""></div>
+                                                        value="123"></div>
                                             </div>
                                     </div>
                                 </div>
@@ -164,63 +218,18 @@
                                             <p
                                                 class="text-left" style="border-radius: 15px;font-size: 14px;padding: 5px;background-color: #fafafa;height: 120px;margin-right: 5px;margin-left: 5px;">¿Qué deseas notificarle a tus clientes y qué les ofreces a cambio de su participación?<br></p>
                                         </div>
-                                        <div class="col" style="padding: 0px;width: 100%;height: 60px;"><label class="text-left" style="color: rgb(0,0,0,0.8);font-family: Roboto, sans-serif;font-weight: 700;font-size: 14px;width: 100%;line-height: 10px;margin-top: 10px;height: 15px;padding-right: 15px;padding-left: 15px;">Horario habilitado</label>
+                                        <div class="col" style="padding: 0px;width: 100%;"><label class="text-left" style="color: rgb(0,0,0,0.8);font-family: Roboto, sans-serif;font-weight: 700;font-size: 14px;width: 100%;line-height: 10px;margin-top: 10px;height: 15px;padding-right: 15px;padding-left: 15px;">Horario habilitado</label>
                                             <p
-                                                class="text-left" style="border-radius: 15px;font-size: 14px;padding: 15px;background-color: #fafafa;margin-right: 5px;margin-left: 5px;height: 40px;"><br></p>
+                                                class="text-left" style="border-radius: 15px;font-size: 14px;padding: 15px;background-color: #fafafa;margin-right: 5px;margin-left: 5px;height: 60px;"><br></p>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col" id="purpose-1" style="border-radius: 15px;background-color: #ffffff;height: 250px;padding: 0px;margin: 10px;max-width: 350px;width: 350px;min-width: 350px;">
-                            <div class="cardFlip center" style="border-width: 0px;height: 100%;width: 100%;">
-                                <div id="generalInfo" class="center card__face card__face--front" style="border-radius: 15px;/*display: none;*/border-width: 0px;height: 100%;background-color: #ffffff;width: 100%;">
-                                    <div class="row" style="border-radius: 15px;position: absolute;margin: 0px;width: 100%;background-color: rgb(0,0,0,0.3);">
-                                        <div class="col-2 col-sm-3 center" style="height: 100%;width: 100%;"><img src="assets/img/McDonalds.png" style="border-radius: 50px;width: 35px;"></div>
-                                        <div class="col" style="padding: 0px;">
-                                            <div class="row" style="margin: 0px;">
-                                                <div class="col text-left" style="height: 25px;"><label class="col-form-label" style="color: rgb(255,255,255);font-family: Roboto, sans-serif;font-weight: 500;font-size: 14px;line-height: 10px;">Restaurante Carnes Ricas</label></div>
-                                            </div>
-                                            <div class="row" style="margin: 0px;height: 20px;">
-                                                <div class="col text-left" style="height: 20px;"><label style="color: rgb(255,255,255);font-weight: 500;font-size: 13px;margin: 0px;line-height: 15px;margin-top: -15px;font-family: Roboto, sans-serif;">carnesricas</label><img src="assets/img/bx-certification_white.svg" style="margin-left: 5px;margin-top: -13px;"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="width: 100%;height: 100%;"><img style="/*display: none;*/border: 0px solid #ffffff;border-radius: 15px;height: 100%;background-image: url(&quot;assets/img/hamburguesa-1.jpg&quot;);background-size: cover;background-position: center;width: 100%;"></div>
-                                    <div
-                                        class="row" style="bottom: 0;border-radius: 15px;position: absolute;margin: 0px;width: 100%;background-color: rgb(0,0,0,0.3);">
-                                        <div class="col" style="padding: 0px;">
-                                            <div class="row" style="margin: 0px;">
-                                                <div class="col text-left center" style="height: 25px;"><label class="col-form-label" style="color: rgb(255,255,255);font-family: Roboto, sans-serif;font-weight: 500;font-size: 14px;height: 100%;width: 100%;line-height: 10px;">Finde-burguesa</label></div>
-                                            </div>
-                                            <div class="row" style="margin: 0px;">
-                                                <div class="col text-left" style="height: 25px;margin-top: -5px;"><label class="col-form-label text-left center" style="color: rgb(255,255,255);font-weight: 500;font-size: 13px;margin: 0px;height: 100%;width: 100%;line-height: 10px;font-family: Roboto, sans-serif;">Código 012345</label></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4 center" style="width: 100%;margin: 0px;padding: 0px;">
-                                            <div class="center" style="width: 100%;height: 100%;padding-right: 8px;"><input type="text" style="width: 100%;background-image: url(&quot;assets/img/hearts.svg&quot;);background-repeat: no-repeat;background-size: contain;background-position: right;font-family: Roboto, sans-serif;color: rgb(255,255,255);background-color: transparent;margin-top: 10px;padding: 0px 5px;padding-left: 20px;font-size: 16px;"
-                                                    value="123"></div>
-                                        </div>
-                                </div>
-                            </div>
-                            <div class="border rounded border-white card__face card__face--back" id="detailInfo" style="/*border-width: 2px;*/border-radius: 15px;border-width: 0px;background-color: #ffffff;width: 100%;height: 100%;">
-                                <div class="row row-cols-1 justify-content-center" style="border-radius: 15px;position: absolute;margin: 0px;width: 100%;background-color: transparent;height: 100%;">
-                                    <div class="col" style="padding: 0px;height: 150px;"><label class="text-left" style="color: rgb(0,0,0,0.8);font-family: Roboto, sans-serif;font-weight: 700;font-size: 14px;line-height: 10px;height: 15px;width: 100%;padding-right: 15px;padding-left: 15px;padding-top: 5px;">Detalle y otras condiciones</label>
-                                        <p
-                                            class="text-left" style="border-radius: 15px;font-size: 14px;padding: 5px;background-color: #fafafa;height: 120px;margin-right: 5px;margin-left: 5px;">¿Qué deseas notificarle a tus clientes y qué les ofreces a cambio de su participación?<br></p>
-                                    </div>
-                                    <div class="col" style="padding: 0px;width: 100%;"><label class="text-left" style="color: rgb(0,0,0,0.8);font-family: Roboto, sans-serif;font-weight: 700;font-size: 14px;width: 100%;line-height: 10px;margin-top: 10px;height: 15px;padding-right: 15px;padding-left: 15px;">Horario habilitado</label>
-                                        <p
-                                            class="text-left" style="border-radius: 15px;font-size: 14px;padding: 15px;background-color: #fafafa;margin-right: 5px;margin-left: 5px;height: 60px;"><br></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
         </div>
-    </div>
-    </section>
-    </main>
+        </section>
+        </main>
     </div>
     </div>
     <script src="assets/js/jquery.min.js"></script>
@@ -235,25 +244,21 @@
     <script src="assets/js/--mp---Masonry-Gallery-with-Loader.js"></script>
     <script src="assets/js/Collapsible-sidebar-left-or-right--Content-overlay.js"></script>
     <script src="assets/js/theme.js"></script>
-    <script src="assets/js/3D_CSS_PROGRESS_BAR_BY_REDSTAPLER.js"></script>
     <script src="assets/js/addImage.js"></script>
     <script src="assets/js/addTeamMemberComunity.js"></script>
     <script src="assets/js/backPage.js"></script>
     <script src="assets/js/delete_purpose_comunity.js"></script>
     <script src="assets/js/delete_TeamMember.js"></script>
     <script src="assets/js/disclaimer_comunity.js"></script>
-    <script src="assets/js/endPurpose.js"></script>
-    <script src="assets/js/explore.js"></script>
     <script src="assets/js/flipCard.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="assets/js/indexPage.js"></script>
     <script src="assets/js/join_purpose_image.js"></script>
-    <script src="assets/js/join_purpose.js"></script>
     <script src="assets/js/Loading-Page-Animation-Style.js"></script>
     <script src="assets/js/loadingPage.js"></script>
     <script src="assets/js/main_page.js"></script>
     <script src="assets/js/ml-video.js"></script>
     <script src="assets/js/navBar.js"></script>
-    <script src="assets/js/progress_bar.js"></script>
     <script src="assets/js/QR_Module.js"></script>
     <script src="assets/js/qr_reader.js"></script>
     <script src="assets/js/qr-scanner-worker.min.js"></script>
@@ -263,9 +268,6 @@
     <script src="assets/js/sideNav.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>
     <script src="assets/js/sleep.js"></script>
-    <script src="assets/js/untitled-1.js"></script>
-    <script src="assets/js/untitled-2.js"></script>
-    <script src="assets/js/untitled.js"></script>
 </body>
 
 </html>
