@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="font-family: Roboto, sans-serif;">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -71,17 +71,49 @@
     <link rel="stylesheet" href="assets/css/tooltip.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-light navbar-expand-md border-primary border rounded-0 shadow-sm" id="navBar" style="top: 0px;z-index: 10;position: fixed;background-color: #ffffff;width: 100%;margin: 0px;height: 80px;padding-top: 30px;">
-        <div class="container-fluid">
-            <div style="height: 50%;font-size: 20px;font-family: Roboto, sans-serif;"><a href="mainPage_comunity.html"><img src="assets/img/bx-arrow-back.svg"></a><span class="open-sidebar headerDesign">Acuerdo de pago</span></div>
+<body style="background-color: #fafafa;">
+    <div id="disclaimerPaymentMain" style="display: none;z-index: 25;width: 0px;height: 0px;">
+        <div class="border rounded order-1" id="disclaimerPayment_Back" style="top: 0;position: fixed;z-index: 24;transition: all 0s;background-color: rgba(113,113,113,0.2);padding-left: 0px;padding-top: 0px;width: 100%;height: 100%;/*margin-left: -100%;*/"></div>
+        <div id="disclaimerPayment" class="animated disclaimer faster fadeOutDown" style="/*border-radius: 5px;*/transition: all 0.2s;overflow-y: hidden;z-index: 25;background-color: #0094FF;width: 100%;height: 190px;">
+            <div class="row" style="margin: 0px;margin-top: 20px;">
+                <div class="col-1" style="padding: 0px;margin-left: 5px;"><a id="close_disclaimerPayment" href="#"><img src="assets/img/bx-arrow-back-white.svg"></a></div>
+                <div class="col" style="padding: 0px;">
+                    <p class="text-left" style="font-family: Roboto, sans-serif;font-size: 16px;color: rgb(255,255,255);margin: 0px 5px;">Disfruta de una suscripción mensual para tu punto de recompensas. Que te permita ubicar y fidelizar a tus clientes de una forma más cercana y dinámica.<br></p>
+                </div>
+            </div>
+            <div class="row" style="position: fixed;bottom: 15px;margin-top: 10px;width: 100%;">
+                <div class="col text-right"><a class="btn" role="button" style="color: rgb(255,255,255);font-family: Roboto, sans-serif;" href="#">¡Entendido!</a></div>
+            </div>
         </div>
+    </div>
+    <nav class="navbar navbar-light navbar-expand-md border-primary border rounded-0 shadow-sm" style="top: 0px;z-index: 10;position: fixed;background-color: #ffffff;width: 100%;margin: 0px;height: 80px;padding-top: 30px;">
+        <div class="container-fluid">
+            <div style="height: 50%;font-size: 20px;font-family: Roboto, sans-serif;"><a href="mainPage_comunity.html"><img src="assets/img/bx-arrow-back.svg"></a><span class="open-sidebar headerDesign">Acuerdo de pago</span>
+                <div></div>
+            </div><a id="exec_disclaimerPayment" href="#"><img src="assets/img/bx-info-circle-black.svg" style="margin-top: 2px;"></a></div>
     </nav>
     <main class="page registration-page" style="height: 100%;margin-top: 80px;">
         <section class="clean-block clean-form dark" style="/*height: 100%;*/width: 100%;background-color: transparent;">
-            <div class="container" style="height: 100%;padding-top: 10px;padding-bottom: 15px;max-width: 700px;"><label style="font-size: 30px;width: 100%;margin-bottom: 0px;margin-top: 10px;">¡Pronto!</label><label style="font-size: 16px;margin-top: 15px;width: 100%;">Estamos trabajando para ofrecerte un mejor servicio.<br></label>
-                <div class="center"
-                    style="margin-top: 100px;width: 175px;"><img src="assets/img/technology.svg" style="width: 100%;height: 100%;"></div>
+            <div class="container" style="height: 100%;padding-top: 10px;padding-bottom: 15px;max-width: 700px;">
+                <div class="center" style="margin-top: 20px;"><img src="assets/img/Payments.svg"></div>
+                <div style="margin-top: 20px;"><img src="assets/img/creditCards.svg"></div>
+                <div style="margin-top: 25px;"><label style="width: 100%;font-family: Roboto, sans-serif;font-size: 16px;">Número de tarjeta</label><input type="text" style="width: 100%;background-image: url(&quot;assets/img/bx-credit-card-gray.svg&quot;);background-repeat: no-repeat;padding: 5px;background-position: left;padding-left: 30px;font-family: Roboto, sans-serif;"
+                        inputmode="numeric"></div>
+                <div style="margin-top: 25px;"><label style="width: 100%;font-family: Roboto, sans-serif;font-size: 16px;">Titular de la tarjeta</label><input type="text" style="width: 100%;background-image: url(&quot;assets/img/bx-user%201.svg&quot;);background-repeat: no-repeat;padding: 5px;background-position: left;padding-left: 30px;font-family: Roboto, sans-serif;"></div>
+                <div
+                    class="row" style="margin: 0px;margin-top: 25px;">
+                    <div class="col" style="padding: 0px;">
+                        <div style="margin-top: 15px;"><label style="width: 100%;font-family: Roboto, sans-serif;font-size: 16px;">Fecha de vencimiento</label><input type="text" style="width: 100%;background-image: url(&quot;assets/img/bx-calendar-event%201.svg&quot;);background-repeat: no-repeat;padding: 5px;background-position: left;padding-left: 30px;font-family: Roboto, sans-serif;padding-top: 7px;"
+                                placeholder="MM/AA"></div>
+                    </div>
+                    <div class="col-5">
+                        <div style="margin-top: 15px;"><label style="width: 100%;font-family: Roboto, sans-serif;font-size: 16px;">CVV</label><input type="text" style="width: 100%;background-image: url(&quot;assets/img/bx-lock-alt-gray.svg&quot;);background-repeat: no-repeat;padding: 5px;background-position: left;padding-left: 30px;font-family: Roboto, sans-serif;background-size: auto;"
+                                inputmode="numeric"></div>
+                    </div>
+            </div>
+            <div class="row" style="margin: 0px;width: 100%;margin-top: 30px;">
+                <div class="col center" style="width: 100%;"><button class="btn text-center focusCyan styleButton" data-bs-hover-animate="pulse" id="registerComunityButton" type="button" style="background-color: #108b8b;color: rgb(255,255,255);width: 100%;">$30/mes</button></div>
+            </div>
             </div>
         </section>
     </main>

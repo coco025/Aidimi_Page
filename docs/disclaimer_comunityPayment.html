@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="font-family: Roboto, sans-serif;">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -72,19 +72,20 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md border-primary border rounded-0 shadow-sm" id="navBar" style="top: 0px;z-index: 10;position: fixed;background-color: #ffffff;width: 100%;margin: 0px;height: 80px;padding-top: 30px;">
-        <div class="container-fluid">
-            <div style="height: 50%;font-size: 20px;font-family: Roboto, sans-serif;"><a href="mainPage_comunity.html"><img src="assets/img/bx-arrow-back.svg"></a><span class="open-sidebar headerDesign">Acuerdo de pago</span></div>
-        </div>
-    </nav>
-    <main class="page registration-page" style="height: 100%;margin-top: 80px;">
-        <section class="clean-block clean-form dark" style="/*height: 100%;*/width: 100%;background-color: transparent;">
-            <div class="container" style="height: 100%;padding-top: 10px;padding-bottom: 15px;max-width: 700px;"><label style="font-size: 30px;width: 100%;margin-bottom: 0px;margin-top: 10px;">¡Pronto!</label><label style="font-size: 16px;margin-top: 15px;width: 100%;">Estamos trabajando para ofrecerte un mejor servicio.<br></label>
-                <div class="center"
-                    style="margin-top: 100px;width: 175px;"><img src="assets/img/technology.svg" style="width: 100%;height: 100%;"></div>
+    <div id="disclaimerPaymentMain" style="display: none;z-index: 25;width: 0px;height: 0px;">
+        <div class="border rounded order-1" id="disclaimerPayment_Back" style="top: 0;position: fixed;z-index: 24;transition: all 0s;background-color: rgba(113,113,113,0.2);padding-left: 0px;padding-top: 0px;width: 100%;height: 100%;/*margin-left: -100%;*/"></div>
+        <div id="disclaimerPayment" class="animated disclaimer faster fadeOutDown" style="/*border-radius: 5px;*/transition: all 0.2s;overflow-y: hidden;z-index: 25;background-color: #0094FF;width: 100%;height: 190px;">
+            <div class="row" style="margin: 0px;margin-top: 20px;">
+                <div class="col-1" style="padding: 0px;margin-left: 5px;"><a id="close_disclaimerPayment" href="#"><img src="assets/img/bx-arrow-back-white.svg"></a></div>
+                <div class="col" style="padding: 0px;">
+                    <p class="text-left" style="font-family: Roboto, sans-serif;font-size: 16px;color: rgb(255,255,255);margin: 0px 5px;">Disfruta de una suscripción mensual para tu punto de recompensas. Que te permita ubicar y fidelizar a tus clientes de una forma más cercana y dinámica.<br></p>
+                </div>
             </div>
-        </section>
-    </main>
+            <div class="row" style="position: fixed;bottom: 15px;margin-top: 10px;width: 100%;">
+                <div class="col text-right"><a class="btn" role="button" style="color: rgb(255,255,255);font-family: Roboto, sans-serif;" href="#">¡Entendido!</a></div>
+            </div>
+        </div>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>

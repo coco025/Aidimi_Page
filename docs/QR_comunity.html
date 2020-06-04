@@ -71,17 +71,48 @@
     <link rel="stylesheet" href="assets/css/tooltip.css">
 </head>
 
-<body>
+<body style="font-family: Roboto, sans-serif;">
+    <div id="disclaimerQRComunityMain" style="display: none;z-index: 25;width: 0px;height: 0px;">
+        <div class="border rounded order-1" id="disclaimerQRComunity_Back" style="top: 0;position: fixed;z-index: 24;transition: all 0s;background-color: rgba(113,113,113,0.2);padding-left: 0px;padding-top: 0px;width: 100%;height: 100%;/*margin-left: -100%;*/"></div>
+        <div id="disclaimerQRComunity" class="animated disclaimer faster fadeOutDown" style="/*border-radius: 5px;*/transition: all 0.2s;overflow-y: hidden;z-index: 25;background-color: #0094FF;width: 100%;height: 190px;">
+            <div class="row" style="margin: 0px;margin-top: 20px;">
+                <div class="col-1" style="padding: 0px;margin-left: 5px;"><a id="close_disclaimerQR" href="#"><img src="assets/img/bx-arrow-back-white.svg"></a></div>
+                <div class="col" style="padding: 0px;">
+                    <p class="text-left" style="font-family: Roboto, sans-serif;font-size: 16px;color: rgb(255,255,255);margin: 0px 5px;">Este es tu identificador único. Utilízalo para fidelizar a tus clientes de forma inmediata. Lo puedes compartir con tu audiencia, a través de tus redes sociales con una captura de esta pantalla.<br></p>
+                </div>
+            </div>
+            <div class="row" style="position: fixed;bottom: 15px;margin-top: 10px;width: 100%;">
+                <div class="col text-right"><a class="btn" role="button" style="color: rgb(255,255,255);font-family: Roboto, sans-serif;" href="#">¡Entendido!</a></div>
+            </div>
+        </div>
+    </div>
     <nav class="navbar navbar-light navbar-expand-md border-primary border rounded-0 shadow-sm" id="navBar" style="top: 0px;z-index: 10;position: fixed;background-color: #ffffff;width: 100%;margin: 0px;height: 80px;padding-top: 30px;">
         <div class="container-fluid">
-            <div style="height: 50%;font-size: 20px;font-family: Roboto, sans-serif;"><a href="mainPage_comunity.html"><img src="assets/img/bx-arrow-back.svg"></a><span class="open-sidebar headerDesign">Acuerdo de pago</span></div>
-        </div>
+            <div style="height: 50%;font-size: 20px;font-family: Roboto, sans-serif;"><a href="mainPage_comunity.html"><img src="assets/img/bx-arrow-back.svg"></a><span class="open-sidebar headerDesign">Nuestro QR único</span>
+                <div></div>
+            </div><a id="exec_disclaimerQR" href="#"><img src="assets/img/bx-info-circle-black.svg"></a></div>
     </nav>
-    <main class="page registration-page" style="height: 100%;margin-top: 80px;">
-        <section class="clean-block clean-form dark" style="/*height: 100%;*/width: 100%;background-color: transparent;">
-            <div class="container" style="height: 100%;padding-top: 10px;padding-bottom: 15px;max-width: 700px;"><label style="font-size: 30px;width: 100%;margin-bottom: 0px;margin-top: 10px;">¡Pronto!</label><label style="font-size: 16px;margin-top: 15px;width: 100%;">Estamos trabajando para ofrecerte un mejor servicio.<br></label>
-                <div class="center"
-                    style="margin-top: 100px;width: 175px;"><img src="assets/img/technology.svg" style="width: 100%;height: 100%;"></div>
+    <main class="page registration-page" style="height: 100%;margin-top: 80px;padding-top: 15px;">
+        <section class="clean-block clean-form dark" style="/*height: 100%;*/width: 100%;background-color: transparent;padding-bottom: 0px;">
+            <div class="container" style="height: 100%;max-width: 700px;padding: 0px 40px;">
+                <div style="width: 100%;">
+                    <div class="row myAch_row" style="margin: 0px;margin-bottom: 15px;width: 100%;">
+                        <div class="col-1 center" style="max-width: 100%;"><img src="assets/img/McDonalds.png" style="border-radius: 50px;width: 50px;"></div>
+                        <div class="col" style="padding-left: 20px;">
+                            <div class="row">
+                                <div class="col" style="padding: 0px;"><label class="col-form-label comunity" style="font-size: 16px;font-weight: bold;">Nombre comunidad</label></div>
+                            </div>
+                            <div class="row">
+                                <div class="col" style="height: 20px;padding: 0px;"><label class="user" style="height: 20px;padding: 0px;margin: 0px;color: #A9A9A9;margin-top: -15px;font-weight: bold;">@usuario</label><img src="assets/img/Verification.svg" style="margin-top: -20px;margin-left: 10px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div><label class="center" style="width: 100%;font-size: 16px;">¡Gracias por unirte a nuestra comunidad!</label></div>
+                <div class="center" style="width: 100%;"><img src="assets/img/qr-code.png" style="width: 250px;margin-top: 50px;"></div>
+                <div style="width: 100%;height: 2px;background-color: #eaeaea;margin-top: 10px;"></div>
+                <div><label class="center" style="width: 100%;color: #108b8b;"><br>Utiliza Aidimi desde tu dispositivo para escanear este código.<br><br></label></div>
+                <div class="center"><img src="assets/img/onlylogo.png" style="width: 25px;height: 30px;"></div>
             </div>
         </section>
     </main>
